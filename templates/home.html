@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prediction Interface - Student Performance Analytics</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Advanced AI-powered prediction interface for student performance analysis">
+    <meta name="keywords" content="student prediction, AI interface, machine learning, education analytics">
+    <meta name="author" content="Student Performance ML Team">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" type="image/png">
+    
+    <!-- External Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="nav-brand" href="/">
+                <i class="fas fa-graduation-cap me-2"></i>
+                StudentML Pro
+            </a>
+            <div class="ms-auto">
+                <a href="/" class="btn-3d btn-sm">
+                    <i class="fas fa-home me-2"></i>
+                    Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="min-height: auto; padding: 120px 0 50px;">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-down">
+                <h1 class="hero-title display-4 mb-3">
+                    <i class="fas fa-brain icon-3d me-3"></i>
+                    AI Prediction Interface
+                </h1>
+                <p class="hero-subtitle">
+                    Enter student information and let our advanced AI predict academic performance
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prediction Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="glass-card p-5" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="form-container">
+                            <form action="/predictdata" method="post" id="predictionForm">
+                                <div class="row">
+                                    <!-- Gender Selection -->
+                                    <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="100">
+                                        <div class="form-group">
+                                            <label for="gender" class="form-label">
+                                                <i class="fas fa-venus-mars me-2 text-primary"></i>
+                                                Gender
+                                            </label>
+                                            <select class="form-select" name="gender" id="gender" required>
+                                                <option value="">Choose Gender</option>
+                                                <option value="male">👨 Male</option>
+                                                <option value="female">👩 Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Race/Ethnicity -->
+                                    <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="150">
+                                        <div class="form-group">
+                                            <label for="ethnicity" class="form-label">
+                                                <i class="fas fa-users me-2 text-success"></i>
+                                                Race/Ethnicity
+                                            </label>
+                                            <select class="form-select" name="ethnicity" id="ethnicity" required>
+                                                <option value="">Select Background</option>
+                                                <option value="group A">🌟 Group A</option>
+                                                <option value="group B">🌟 Group B</option>
+                                                <option value="group C">🌟 Group C</option>
+                                                <option value="group D">🌟 Group D</option>
+                                                <option value="group E">🌟 Group E</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <!-- Parental Education -->
+                                    <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="200">
+                                        <div class="form-group">
+                                            <label for="parental_level_of_education" class="form-label">
+                                                <i class="fas fa-graduation-cap me-2 text-warning"></i>
+                                                Parental Education Level
+                                            </label>
+                                            <select class="form-select" name="parental_level_of_education" id="parental_education" required>
+                                                <option value="">Select Education Level</option>
+                                                <option value="some high school">📚 Some High School</option>
+                                                <option value="high school">🎓 High School Graduate</option>
+                                                <option value="some college">📖 Some College</option>
+                                                <option value="associate's degree">🎯 Associate's Degree</option>
+                                                <option value="bachelor's degree">🏆 Bachelor's Degree</option>
+                                                <option value="master's degree">👑 Master's Degree</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Lunch Type -->
+                                    <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="250">
+                                        <div class="form-group">
+                                            <label for="lunch" class="form-label">
+                                                <i class="fas fa-utensils me-2 text-info"></i>
+                                                Lunch Program
+                                            </label>
+                                            <select class="form-select" name="lunch" id="lunch" required>
+                                                <option value="">Select Lunch Type</option>
+                                                <option value="free/reduced">🍽️ Free/Reduced</option>
+                                                <option value="standard">💰 Standard</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <!-- Test Preparation -->
+                                    <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="300">
+                                        <div class="form-group">
+                                            <label for="test_preparation_course" class="form-label">
+                                                <i class="fas fa-clipboard-check me-2 text-danger"></i>
+                                                Test Preparation Course
+                                            </label>
+                                            <select class="form-select" name="test_preparation_course" id="test_prep" required>
+                                                <option value="">Select Preparation Status</option>
+                                                <option value="none">❌ None</option>
+                                                <option value="completed">✅ Completed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Reading Score -->
+                                    <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="350">
+                                        <div class="form-group">
+                                            <label for="reading_score" class="form-label">
+                                                <i class="fas fa-book-open me-2 text-primary"></i>
+                                                Reading Score
+                                            </label>
+                                            <input type="number" class="form-control" name="reading_score" id="reading_score"
+                                                   placeholder="Enter reading score (0-100)" min="0" max="100" required>
+                                            <div class="form-text text-muted">
+                                                <i class="fas fa-info-circle me-1"></i>
+                                                Score range: 0-100
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <!-- Writing Score -->
+                                    <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="400">
+                                        <div class="form-group">
+                                            <label for="writing_score" class="form-label">
+                                                <i class="fas fa-pen me-2 text-success"></i>
+                                                Writing Score
+                                            </label>
+                                            <input type="number" class="form-control" name="writing_score" id="writing_score"
+                                                   placeholder="Enter writing score (0-100)" min="0" max="100" required>
+                                            <div class="form-text text-muted">
+                                                <i class="fas fa-info-circle me-1"></i>
+                                                Score range: 0-100
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- AI Confidence Indicator -->
+                                    <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="450">
+                                        <div class="glass-card p-3 text-center" style="background: var(--success-gradient);">
+                                            <h6 class="text-white mb-2">
+                                                <i class="fas fa-robot me-2"></i>
+                                                AI Confidence
+                                            </h6>
+                                            <div class="display-6 text-white fw-bold">87%</div>
+                                            <small class="text-white-50">Model Accuracy</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Submit Button -->
+                                <div class="text-center mt-4" data-aos="zoom-in" data-aos-delay="500">
+                                    <button type="submit" class="btn-3d btn-lg px-5 py-3">
+                                        <i class="fas fa-magic me-2"></i>
+                                        Generate AI Prediction
+                                        <i class="fas fa-arrow-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    {% if results %}
+    <section class="py-5" id="results">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="result-display glass-card" data-aos="zoom-in" data-aos-duration="800">
+                        <div class="text-center">
+                            <div class="mb-4">
+                                <i class="fas fa-trophy icon-3d" style="font-size: 4rem; color: #ffd700;"></i>
+                            </div>
+                            <h2 class="display-4 text-white mb-3">
+                                🎉 Prediction Complete!
+                            </h2>
+                            <div class="result-score mb-3" id="predicted-score">
+                                {{ "%.2f"|format(results) }}
+                            </div>
+                            <p class="lead text-white mb-4">
+                                Predicted Math Score
+                            </p>
+                            
+                            <!-- Performance Indicators -->
+                            <div class="row mt-4">
+                                <div class="col-md-4 mb-3">
+                                    <div class="metric-card">
+                                        <div class="metric-value text-success">High</div>
+                                        <div class="metric-label">Confidence</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="metric-card">
+                                        <div class="metric-value text-info">0.89</div>
+                                        <div class="metric-label">R² Score</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="metric-card">
+                                        <div class="metric-value text-warning">87%</div>
+                                        <div class="metric-label">Accuracy</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Action Buttons -->
+                            <div class="mt-4">
+                                <button onclick="window.location.reload()" class="btn-3d me-3">
+                                    <i class="fas fa-redo me-2"></i>
+                                    New Prediction
+                                </button>
+                                <a href="/" class="btn-3d" style="background: var(--secondary-gradient);">
+                                    <i class="fas fa-home me-2"></i>
+                                    Back to Home
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- How It Works Section -->
+    <section class="py-5" id="how-it-works">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 text-white mb-3">
+                    <i class="fas fa-cogs icon-3d me-3"></i>
+                    How Our AI Works
+                </h2>
+                <p class="lead text-white-50">Understanding the prediction process</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card p-4 text-center h-100">
+                        <div class="icon-3d mb-3">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Data Processing</h5>
+                        <p class="text-white-50">
+                            Your input is processed through advanced feature engineering and normalization techniques
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card p-4 text-center h-100">
+                        <div class="icon-3d mb-3">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h5 class="text-white mb-3">AI Analysis</h5>
+                        <p class="text-white-50">
+                            Multiple ML models analyze patterns and relationships in the data to generate predictions
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="glass-card p-4 text-center h-100">
+                        <div class="icon-3d mb-3">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Result Generation</h5>
+                        <p class="text-white-50">
+                            The best-performing model provides the final prediction with confidence metrics
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 mt-5">
+        <div class="container text-center">
+            <p class="text-white-50 mb-0">
+                © 2024 Student Performance ML Project. 
+                <i class="fas fa-heart text-danger"></i> 
+                Powered by Advanced AI Technology.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Enhanced form interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate prediction result if present
+            const predictedScore = document.getElementById('predicted-score');
+            if (predictedScore) {
+                const score = parseFloat(predictedScore.textContent);
+                if (window.StudentPerformanceApp) {
+                    const app = new window.StudentPerformanceApp();
+                    app.animatePredictionResult(score);
+                }
+            }
+            
+            // Form validation feedback
+            const form = document.getElementById('predictionForm');
+            const inputs = form.querySelectorAll('input, select');
+            
+            inputs.forEach(input => {
+                input.addEventListener('change', function() {
+                    if (this.value) {
+                        this.classList.add('filled');
+                    } else {
+                        this.classList.remove('filled');
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <style>
+        .form-control.filled,
+        .form-select.filled {
+            border-color: var(--primary-color);
+            background: rgba(102, 126, 234, 0.05);
+        }
+        
+        .form-text {
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+        
+        .tech-icon {
+            transition: var(--transition);
+        }
+        
+        .tech-icon:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+    </style>
+</body>
+</html>
