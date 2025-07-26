@@ -1,350 +1,270 @@
-# 🎓 Student Performance ML Project
+# Student Performance ML Project
 
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange.svg)
-![MLflow](https://img.shields.io/badge/MLflow-Tracking-red.svg)
-![Flask](https://img.shields.io/badge/Flask-Web%20App-green.svg)
-![Docker](https://img.shields.io/badge/Docker-Containerized-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![MLflow](https://img.shields.io/badge/MLflow-red.svg)
+![Flask](https://img.shields.io/badge/Flask-green.svg)
+![Docker](https://img.shields.io/badge/Docker-blue.svg)
+[![GitHub](https://img.shields.io/badge/GitHub-vannu07-black.svg)](https://github.com/vannu07/Student_Performance)
 
-**🚀 End-to-end ML project for predicting student performance using advanced machine learning techniques**
-
-[📊 Demo](#demo) • [🔧 Installation](#installation) • [📖 Usage](#usage) • [🏗️ Architecture](#architecture) • [📈 Results](#results)
+**End-to-end ML project for predicting student performance using advanced machine learning techniques**
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## Features
 
-- [🎯 Overview](#-overview)
-- [✨ Features](#-features)
-- [🏗️ Project Architecture](#️-project-architecture)
-- [🔧 Installation](#-installation)
-- [🚀 Quick Start](#-quick-start)
-- [📊 Demo](#-demo)
-- [🔬 Model Performance](#-model-performance)
-- [🐳 Docker Deployment](#-docker-deployment)
-- [📱 Web Application](#-web-application)
-- [🛠️ MLflow Integration](#️-mlflow-integration)
-- [📁 Project Structure](#-project-structure)
-- [🧪 Testing](#-testing)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+- **Data Ingestion**: Automated data collection and validation
+- **Data Transformation**: Feature engineering and preprocessing
+- **Model Training**: Multiple ML algorithms with hyperparameter tuning
+- **Model Evaluation**: Comprehensive model assessment with MLflow tracking
+- **MLflow Integration**: Experiment tracking and model registry
+- **DagsHub Integration**: Remote experiment tracking and collaboration
+- **Deployment Ready**: Flask web application
+- **Docker Support**: Containerized deployment
 
----
-
-## 🎯 Overview
-
-This project implements a comprehensive machine learning solution for predicting student academic performance. Built with industry best practices, it features automated data pipelines, multiple ML algorithms, experiment tracking, and a user-friendly web interface.
-
-### 🎬 Demo Preview
-
-```
-
-
-## ✨ Features
-
-### 🔄 **Automated ML Pipeline**
-- 📥 **Data Ingestion**: Automated data collection and validation
-- 🔧 **Data Transformation**: Advanced feature engineering and preprocessing
-- 🤖 **Model Training**: Multiple ML algorithms with hyperparameter optimization
-- 📊 **Model Evaluation**: Comprehensive assessment with cross-validation
-
-### 🎛️ **Experiment Tracking**
-- 📈 **MLflow Integration**: Complete experiment lifecycle management
-- 🌐 **DagsHub Integration**: Remote tracking and team collaboration
-- 📋 **Model Registry**: Centralized model versioning and deployment
-
-### 🚀 **Production Ready**
-- 🌐 **Flask Web App**: Interactive prediction interface
-- 🐳 **Docker Support**: Containerized deployment
-- ☁️ **Cloud Ready**: AWS/Azure/GCP deployment scripts
-- 🔒 **Security**: Input validation and error handling
-
----
-
-## 🏗️ Project Architecture
-
-```mermaid
-graph TB
-    A[📊 Data Sources] --> B[🔄 Data Ingestion]
-    B --> C[🧹 Data Preprocessing]
-    C --> D[🔧 Feature Engineering]
-    D --> E[🤖 Model Training]
-    E --> F[📊 Model Evaluation]
-    F --> G[📈 MLflow Tracking]
-    G --> H[🌐 Model Registry]
-    H --> I[🚀 Deployment]
-    I --> J[📱 Web Application]
-    
-    style A fill:#e1f5fe
-    style E fill:#f3e5f5
-    style G fill:#fff3e0
-    style J fill:#e8f5e8
-```
-
----
-
-## 🔧 Installation
-
-### 📋 Prerequisites
-
-- 🐍 Python 3.8+
-- 📦 pip package manager
-- 🐳 Docker (optional)
-
-### ⚡ Quick Install
+## 🚀 Quick Start
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/student-performance-ml-project.git
-cd student-performance-ml-project
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+git clone https://github.com/vannu07/Student_Performance.git
+cd Student_Performance
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Setup the package
-pip install -e .
-```
-
----
-
-## 🚀 Quick Start
-
-### 1️⃣ **Start MLflow Server**
-```bash
-mlflow ui
-```
-🌐 Access at: `http://localhost:5000`
-
-### 2️⃣ **Run Training Pipeline**
-```bash
+# Run training pipeline
 python main.py
-```
 
-### 3️⃣ **Launch Web Application**
-```bash
+# Launch web app
 python app.py
 ```
-🌐 Access at: `http://localhost:8080`
 
----
+Open `http://localhost:8080` to use the prediction interface.
 
+## 📊 What This Project Does
 
+This is an end-to-end ML system that predicts student exam scores based on various factors like study habits, family background, and previous performance. Built with industry best practices for production deployment.
 
-## 🔬 Model Performance
+### Key Components:
+- **Data Pipeline**: Automated ingestion and preprocessing
+- **ML Models**: Multiple algorithms with hyperparameter tuning
+- **Experiment Tracking**: MLflow integration for model versioning
+- **Web Interface**: Flask app for real-time predictions
+- **Deployment**: Docker containerization
 
-### 🏆 **Algorithm Comparison**
+## 🏗️ Architecture
 
-| Algorithm | 📊 R² Score | 📉 MAE | 📈 RMSE | ⚡ Training Time |
-|-----------|-------------|---------|---------|-----------------|
-| 🌲 Random Forest | 0.847 | 2.34 | 3.12 | 45s |
-| 🚀 XGBoost | 0.853 | 2.28 | 3.05 | 67s |
-| 🐱 CatBoost | 0.841 | 2.41 | 3.18 | 89s |
-| 💡 LightGBM | 0.849 | 2.32 | 3.09 | 32s |
-| 📈 Linear Regression | 0.723 | 3.45 | 4.67 | 2s |
-
-### 📊 **Performance Visualization**
+<div align="center">
 
 ```
-📈 Add performance comparison charts/GIFs here
-![Performance Charts](https://via.placeholder.com/700x400/6f42c1/ffffff?text=Model+Performance+Charts)
+📊 Data → 🔄 Processing → 🤖 Training → 📈 Evaluation → 🚀 Deployment
 ```
 
----
+</div>
 
-## 🐳 Docker Deployment
+The pipeline automatically handles:
+1. Data validation and cleaning
+2. Feature engineering and scaling  
+3. Model training with cross-validation
+4. Performance evaluation and logging
+5. Model deployment to web interface
 
-### 🏗️ **Build Container**
-```bash
-docker build -t student-performance-ml .
-```
+## 🎯 Model Performance
 
-### 🚀 **Run Container**
-```bash
-docker run -p 8080:8080 student-performance-ml
-```
+Multiple algorithms tested and tracked in MLflow:
 
-### 🐙 **Docker Compose**
-```bash
-docker-compose up -d
-```
+| Algorithm | R² Score | MAE | RMSE | Training Time |
+|-----------|----------|-----|------|---------------|
+| **Random Forest** | 0.847 | 2.34 | 3.12 | 45s |
+| **XGBoost** | 0.853 | 2.28 | 3.05 | 67s |
+| **LightGBM** | 0.849 | 2.32 | 3.09 | 32s |
+| **CatBoost** | 0.841 | 2.41 | 3.18 | 89s |
+| Linear Regression | 0.723 | 3.45 | 4.67 | 2s |
 
----
-
-## 📱 Web Application
-
-### 🌟 **Key Features**
-
-- 🎯 **Real-time Predictions**: Instant student performance forecasting
-- 📊 **Interactive Visualizations**: Dynamic charts and graphs
-- 📈 **Model Insights**: Feature importance and prediction explanations
-- 📱 **Responsive Design**: Works on desktop and mobile devices
-
-### 🖼️ **Screenshots**
-
-| 🏠 Home Page | 📊 Prediction Interface | 📈 Results Dashboard |
-|--------------|-------------------------|---------------------|
-| ![Home](https://via.placeholder.com/250x150/007bff/ffffff?text=Home) | ![Predict](https://via.placeholder.com/250x150/28a745/ffffff?text=Predict) | ![Results](https://via.placeholder.com/250x150/ffc107/ffffff?text=Results) |
-
----
-
-## 🛠️ MLflow Integration
-
-### 📊 **Experiment Tracking**
-- ✅ Automated metric logging
-- 📁 Artifact storage
-- 🔄 Model versioning
-- 📈 Comparison dashboards
-
-### 🌐 **Remote Tracking with DagsHub**
-```bash
-export MLFLOW_TRACKING_URI=https://dagshub.com/yourusername/student-performance-ml.mlflow
-export MLFLOW_TRACKING_USERNAME=your_username
-export MLFLOW_TRACKING_PASSWORD=your_token
-```
-
----
+All models are evaluated using R² Score, Mean Absolute Error (MAE), and Root Mean Square Error (RMSE).
 
 ## 📁 Project Structure
 
 ```
-🏗️ student_performance_ml_project/
+student_performance_ml_project/
 ├── 📊 data/
-│   ├── 📥 raw/                    # Raw data files
-│   ├── 🔧 processed/              # Processed data files
-│   └── 🌐 external/               # External data sources
+│   ├── raw/                    # Raw data files
+│   ├── processed/              # Processed data files
+│   └── external/               # External data sources
 ├── 🧩 src/
-│   └── 🎓 student_performance/
-│       ├── 🔧 components/         # Core ML components
-│       ├── 🔄 pipeline/           # Training & prediction pipelines
-│       ├── 🛠️ utils/              # Utility functions
-│       ├── ⚙️ config/             # Configuration management
-│       ├── 📋 entity/             # Data classes
-│       └── 📊 constants/          # Project constants
-├── ⚙️ config/                     # YAML configurations
-├── 🔬 research/                   # Jupyter notebooks
-├── 📦 artifacts/                  # Model artifacts & logs
-├── 🧪 tests/                      # Unit tests
-├── 🚀 deployment/                 # Deployment files
-├── 🐳 Dockerfile                  # Container configuration
-├── 📋 requirements.txt            # Dependencies
-├── 🎯 main.py                     # Training script
-└── 🌐 app.py                      # Web application
+│   └── student_performance/
+│       ├── **init**.py
+│       ├── components/
+│       │   ├── **init**.py
+│       │   ├── data_ingestion.py
+│       │   ├── data_transformation.py
+│       │   ├── model_trainer.py
+│       │   └── model_evaluation.py
+│       ├── pipeline/
+│       │   ├── **init**.py
+│       │   ├── training_pipeline.py
+│       │   └── prediction_pipeline.py
+│       ├── utils/
+│       │   ├── **init**.py
+│       │   └── common.py
+│       ├── config/
+│       │   ├── **init**.py
+│       │   └── configuration.py
+│       ├── entity/
+│       │   ├── **init**.py
+│       │   └── config_entity.py
+│       └── constants/
+│           └── **init**.py
+├── ⚙️ config/
+│   ├── config.yaml
+│   ├── params.yaml
+│   └── schema.yaml
+├── 🔬 research/
+│   └── notebooks/              # Jupyter notebooks for research
+├── 📦 artifacts/               # Model artifacts, logs, etc.
+├── 📋 logs/                    # Application logs
+├── 🧪 tests/                   # Unit tests
+├── 🚀 deployment/
+│   ├── app.py                  # Flask application
+│   ├── Dockerfile
+│   └── requirements.txt
+├── dvc.yaml                    # DVC pipeline configuration
+├── params.yaml                 # Parameters for experiments
+├── requirements.txt            # Python dependencies
+├── setup.py                    # Package setup
+├── main.py                     # Main training script
+└── app.py                      # Web application
 ```
 
----
+## 🔬 MLflow Integration
 
-## 🧪 Testing
-
-### 🔍 **Run Tests**
+Start MLflow UI to view all experiments:
 ```bash
-# Run all tests
-pytest tests/
-
-# Run with coverage
-pytest --cov=src tests/
-
-# Run specific test file
-pytest tests/test_data_ingestion.py -v
+mlflow ui
 ```
 
-### 📊 **Test Coverage**
-```
-📈 Add test coverage badge/visualization here
-![Test Coverage](https://via.placeholder.com/400x200/198754/ffffff?text=Test+Coverage+Report)
+Features:
+- Automated metric logging
+- Model versioning and registry
+- Experiment comparison
+- Parameter tracking
+- Artifact storage
+
+All model metrics, parameters, and artifacts are automatically logged for comparison.
+
+## 🌐 Web Application
+
+The Flask app provides:
+- Interactive web interface for predictions
+- Model performance visualization
+- Real-time prediction capabilities
+- Student data input form
+- Feature importance visualization
+
+## 🐳 Docker Deployment
+
+The project is deployment-ready with Docker:
+
+```bash
+# Build image
+docker build -t student-performance-ml .
+
+# Run container
+docker run -p 8080:8080 student-performance-ml
 ```
 
----
+## 💡 Key Features
+
+### Training Pipeline
+The training pipeline includes:
+- Data ingestion from multiple sources
+- Data validation and preprocessing
+- Feature engineering
+- Model training with multiple algorithms
+- Model evaluation and comparison
+- MLflow experiment tracking
+
+### Data Processing
+- Handles missing values intelligently
+- Feature scaling and encoding
+- Outlier detection and treatment
+- Data validation with schema checking
+
+### Model Training  
+- Grid search hyperparameter optimization
+- K-fold cross-validation
+- Automated feature selection
+- Model performance comparison
+
+### Production Ready
+- REST API endpoints
+- Input validation and error handling
+- Logging and monitoring
+- Model versioning support
+
+## 🛠️ Technical Stack
+
+- **ML Framework**: Scikit-learn, XGBoost, CatBoost, LightGBM  
+- **Experiment Tracking**: MLflow
+- **Web Framework**: Flask
+- **Data Processing**: Pandas, NumPy
+- **Visualization**: Matplotlib, Seaborn
+- **Deployment**: Docker, Gunicorn
+- **Pipeline**: DVC for data versioning
+
+## Deployment Options
+
+The project supports multiple deployment options:
+- Docker containerization
+- Flask web application
+- MLflow model serving
+- Cloud deployment scripts
+
+## Usage
+
+### Training Pipeline
+```bash
+python main.py
+```
+
+### Web Application
+```bash
+python app.py
+```
+
+### MLflow UI
+```bash
+mlflow ui
+```
 
 ## 🤝 Contributing
 
-We welcome contributions! 🎉
+Contributions welcome! Please check the [issues](https://github.com/vannu07/Student_Performance/issues) page.
 
-### 📝 **How to Contribute**
-
-1. 🍴 Fork the repository
-2. 🌿 Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. 💾 Commit changes (`git commit -m 'Add amazing feature'`)
-4. 📤 Push to branch (`git push origin feature/amazing-feature`)
-5. 🔄 Open a Pull Request
-
-### 📋 **Guidelines**
-
-- ✅ Follow PEP 8 style guide
-- 🧪 Add tests for new features
-- 📚 Update documentation
-- 🔍 Ensure all tests pass
-
----
-
-## 🚀 Deployment Options
-
-### ☁️ **Cloud Platforms**
-
-| Platform | Status | Guide |
-|----------|--------|--------|
-| 🌊 **AWS** | ✅ Ready | [AWS Guide](deployment/aws/README.md) |
-| ☁️ **Azure** | ✅ Ready | [Azure Guide](deployment/azure/README.md) |
-| 🌐 **GCP** | ✅ Ready | [GCP Guide](deployment/gcp/README.md) |
-| 🚀 **Heroku** | ✅ Ready | [Heroku Guide](deployment/heroku/README.md) |
-
----
-
-## 📊 Monitoring & Observability
-
-- 📈 **Performance Metrics**: Real-time model performance tracking
-- 🚨 **Alerting**: Automated alerts for model drift
-- 📋 **Logging**: Comprehensive application logging
-- 🔍 **Health Checks**: Endpoint monitoring
-
----
-
-## 🏷️ Versioning
-
-This project uses [Semantic Versioning](https://semver.org/). For available versions, see the [tags](https://github.com/yourusername/student-performance-ml-project/tags).
-
----
+1. Fork the repo
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Commit changes (`git commit -am 'Add new feature'`)
+4. Push to branch (`git push origin feature/improvement`)
+5. Create Pull Request
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👥 Authors & Acknowledgments
-
-### 👨‍💻 **Authors**
-- **Your Name** - *Initial work* - [@yourusername](https://github.com/yourusername)
-
-### 🙏 **Acknowledgments**
-- 📚 Dataset providers
-- 🧠 ML community for inspiration
-- 🛠️ Open source contributors
-
----
-
-
-
-### 🌟 **Show Your Support**
-
-Give a ⭐️ if this project helped you!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=vannu07/Student_Performance&type=Date)](https://star-history.com/#vannu07/Student_Performancet&Date)
+This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
 
-**🎓 Built with ❤️ for better education outcomes**
+**⭐ Star this repo if it helped you!**
 
-![Footer](https://dummyimage.com/800x100/0066cc/ffffff&text=Student+Performance+ML+Project)
+[![GitHub stars](https://img.shields.io/github/stars/vannu07/Student_Performance.svg?style=social&label=Star)](https://github.com/vannu07/Student_Performance)
+[![GitHub forks](https://img.shields.io/github/forks/vannu07/Student_Performance.svg?style=social&label=Fork)](https://github.com/vannu07/Student_Performance/fork)
+
+**Student Performance ML Project - End-to-end machine learning solution**
+
+Built with ❤️ by [vannu07](https://github.com/vannu07)
 
 </div>
