@@ -331,18 +331,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Support & Contact
 
-### 💬 **Get Help**
-- 📧 Email: your.email@example.com
-- 💬 Discord: [Join our server](https://discord.gg/yourserver)
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/student-performance-ml-project/issues)
 
 ### 🌟 **Show Your Support**
 
 Give a ⭐️ if this project helped you!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/student-performance-ml-project&type=Date)](https://star-history.com/#yourusername/student-performance-ml-project&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=vannu07/Student_Performance&type=Date)](https://star-history.com/#vannu07/Student_Performancet&Date)
 
 ---
 
@@ -350,6 +345,6 @@ Give a ⭐️ if this project helped you!
 
 **🎓 Built with ❤️ for better education outcomes**
 
-![Footer](https://via.placeholder.com/800x100/0066cc/ffffff?text=Student+Performance+ML+Project+-+Empowering+Education+with+AI)
+![Footer](https://fakeimg.pl/800x100/0066cc/ffffff/?text=Student+Performance+ML+Project)
 
 </div>
