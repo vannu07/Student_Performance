@@ -1,171 +1,64 @@
-// Advanced JavaScript for Student Performance ML Project
-// Modern ES6+ with animations, 3D effects, and interactive features
+// Simple and Clean JavaScript for Student Performance Predictor
 
-class StudentPerformanceApp {
+class StudentPredictorApp {
     constructor() {
         this.init();
         this.setupEventListeners();
-        this.createParticles();
-        this.setupScrollAnimations();
         this.setupFormValidation();
-        this.setupThemeToggle();
+        this.setupAnimations();
     }
 
     init() {
-        console.log('🚀 Student Performance ML App Initialized');
-        this.setupLoadingAnimation();
-        this.setupCounterAnimations();
-        this.setup3DEffects();
+        console.log('🚀 Student Predictor App Initialized');
+        this.setupNavbarScroll();
+        this.setupSmoothScrolling();
     }
 
-    // Particle System
-    createParticles() {
-        const particlesContainer = document.createElement('div');
-        particlesContainer.className = 'particles';
-        document.body.appendChild(particlesContainer);
-
-        for (let i = 0; i < 50; i++) {
-            this.createParticle(particlesContainer);
-        }
-
-        // Continuously create new particles
-        setInterval(() => {
-            if (particlesContainer.children.length < 50) {
-                this.createParticle(particlesContainer);
-            }
-        }, 200);
-    }
-
-    createParticle(container) {
-        const particle = document.createElement('div');
-        particle.className = 'particle';
-        
-        // Random positioning and animation
-        particle.style.left = Math.random() * 100 + '%';
-        particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
-        particle.style.animationDelay = Math.random() * 2 + 's';
-        
-        container.appendChild(particle);
-
-        // Remove particle after animation
-        setTimeout(() => {
-            if (particle.parentNode) {
-                particle.parentNode.removeChild(particle);
-            }
-        }, 8000);
-    }
-
-    // Scroll Animations
-    setupScrollAnimations() {
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    
-                    // Trigger counter animation for metrics
-                    if (entry.target.classList.contains('metric-card')) {
-                        this.animateCounter(entry.target);
-                    }
-                }
-            });
-        }, observerOptions);
-
-        // Observe all fade-in elements
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Observe metric cards
-        document.querySelectorAll('.metric-card').forEach(el => {
-            observer.observe(el);
-        });
-    }
-
-    // Counter Animation
-    animateCounter(element) {
-        const valueElement = element.querySelector('.metric-value');
-        if (!valueElement || valueElement.dataset.animated) return;
-
-        const finalValue = parseFloat(valueElement.textContent);
-        const duration = 2000;
-        const startTime = performance.now();
-
-        const animate = (currentTime) => {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            
-            // Easing function
-            const easeOutCubic = 1 - Math.pow(1 - progress, 3);
-            const currentValue = finalValue * easeOutCubic;
-            
-            if (valueElement.textContent.includes('%')) {
-                valueElement.textContent = Math.round(currentValue) + '%';
-            } else if (valueElement.textContent.includes('.')) {
-                valueElement.textContent = currentValue.toFixed(2);
-            } else {
-                valueElement.textContent = Math.round(currentValue);
-            }
-
-            if (progress < 1) {
-                requestAnimationFrame(animate);
-            } else {
-                valueElement.dataset.animated = 'true';
-            }
-        };
-
-        requestAnimationFrame(animate);
-    }
-
-    // 3D Effects Setup
-    setup3DEffects() {
-        // Mouse tracking for 3D card effects
-        document.addEventListener('mousemove', (e) => {
-            const cards = document.querySelectorAll('.glass-card');
-            
-            cards.forEach(card => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const rotateX = (y - centerY) / 10;
-                const rotateY = (centerX - x) / 10;
-                
-                if (x >= 0 && x <= rect.width && y >= 0 && y <= rect.height) {
-                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
+    // Navbar scroll effect
+    setupNavbarScroll() {
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (navbar) {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
                 } else {
-                    card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+                    navbar.classList.remove('scrolled');
                 }
-            });
+            }
         });
+    }
 
-        // Reset 3D effects when mouse leaves
-        document.addEventListener('mouseleave', () => {
-            document.querySelectorAll('.glass-card').forEach(card => {
-                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+    // Smooth scrolling for anchor links
+    setupSmoothScrolling() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(anchor.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
     }
 
-    // Form Validation with Visual Feedback
+    // Form validation with visual feedback
     setupFormValidation() {
-        const form = document.querySelector('form');
+        const form = document.querySelector('#predictionForm');
         if (!form) return;
 
         const inputs = form.querySelectorAll('input, select');
         
+        // Real-time validation
         inputs.forEach(input => {
             input.addEventListener('blur', () => this.validateField(input));
-            input.addEventListener('input', () => this.clearValidation(input));
+            input.addEventListener('input', () => this.clearFieldError(input));
         });
 
+        // Form submission
         form.addEventListener('submit', (e) => {
             if (!this.validateForm(form)) {
                 e.preventDefault();
@@ -176,72 +69,76 @@ class StudentPerformanceApp {
         });
     }
 
+    // Validate individual field
     validateField(field) {
         const value = field.value.trim();
         let isValid = true;
         let message = '';
 
-        // Remove existing validation classes
-        field.classList.remove('valid', 'invalid');
+        // Clear previous validation
+        field.classList.remove('is-valid', 'is-invalid');
+        this.clearFieldError(field);
 
+        // Required field validation
         if (field.hasAttribute('required') && !value) {
             isValid = false;
             message = 'This field is required';
-        } else if (field.type === 'number') {
+        }
+        // Number field validation
+        else if (field.type === 'number' && value) {
             const num = parseFloat(value);
             const min = parseFloat(field.min) || 0;
             const max = parseFloat(field.max) || 100;
             
-            if (isNaN(num) || num < min || num > max) {
+            if (isNaN(num)) {
                 isValid = false;
-                message = `Please enter a number between ${min} and ${max}`;
+                message = 'Please enter a valid number';
+            } else if (num < min || num > max) {
+                isValid = false;
+                message = `Score must be between ${min} and ${max}`;
             }
         }
 
         // Apply validation styling
-        field.classList.add(isValid ? 'valid' : 'invalid');
-        
-        // Show/hide error message
-        this.showFieldError(field, isValid ? '' : message);
-        
+        if (value) { // Only show validation if field has content
+            field.classList.add(isValid ? 'is-valid' : 'is-invalid');
+            if (!isValid) {
+                this.showFieldError(field, message);
+            }
+        }
+
         return isValid;
     }
 
+    // Show field error message
     showFieldError(field, message) {
-        let errorElement = field.parentNode.querySelector('.field-error');
+        let errorDiv = field.parentNode.querySelector('.invalid-feedback');
         
-        if (message) {
-            if (!errorElement) {
-                errorElement = document.createElement('div');
-                errorElement.className = 'field-error';
-                field.parentNode.appendChild(errorElement);
-            }
-            errorElement.textContent = message;
-            errorElement.style.opacity = '1';
-        } else if (errorElement) {
-            errorElement.style.opacity = '0';
-            setTimeout(() => {
-                if (errorElement.parentNode) {
-                    errorElement.parentNode.removeChild(errorElement);
-                }
-            }, 300);
+        if (!errorDiv) {
+            errorDiv = document.createElement('div');
+            errorDiv.className = 'invalid-feedback';
+            field.parentNode.appendChild(errorDiv);
+        }
+        
+        errorDiv.textContent = message;
+    }
+
+    // Clear field error
+    clearFieldError(field) {
+        field.classList.remove('is-invalid');
+        const errorDiv = field.parentNode.querySelector('.invalid-feedback');
+        if (errorDiv) {
+            errorDiv.remove();
         }
     }
 
-    clearValidation(field) {
-        field.classList.remove('invalid');
-        const errorElement = field.parentNode.querySelector('.field-error');
-        if (errorElement) {
-            errorElement.style.opacity = '0';
-        }
-    }
-
+    // Validate entire form
     validateForm(form) {
-        const inputs = form.querySelectorAll('input[required], select[required]');
+        const requiredFields = form.querySelectorAll('[required]');
         let isValid = true;
 
-        inputs.forEach(input => {
-            if (!this.validateField(input)) {
+        requiredFields.forEach(field => {
+            if (!this.validateField(field)) {
                 isValid = false;
             }
         });
@@ -249,405 +146,206 @@ class StudentPerformanceApp {
         return isValid;
     }
 
+    // Show form validation errors
     showFormErrors() {
-        // Shake animation for invalid fields
-        const invalidFields = document.querySelectorAll('.invalid');
-        invalidFields.forEach(field => {
-            field.style.animation = 'shake 0.5s ease-in-out';
-            setTimeout(() => {
-                field.style.animation = '';
-            }, 500);
-        });
+        const invalidFields = document.querySelectorAll('.is-invalid');
+        
+        if (invalidFields.length > 0) {
+            // Scroll to first invalid field
+            invalidFields[0].scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+            
+            // Focus on first invalid field
+            invalidFields[0].focus();
+            
+            // Show error message
+            this.showNotification('Please fill in all required fields correctly', 'error');
+        }
     }
 
-    // Loading State Management
+    // Show loading state during form submission
     showLoadingState() {
-        const submitBtn = document.querySelector('button[type="submit"]');
+        const submitBtn = document.querySelector('#submitBtn');
         if (!submitBtn) return;
 
-        const originalText = submitBtn.textContent;
-        submitBtn.innerHTML = '<div class="loading-spinner"></div> Processing...';
+        // Create loading overlay
+        const loadingOverlay = document.createElement('div');
+        loadingOverlay.className = 'loading-overlay show';
+        loadingOverlay.innerHTML = `
+            <div class="text-center">
+                <div class="loading-spinner mb-3"></div>
+                <h5>Processing your request...</h5>
+                <p class="text-muted">Our AI is analyzing the student data</p>
+            </div>
+        `;
+        document.body.appendChild(loadingOverlay);
+
+        // Disable submit button
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<div class="spinner-border spinner-border-sm me-2"></div>Processing...';
         submitBtn.disabled = true;
 
-        // Simulate processing time (remove this in production)
+        // Remove loading state after form submission (handled by server)
+        // This is just for visual feedback during the request
+    }
+
+    // Show notification messages
+    showNotification(message, type = 'info') {
+        const alertClass = type === 'error' ? 'alert-danger' : 'alert-info';
+        
+        const notification = document.createElement('div');
+        notification.className = `alert ${alertClass} alert-dismissible fade show position-fixed`;
+        notification.style.cssText = 'top: 100px; right: 20px; z-index: 9999; min-width: 300px;';
+        notification.innerHTML = `
+            <i class="fas fa-${type === 'error' ? 'exclamation-triangle' : 'info-circle'} me-2"></i>
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        `;
+        
+        document.body.appendChild(notification);
+        
+        // Auto remove after 5 seconds
         setTimeout(() => {
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
-        }, 3000);
-    }
-
-    // Theme Toggle (Dark/Light Mode)
-    setupThemeToggle() {
-        const themeToggle = document.createElement('button');
-        themeToggle.className = 'theme-toggle';
-        themeToggle.innerHTML = '🌙';
-        themeToggle.setAttribute('aria-label', 'Toggle dark mode');
-        
-        document.body.appendChild(themeToggle);
-
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-theme');
-            themeToggle.innerHTML = document.body.classList.contains('dark-theme') ? '☀️' : '🌙';
-            
-            // Save preference
-            localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
-        });
-
-        // Load saved theme
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-theme');
-            themeToggle.innerHTML = '☀️';
-        }
-    }
-
-    // Loading Animation
-    setupLoadingAnimation() {
-        // Page load animation
-        window.addEventListener('load', () => {
-            const loader = document.querySelector('.page-loader');
-            if (loader) {
-                loader.style.opacity = '0';
-                setTimeout(() => {
-                    loader.style.display = 'none';
-                }, 500);
+            if (notification.parentNode) {
+                notification.remove();
             }
-
-            // Animate elements on load
-            this.animateOnLoad();
-        });
+        }, 5000);
     }
 
-    animateOnLoad() {
-        const elements = document.querySelectorAll('.hero-title, .hero-subtitle, .feature-card');
-        elements.forEach((el, index) => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(50px)';
-            
-            setTimeout(() => {
-                el.style.transition = 'all 0.8s ease-out';
-                el.style.opacity = '1';
-                el.style.transform = 'translateY(0)';
-            }, index * 200);
-        });
-    }
+    // Setup scroll animations
+    setupAnimations() {
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-    // Counter Animations for Statistics
-    setupCounterAnimations() {
-        const counters = document.querySelectorAll('[data-counter]');
-        
-        counters.forEach(counter => {
-            const target = parseInt(counter.getAttribute('data-counter'));
-            const duration = 2000;
-            const step = target / (duration / 16);
-            let current = 0;
-
-            const updateCounter = () => {
-                current += step;
-                if (current < target) {
-                    counter.textContent = Math.floor(current);
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    counter.textContent = target;
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
                 }
-            };
-
-            // Start counter when element is visible
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        updateCounter();
-                        observer.unobserve(entry.target);
-                    }
-                });
             });
+        }, observerOptions);
 
-            observer.observe(counter);
+        // Observe elements for animation
+        document.querySelectorAll('.fade-in, .slide-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add fade-in class to cards and sections
+        document.querySelectorAll('.feature-card, .step-card, .info-card').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
         });
     }
 
-    // Event Listeners
+    // Setup event listeners
     setupEventListeners() {
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', (e) => {
-                e.preventDefault();
-                const target = document.querySelector(anchor.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+        // Form field focus effects
+        document.querySelectorAll('.form-control, .form-select').forEach(field => {
+            field.addEventListener('focus', () => {
+                field.parentNode.classList.add('focused');
+            });
+            
+            field.addEventListener('blur', () => {
+                field.parentNode.classList.remove('focused');
             });
         });
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (navbar) {
-                if (window.scrollY > 100) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
-        });
-
-        // Button click effects
-        document.addEventListener('click', (e) => {
-            if (e.target.classList.contains('btn-3d')) {
-                this.createRippleEffect(e);
-            }
-        });
-
-        // Form input focus effects
-        document.querySelectorAll('.form-control, .form-select').forEach(input => {
-            input.addEventListener('focus', () => {
-                input.parentNode.classList.add('focused');
+        // Button hover effects
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                btn.style.transform = 'translateY(-2px)';
             });
+            
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translateY(0)';
+            });
+        });
 
-            input.addEventListener('blur', () => {
-                input.parentNode.classList.remove('focused');
+        // Card hover effects
+        document.querySelectorAll('.feature-card, .info-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
             });
         });
     }
 
-    // Ripple Effect for Buttons
-    createRippleEffect(e) {
-        const button = e.target;
-        const ripple = document.createElement('span');
-        const rect = button.getBoundingClientRect();
-        const size = Math.max(rect.width, rect.height);
-        const x = e.clientX - rect.left - size / 2;
-        const y = e.clientY - rect.top - size / 2;
-
-        ripple.style.width = ripple.style.height = size + 'px';
-        ripple.style.left = x + 'px';
-        ripple.style.top = y + 'px';
-        ripple.classList.add('ripple');
-
-        button.appendChild(ripple);
-
-        setTimeout(() => {
-            ripple.remove();
-        }, 600);
+    // Utility function to format numbers
+    formatNumber(num, decimals = 1) {
+        return parseFloat(num).toFixed(decimals);
     }
 
-    // Prediction Result Animation
-    animatePredictionResult(score) {
-        const resultContainer = document.querySelector('.result-display');
-        if (!resultContainer) return;
-
-        // Create animated score display
-        const scoreElement = resultContainer.querySelector('.result-score');
-        if (scoreElement) {
-            let currentScore = 0;
-            const targetScore = parseFloat(score);
-            const duration = 2000;
-            const increment = targetScore / (duration / 16);
-
-            const animateScore = () => {
-                currentScore += increment;
-                if (currentScore < targetScore) {
-                    scoreElement.textContent = currentScore.toFixed(1);
-                    requestAnimationFrame(animateScore);
-                } else {
-                    scoreElement.textContent = targetScore.toFixed(2);
-                    
-                    // Add celebration effect
-                    this.celebratePrediction();
-                }
-            };
-
-            animateScore();
-        }
-    }
-
-    // Celebration Animation
-    celebratePrediction() {
-        // Create confetti effect
-        for (let i = 0; i < 50; i++) {
-            setTimeout(() => {
-                this.createConfetti();
-            }, i * 50);
-        }
-    }
-
-    createConfetti() {
-        const confetti = document.createElement('div');
-        confetti.className = 'confetti';
-        confetti.style.left = Math.random() * 100 + '%';
-        confetti.style.backgroundColor = this.getRandomColor();
-        confetti.style.animationDuration = (Math.random() * 2 + 1) + 's';
-        
-        document.body.appendChild(confetti);
-
-        setTimeout(() => {
-            confetti.remove();
-        }, 3000);
-    }
-
-    getRandomColor() {
-        const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#ff9ff3'];
-        return colors[Math.floor(Math.random() * colors.length)];
+    // Utility function to get performance level
+    getPerformanceLevel(score) {
+        if (score >= 90) return { level: 'Excellent', color: 'success' };
+        if (score >= 80) return { level: 'Very Good', color: 'info' };
+        if (score >= 70) return { level: 'Good', color: 'primary' };
+        if (score >= 60) return { level: 'Average', color: 'warning' };
+        return { level: 'Needs Improvement', color: 'danger' };
     }
 }
 
-// Utility Functions
-const utils = {
-    // Debounce function for performance
-    debounce(func, wait) {
-        let timeout;
-        return function executedFunction(...args) {
-            const later = () => {
-                clearTimeout(timeout);
-                func(...args);
-            };
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-        };
-    },
-
-    // Throttle function for scroll events
-    throttle(func, limit) {
-        let inThrottle;
-        return function() {
-            const args = arguments;
-            const context = this;
-            if (!inThrottle) {
-                func.apply(context, args);
-                inThrottle = true;
-                setTimeout(() => inThrottle = false, limit);
-            }
-        };
-    },
-
-    // Format numbers with animations
-    formatNumber(num, decimals = 0) {
-        return new Intl.NumberFormat('en-US', {
-            minimumFractionDigits: decimals,
-            maximumFractionDigits: decimals
-        }).format(num);
-    }
-};
-
 // Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new StudentPerformanceApp();
+    new StudentPredictorApp();
 });
 
-// Add CSS animations dynamically
-const style = document.createElement('style');
-style.textContent = `
-    .ripple {
-        position: absolute;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.4);
-        transform: scale(0);
-        animation: ripple-animation 0.6s linear;
-        pointer-events: none;
+// Additional utility functions
+function showToast(message, type = 'info') {
+    const toast = document.createElement('div');
+    toast.className = `toast align-items-center text-white bg-${type} border-0`;
+    toast.setAttribute('role', 'alert');
+    toast.innerHTML = `
+        <div class="d-flex">
+            <div class="toast-body">${message}</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    `;
+    
+    document.body.appendChild(toast);
+    const bsToast = new bootstrap.Toast(toast);
+    bsToast.show();
+    
+    toast.addEventListener('hidden.bs.toast', () => {
+        toast.remove();
+    });
+}
+
+// Form auto-save functionality (optional)
+function setupAutoSave() {
+    const form = document.querySelector('#predictionForm');
+    if (!form) return;
+
+    const inputs = form.querySelectorAll('input, select');
+    
+    inputs.forEach(input => {
+        input.addEventListener('change', () => {
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            localStorage.setItem('studentFormData', JSON.stringify(data));
+        });
+    });
+
+    // Load saved data
+    const savedData = localStorage.getItem('studentFormData');
+    if (savedData) {
+        const data = JSON.parse(savedData);
+        Object.keys(data).forEach(key => {
+            const field = form.querySelector(`[name="${key}"]`);
+            if (field && data[key]) {
+                field.value = data[key];
+            }
+        });
     }
+}
 
-    @keyframes ripple-animation {
-        to {
-            transform: scale(4);
-            opacity: 0;
-        }
-    }
-
-    .shake {
-        animation: shake 0.5s ease-in-out;
-    }
-
-    @keyframes shake {
-        0%, 100% { transform: translateX(0); }
-        25% { transform: translateX(-5px); }
-        75% { transform: translateX(5px); }
-    }
-
-    .field-error {
-        color: #ff6b6b;
-        font-size: 0.8rem;
-        margin-top: 0.5rem;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-
-    .form-control.valid {
-        border-color: #4ecdc4;
-        box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.1);
-    }
-
-    .form-control.invalid {
-        border-color: #ff6b6b;
-        box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
-    }
-
-    .theme-toggle {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: var(--glass-bg);
-        border: 1px solid var(--glass-border);
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-        cursor: pointer;
-        z-index: 1001;
-        transition: var(--transition);
-        backdrop-filter: blur(10px);
-    }
-
-    .theme-toggle:hover {
-        transform: scale(1.1) rotate(15deg);
-    }
-
-    .confetti {
-        position: fixed;
-        width: 10px;
-        height: 10px;
-        background: #ff6b6b;
-        animation: confetti-fall linear forwards;
-        z-index: 1000;
-        pointer-events: none;
-    }
-
-    @keyframes confetti-fall {
-        0% {
-            transform: translateY(-100vh) rotate(0deg);
-            opacity: 1;
-        }
-        100% {
-            transform: translateY(100vh) rotate(720deg);
-            opacity: 0;
-        }
-    }
-
-    .page-loader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--primary-gradient);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-        transition: opacity 0.5s ease;
-    }
-
-    .dark-theme {
-        --primary-gradient: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-        --glass-bg: rgba(0, 0, 0, 0.2);
-        --glass-border: rgba(255, 255, 255, 0.1);
-    }
-`;
-
-document.head.appendChild(style);
-
-// Export for use in other scripts
-window.StudentPerformanceApp = StudentPerformanceApp;
-window.utils = utils;
+// Initialize auto-save
+document.addEventListener('DOMContentLoaded', setupAutoSave);

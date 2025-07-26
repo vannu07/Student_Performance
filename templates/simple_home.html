@@ -3,119 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Performance Predictor - Simple & Easy</title>
+    <title>Student Performance Prediction - Simple Form</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Simple Home CSS -->
-    <link href="{{ url_for('static', filename='css/simple_home.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        :root {
-            --primary-color: #4a90e2;
-            --success-color: #28a745;
-            --warning-color: #ffc107;
-            --danger-color: #dc3545;
-            --light-bg: #f8f9fa;
-            --dark-text: #343a40;
-        }
-
         body {
+            font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px 0;
         }
-
-        .main-container {
+        
+        .form-container {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            margin: 20px auto;
-            max-width: 900px;
-            overflow: hidden;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #4a90e2, #357abd);
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            font-weight: 300;
-        }
-
-        .header p {
-            margin: 10px 0 0 0;
-            opacity: 0.9;
-            font-size: 1.1rem;
-        }
-
-        .form-section {
             padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 20px 0;
         }
-
-        .step-indicator {
-            display: flex;
-            justify-content: center;
+        
+        .form-header {
+            text-align: center;
             margin-bottom: 30px;
         }
-
-        .step {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #e9ecef;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 10px;
-            font-weight: bold;
-            color: #6c757d;
-            position: relative;
+        
+        .form-header h2 {
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 10px;
         }
-
-        .step.active {
-            background: var(--primary-color);
-            color: white;
+        
+        .form-header p {
+            color: #666;
+            margin-bottom: 0;
         }
-
-        .step.completed {
-            background: var(--success-color);
-            color: white;
-        }
-
-        .step::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            width: 20px;
-            height: 2px;
-            background: #e9ecef;
-            transform: translateY(-50%);
-        }
-
-        .step:last-child::after {
-            display: none;
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
+        
         .form-label {
             font-weight: 600;
-            color: var(--dark-text);
+            color: #333;
             margin-bottom: 8px;
-            display: block;
         }
-
+        
         .form-control, .form-select {
             border: 2px solid #e9ecef;
             border-radius: 10px;
@@ -123,315 +55,243 @@
             font-size: 16px;
             transition: all 0.3s ease;
         }
-
+        
         .form-control:focus, .form-select:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
         }
-
+        
         .btn-predict {
-            background: linear-gradient(135deg, #28a745, #20c997);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border: none;
-            color: white;
-            padding: 15px 40px;
-            font-size: 18px;
-            font-weight: 600;
             border-radius: 50px;
+            padding: 15px 40px;
+            font-weight: 600;
+            font-size: 18px;
+            color: white;
             transition: all 0.3s ease;
             width: 100%;
-            margin-top: 20px;
         }
-
+        
         .btn-predict:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(40, 167, 69, 0.3);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
             color: white;
         }
-
-        .result-card {
-            background: linear-gradient(135deg, #28a745, #20c997);
+        
+        .result-section {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
             color: white;
-            border-radius: 15px;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .result-score {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        
+        .error-section {
+            background: linear-gradient(135deg, #dc3545 0%, #e74c3c 100%);
+            color: white;
+            border-radius: 20px;
             padding: 30px;
             text-align: center;
             margin-top: 30px;
-            animation: slideIn 0.5s ease-out;
         }
-
-        .result-score {
-            font-size: 4rem;
-            font-weight: bold;
-            margin: 20px 0;
+        
+        .section-divider {
+            border-top: 2px solid #e9ecef;
+            margin: 30px 0;
+            position: relative;
         }
-
-        .info-card {
-            background: #f8f9fa;
-            border-left: 4px solid var(--primary-color);
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 5px;
+        
+        .section-divider::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
         }
-
-        .progress-bar-custom {
-            height: 8px;
-            border-radius: 4px;
-            background: #e9ecef;
-            margin: 20px 0;
-            overflow: hidden;
+        
+        .back-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            border-radius: 50px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-bottom: 20px;
         }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #28a745, #20c997);
-            border-radius: 4px;
-            transition: width 0.3s ease;
-        }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .help-text {
-            font-size: 0.9rem;
-            color: #6c757d;
-            margin-top: 5px;
-        }
-
-        .icon-large {
-            font-size: 1.2rem;
-            margin-right: 8px;
-        }
-
-        @media (max-width: 768px) {
-            .main-container {
-                margin: 10px;
-            }
-            
-            .form-section {
-                padding: 20px;
-            }
-            
-            .header h1 {
-                font-size: 2rem;
-            }
+        
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="main-container">
-            <!-- Header -->
-            <div class="header">
-                <h1><i class="fas fa-graduation-cap"></i> Student Performance Predictor</h1>
-                <p>Simple AI-powered tool to predict student math scores</p>
-            </div>
-
-            <!-- Form Section -->
-            <div class="form-section">
-                <!-- Step Indicator -->
-                <div class="step-indicator">
-                    <div class="step active">1</div>
-                    <div class="step">2</div>
-                    <div class="step">3</div>
-                </div>
-
-                <!-- Info Card -->
-                <div class="info-card">
-                    <h5><i class="fas fa-info-circle icon-large text-primary"></i>How it works</h5>
-                    <p class="mb-0">Fill in the student information below and our AI will predict their math performance. All fields are required for accurate prediction.</p>
-                </div>
-
-                <!-- Prediction Form -->
-                <form action="/predictdata" method="post" id="predictionForm">
-                    <div class="row">
-                        <!-- Gender -->
-                        <div class="col-md-6">
-                            <div class="form-group">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Back Button -->
+                <a href="/simple" class="back-btn">
+                    <i class="fas fa-arrow-left me-2"></i>Back to Home
+                </a>
+                
+                <!-- Form Container -->
+                <div class="form-container">
+                    <div class="form-header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="AI Brain" width="80" height="80" class="mb-3">
+                        <h2>Student Performance Predictor</h2>
+                        <p>Enter student information to get an AI-powered performance prediction</p>
+                    </div>
+                    
+                    <!-- Error Message -->
+                    {% if error %}
+                    <div class="error-section">
+                        <i class="fas fa-exclamation-triangle fa-2x mb-3"></i>
+                        <h4>Oops! Something went wrong</h4>
+                        <p>{{ error }}</p>
+                    </div>
+                    {% endif %}
+                    
+                    <!-- Prediction Form -->
+                    <form method="post" action="/simple-predict">
+                        <div class="row g-3">
+                            <!-- Gender -->
+                            <div class="col-md-6">
                                 <label for="gender" class="form-label">
-                                    <i class="fas fa-user icon-large text-primary"></i>Gender
+                                    <i class="fas fa-venus-mars me-2 text-primary"></i>Gender
                                 </label>
                                 <select class="form-select" name="gender" id="gender" required>
-                                    <option value="">Select Gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
+                                    <option value="">Choose Gender</option>
+                                    <option value="Male" {% if input_data and input_data.gender == 'Male' %}selected{% endif %}>👨 Male</option>
+                                    <option value="Female" {% if input_data and input_data.gender == 'Female' %}selected{% endif %}>👩 Female</option>
                                 </select>
                             </div>
-                        </div>
-
-                        <!-- Race/Ethnicity -->
-                        <div class="col-md-6">
-                            <div class="form-group">
+                            
+                            <!-- Race/Ethnicity -->
+                            <div class="col-md-6">
                                 <label for="ethnicity" class="form-label">
-                                    <i class="fas fa-users icon-large text-success"></i>Race/Ethnicity Group
+                                    <i class="fas fa-users me-2 text-success"></i>Race/Ethnicity
                                 </label>
                                 <select class="form-select" name="ethnicity" id="ethnicity" required>
-                                    <option value="">Select Group</option>
-                                    <option value="group A">Group A</option>
-                                    <option value="group B">Group B</option>
-                                    <option value="group C">Group C</option>
-                                    <option value="group D">Group D</option>
-                                    <option value="group E">Group E</option>
+                                    <option value="">Select Background</option>
+                                    <option value="Group A" {% if input_data and input_data.race_ethnicity == 'Group A' %}selected{% endif %}>Group A</option>
+                                    <option value="Group B" {% if input_data and input_data.race_ethnicity == 'Group B' %}selected{% endif %}>Group B</option>
+                                    <option value="Group C" {% if input_data and input_data.race_ethnicity == 'Group C' %}selected{% endif %}>Group C</option>
+                                    <option value="Group D" {% if input_data and input_data.race_ethnicity == 'Group D' %}selected{% endif %}>Group D</option>
+                                    <option value="Group E" {% if input_data and input_data.race_ethnicity == 'Group E' %}selected{% endif %}>Group E</option>
                                 </select>
-                                <div class="help-text">Different demographic groups for analysis</div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <!-- Parental Education -->
-                        <div class="col-md-6">
-                            <div class="form-group">
+                        
+                        <div class="section-divider"></div>
+                        
+                        <div class="row g-3">
+                            <!-- Parental Education -->
+                            <div class="col-md-6">
                                 <label for="parental_level_of_education" class="form-label">
-                                    <i class="fas fa-graduation-cap icon-large text-warning"></i>Parent's Education Level
+                                    <i class="fas fa-graduation-cap me-2 text-warning"></i>Parental Education
                                 </label>
                                 <select class="form-select" name="parental_level_of_education" id="parental_education" required>
                                     <option value="">Select Education Level</option>
-                                    <option value="some high school">Some High School</option>
-                                    <option value="high school">High School Graduate</option>
-                                    <option value="some college">Some College</option>
-                                    <option value="associate's degree">Associate's Degree</option>
-                                    <option value="bachelor's degree">Bachelor's Degree</option>
-                                    <option value="master's degree">Master's Degree</option>
+                                    <option value="Some high school" {% if input_data and input_data.parental_level_of_education == 'Some high school' %}selected{% endif %}>Some High School</option>
+                                    <option value="High school" {% if input_data and input_data.parental_level_of_education == 'High school' %}selected{% endif %}>High School</option>
+                                    <option value="Some college" {% if input_data and input_data.parental_level_of_education == 'Some college' %}selected{% endif %}>Some College</option>
+                                    <option value="Associate degree" {% if input_data and input_data.parental_level_of_education == "Associate degree" %}selected{% endif %}>Associate Degree</option>
+                                    <option value="Bachelorâ€™s degree" {% if input_data and input_data.parental_level_of_education == "Bachelorâ€™s degree" %}selected{% endif %}>Bachelor's Degree</option>
+                                    <option value="Masterâ€™s degree" {% if input_data and input_data.parental_level_of_education == "Masterâ€™s degree" %}selected{% endif %}>Master's Degree</option>
                                 </select>
-                                <div class="help-text">Highest education level of parents</div>
                             </div>
-                        </div>
-
-                        <!-- Lunch Type -->
-                        <div class="col-md-6">
-                            <div class="form-group">
+                            
+                            <!-- Lunch Program -->
+                            <div class="col-md-6">
                                 <label for="lunch" class="form-label">
-                                    <i class="fas fa-utensils icon-large text-info"></i>Lunch Program
+                                    <i class="fas fa-utensils me-2 text-info"></i>Lunch Program
                                 </label>
                                 <select class="form-select" name="lunch" id="lunch" required>
                                     <option value="">Select Lunch Type</option>
-                                    <option value="free/reduced">Free/Reduced Lunch</option>
-                                    <option value="standard">Standard Lunch</option>
+                                    <option value="Free/reduced" {% if input_data and input_data.lunch == 'Free/reduced' %}selected{% endif %}>Free/Reduced</option>
+                                    <option value="Standard" {% if input_data and input_data.lunch == 'Standard' %}selected{% endif %}>Standard</option>
                                 </select>
-                                <div class="help-text">Indicates socioeconomic status</div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <!-- Test Preparation -->
-                        <div class="col-md-6">
-                            <div class="form-group">
+                        
+                        <div class="section-divider"></div>
+                        
+                        <div class="row g-3">
+                            <!-- Test Preparation -->
+                            <div class="col-md-4">
                                 <label for="test_preparation_course" class="form-label">
-                                    <i class="fas fa-book icon-large text-danger"></i>Test Preparation Course
+                                    <i class="fas fa-clipboard-check me-2 text-danger"></i>Test Prep
                                 </label>
                                 <select class="form-select" name="test_preparation_course" id="test_prep" required>
-                                    <option value="">Select Preparation Status</option>
-                                    <option value="none">No Preparation Course</option>
-                                    <option value="completed">Completed Preparation Course</option>
+                                    <option value="">Select Status</option>
+                                    <option value="" {% if input_data and input_data.test_preparation_course == '' %}selected{% endif %}>None</option>
+                                    <option value="Completed" {% if input_data and input_data.test_preparation_course == 'Completed' %}selected{% endif %}>Completed</option>
                                 </select>
-                                <div class="help-text">Whether student took test prep course</div>
                             </div>
-                        </div>
-
-                        <!-- Reading Score -->
-                        <div class="col-md-6">
-                            <div class="form-group">
+                            
+                            <!-- Reading Score -->
+                            <div class="col-md-4">
                                 <label for="reading_score" class="form-label">
-                                    <i class="fas fa-book-open icon-large text-primary"></i>Reading Score
+                                    <i class="fas fa-book-open me-2 text-primary"></i>Reading Score
                                 </label>
                                 <input type="number" class="form-control" name="reading_score" id="reading_score"
-                                       placeholder="Enter score (0-100)" min="0" max="100" required>
-                                <div class="help-text">Student's reading test score (0-100)</div>
+                                       placeholder="0-100" min="0" max="100" 
+                                       value="{% if input_data %}{{ input_data.reading_score }}{% endif %}" required>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!-- Writing Score -->
-                        <div class="col-md-6">
-                            <div class="form-group">
+                            
+                            <!-- Writing Score -->
+                            <div class="col-md-4">
                                 <label for="writing_score" class="form-label">
-                                    <i class="fas fa-pen icon-large text-success"></i>Writing Score
+                                    <i class="fas fa-pen me-2 text-success"></i>Writing Score
                                 </label>
                                 <input type="number" class="form-control" name="writing_score" id="writing_score"
-                                       placeholder="Enter score (0-100)" min="0" max="100" required>
-                                <div class="help-text">Student's writing test score (0-100)</div>
+                                       placeholder="0-100" min="0" max="100" 
+                                       value="{% if input_data %}{{ input_data.writing_score }}{% endif %}" required>
                             </div>
                         </div>
-
-                        <!-- Progress Indicator -->
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">
-                                    <i class="fas fa-chart-line icon-large text-info"></i>Form Completion
-                                </label>
-                                <div class="progress-bar-custom">
-                                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
-                                </div>
-                                <div class="help-text">
-                                    <span id="progressText">0% Complete</span> - Fill all fields to enable prediction
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn-predict" id="submitBtn" disabled>
-                        <i class="fas fa-magic"></i> Predict Math Score
-                    </button>
-                </form>
-
+                        
+                        <div class="section-divider"></div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-predict">
+                            <i class="fas fa-magic me-2"></i>Predict Performance
+                        </button>
+                    </form>
+                </div>
+                
                 <!-- Results Section -->
                 {% if results %}
-                <div class="result-card">
-                    <h3><i class="fas fa-trophy"></i> Prediction Result</h3>
+                <div class="result-section">
+                    <i class="fas fa-trophy fa-3x mb-3" style="color: #ffd700;"></i>
+                    <h2>🎉 Prediction Complete!</h2>
                     <div class="result-score">{{ "%.1f"|format(results) }}</div>
-                    <p class="mb-0">Predicted Math Score (out of 100)</p>
+                    <p class="lead">Predicted Math Score</p>
                     
-                    <div class="row mt-4">
-                        <div class="col-md-4">
-                            <h6>Performance Level</h6>
-                            <p class="mb-0">
-                                {% if results >= 80 %}
-                                    <i class="fas fa-star"></i> Excellent
-                                {% elif results >= 60 %}
-                                    <i class="fas fa-thumbs-up"></i> Good
-                                {% elif results >= 40 %}
-                                    <i class="fas fa-hand-paper"></i> Average
-                                {% else %}
-                                    <i class="fas fa-hand-point-up"></i> Needs Improvement
-                                {% endif %}
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>Model Confidence</h6>
-                            <p class="mb-0"><i class="fas fa-check-circle"></i> High (87%)</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>Prediction Time</h6>
-                            <p class="mb-0"><i class="fas fa-clock"></i> Instant</p>
-                        </div>
+                    <div class="mt-4">
+                        <a href="/simple-predict" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-redo me-2"></i>Try Again
+                        </a>
+                        <a href="/simple" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
                     </div>
                 </div>
                 {% endif %}
-
-                {% if error %}
-                <div class="alert alert-danger mt-3">
-                    <i class="fas fa-exclamation-triangle"></i> {{ error }}
-                </div>
-                {% endif %}
-
-                <!-- Model Info -->
-                <div class="info-card mt-4">
-                    <h5><i class="fas fa-robot icon-large text-success"></i>About Our AI Model</h5>
-                    <p class="mb-2"><strong>Algorithm:</strong> XGBoost (Extreme Gradient Boosting)</p>
-                    <p class="mb-2"><strong>Training Data:</strong> 1,000+ student records</p>
-                    <p class="mb-2"><strong>Accuracy:</strong> 87% on test data</p>
-                    <p class="mb-0"><strong>Features:</strong> Demographics, parental education, test scores, and socioeconomic factors</p>
-                </div>
             </div>
         </div>
     </div>
@@ -439,17 +299,33 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Simple Home JavaScript -->
-    <script src="{{ url_for('static', filename='js/simple_home.js') }}"></script>
-    
-    <!-- Template-specific JavaScript for results scrolling -->
-    {% if results %}
     <script>
-        // Scroll to results when they exist
-        if (typeof window.scrollToResults === 'function') {
-            window.scrollToResults();
-        }
+        // Simple form validation
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.style.borderColor = '#dc3545';
+                    isValid = false;
+                } else {
+                    field.style.borderColor = '#28a745';
+                }
+            });
+            
+            if (!isValid) {
+                e.preventDefault();
+                alert('Please fill in all required fields.');
+            }
+        });
+        
+        // Clear validation on input
+        document.querySelectorAll('input, select').forEach(field => {
+            field.addEventListener('input', function() {
+                this.style.borderColor = '#e9ecef';
+            });
+        });
     </script>
-    {% endif %}
 </body>
 </html>
