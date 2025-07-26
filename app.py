@@ -31,6 +31,101 @@ def index():
         logger.error(f"Error rendering index page: {str(e)}")
         return f"Error loading page: {str(e)}", 500
 
+# Route for simple landing page (interview-friendly)
+@app.route('/simple')
+def simple_index():
+    """Render the simple landing page for interviews"""
+    try:
+        logger.info("Rendering simple index page")
+        return render_template('simple_index.html')
+    except Exception as e:
+        logger.error(f"Error rendering simple index page: {str(e)}")
+        return f"Error loading page: {str(e)}", 500
+
+# Route for simple prediction interface
+@app.route('/simple-predict', methods=['GET', 'POST'])
+def simple_predict():
+    """Simple prediction interface for interviews"""
+    if request.method == 'GET':
+        try:
+            logger.info("Rendering simple prediction form")
+            return render_template('simple_home.html')
+        except Exception as e:
+            logger.error(f"Error rendering simple prediction form: {str(e)}")
+            return f"Error loading prediction form: {str(e)}", 500
+    else:
+        try:
+            logger.info("Processing simple prediction request")
+            
+            # Extract form data with validation
+            form_data = {
+                'gender': request.form.get('gender'),
+                'race_ethnicity': request.form.get('ethnicity'),
+                'parental_level_of_education': request.form.get('parental_level_of_education'),
+                'lunch': request.form.get('lunch'),
+                'test_preparation_course': request.form.get('test_preparation_course'),
+                'reading_score': request.form.get('reading_score'),
+                'writing_score': request.form.get('writing_score')
+            }
+            
+            # Validate required fields
+            missing_fields = [key for key, value in form_data.items() if not value]
+            if missing_fields:
+                error_msg = f"Missing required fields: {', '.join(missing_fields)}"
+                logger.error(error_msg)
+                return render_template('simple_home.html', error=error_msg)
+            
+            # Validate numeric fields
+            try:
+                reading_score = float(form_data['reading_score'])
+                writing_score = float(form_data['writing_score'])
+                
+                if not (0 <= reading_score <= 100) or not (0 <= writing_score <= 100):
+                    error_msg = "Scores must be between 0 and 100"
+                    logger.error(error_msg)
+                    return render_template('simple_home.html', error=error_msg)
+                    
+            except ValueError:
+                error_msg = "Invalid score values. Please enter numeric values."
+                logger.error(error_msg)
+                return render_template('simple_home.html', error=error_msg)
+            
+            # Create custom data object
+            data = CustomData(
+                gender=form_data['gender'],
+                race_ethnicity=form_data['race_ethnicity'],
+                parental_level_of_education=form_data['parental_level_of_education'],
+                lunch=form_data['lunch'],
+                test_preparation_course=form_data['test_preparation_course'],
+                reading_score=reading_score,
+                writing_score=writing_score
+            )
+            
+            # Get prediction dataframe
+            pred_df = data.get_data_as_data_frame()
+            logger.info(f"Input data shape: {pred_df.shape}")
+            logger.info(f"Input data: {pred_df.to_dict('records')[0]}")
+
+            # Make prediction
+            predict_pipeline = PredictPipeline()
+            results = predict_pipeline.predict(pred_df)
+            
+            prediction_score = float(results[0])
+            logger.info(f"Prediction result: {prediction_score}")
+            
+            # Return result with enhanced data
+            return render_template('simple_home.html', 
+                                 results=prediction_score,
+                                 input_data=form_data,
+                                 success=True)
+            
+        except Exception as e:
+            error_msg = f"Prediction error: {str(e)}"
+            logger.error(error_msg)
+            return render_template('simple_home.html', 
+                                 error=error_msg,
+                                 input_data=request.form.to_dict())
+
 @app.route('/predictdata', methods=['GET', 'POST'])
 def predict_datapoint():
     """Handle prediction requests with enhanced error handling"""
