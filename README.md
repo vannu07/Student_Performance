@@ -137,29 +137,7 @@ python app.py
 
 ---
 
-## 📊 Demo
 
-### 🎬 Training Pipeline in Action
-```
-🎥 Add GIF showing training pipeline execution
-![Training Pipeline](https://via.placeholder.com/600x300/28a745/ffffff?text=Training+Pipeline+GIF)
-```
-
-### 🌐 Web Application Interface
-```
-🎥 Add GIF showing web app usage
-![Web App Demo](https://via.placeholder.com/600x300/17a2b8/ffffff?text=Web+Application+GIF)
-```
-
-### 📈 MLflow Experiment Tracking
-```
-🎥 Add GIF showing MLflow UI
-![MLflow Demo](https://via.placeholder.com/600x300/dc3545/ffffff?text=MLflow+Tracking+GIF)
-```
-
-*Note: Replace placeholder images with actual GIFs of your application*
-
----
 
 ## 🔬 Model Performance
 
