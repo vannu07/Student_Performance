@@ -32,15 +32,29 @@ class ModelEvaluation:
         try:
             test_data = pd.read_csv(self.config.test_data_path)
             model = joblib.load(self.config.model_path)
+            
+            # Load the preprocessor
+            preprocessor_path = "artifacts/data_transformation/preprocessor.pkl"
+            preprocessor = load_bin(preprocessor_path)
 
+            # Prepare test data
             test_x = test_data.drop([self.config.target_column], axis=1)
             test_y = test_data[[self.config.target_column]]
+            
+            # Remove columns that shouldn't be used for prediction
+            columns_to_drop = ["id", "first_name", "last_name", "email"]
+            available_drop_cols = [col for col in columns_to_drop if col in test_x.columns]
+            if available_drop_cols:
+                test_x = test_x.drop(columns=available_drop_cols, axis=1)
+            
+            # Apply preprocessing
+            test_x_processed = preprocessor.transform(test_x)
 
             mlflow.set_registry_uri(self.config.mlflow_uri)
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
             with mlflow.start_run():
-                predicted_qualities = model.predict(test_x)
+                predicted_qualities = model.predict(test_x_processed)
                 (rmse, mae, r2) = self.eval_metrics(test_y, predicted_qualities)
                 
                 # Saving metrics as local
@@ -73,13 +87,26 @@ class ModelEvaluation:
             # Load test data and model
             test_data = pd.read_csv(self.config.test_data_path)
             model = load_bin(self.config.model_path)
+            
+            # Load the preprocessor
+            preprocessor_path = "artifacts/data_transformation/preprocessor.pkl"
+            preprocessor = load_bin(preprocessor_path)
 
             # Prepare test data
             test_x = test_data.drop([self.config.target_column], axis=1)
             test_y = test_data[[self.config.target_column]]
+            
+            # Remove columns that shouldn't be used for prediction
+            columns_to_drop = ["id", "first_name", "last_name", "email"]
+            available_drop_cols = [col for col in columns_to_drop if col in test_x.columns]
+            if available_drop_cols:
+                test_x = test_x.drop(columns=available_drop_cols, axis=1)
+            
+            # Apply preprocessing
+            test_x_processed = preprocessor.transform(test_x)
 
             # Make predictions
-            predicted_qualities = model.predict(test_x)
+            predicted_qualities = model.predict(test_x_processed)
 
             # Calculate metrics
             rmse, mae, r2 = self.eval_metrics(test_y, predicted_qualities)

@@ -76,6 +76,11 @@ class ModelTrainer:
             model_report: dict = evaluate_models(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test,
                                                  models=models, param=params)
 
+            # Log all model scores for debugging
+            logger.info("Model performance report:")
+            for model_name, score in model_report.items():
+                logger.info(f"{model_name}: {score}")
+
             # To get best model score from dict
             best_model_score = max(sorted(model_report.values()))
 
@@ -84,6 +89,10 @@ class ModelTrainer:
                 list(model_report.values()).index(best_model_score)
             ]
             best_model = models[best_model_name]
+
+            logger.info(f"Expected accuracy threshold: {self.config.expected_accuracy}")
+            logger.info(f"Best model score achieved: {best_model_score}")
+            logger.info(f"Best model name: {best_model_name}")
 
             if best_model_score < self.config.expected_accuracy:
                 logger.warning(f"No best model found with score > {self.config.expected_accuracy}")
