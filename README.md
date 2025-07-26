@@ -345,6 +345,6 @@ Give a ⭐️ if this project helped you!
 
 **🎓 Built with ❤️ for better education outcomes**
 
-![Footer](https://fakeimg.pl/800x100/0066cc/ffffff/?text=Student+Performance+ML+Project)
+![Footer](https://dummyimage.com/800x100/0066cc/ffffff&text=Student+Performance+ML+Project)
 
 </div>
