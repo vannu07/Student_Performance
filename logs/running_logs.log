@@ -1,0 +1,2368 @@
+[2025-07-25 14:46:40,224: INFO: app: Starting Student Performance ML Web Application]
+[2025-07-25 14:46:40,225: INFO: app: Features: Advanced UI, 3D Effects, Animations, Real-time Predictions]
+[2025-07-25 14:46:40,225: INFO: app: Access the application at: http://localhost:5000]
+[2025-07-25 14:46:40,299: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000]
+[2025-07-25 14:46:40,299: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-25 14:46:40,322: INFO: _internal:  * Restarting with watchdog (windowsapi)]
+[2025-07-25 14:46:42,601: INFO: app: Starting Student Performance ML Web Application]
+[2025-07-25 14:46:42,602: INFO: app: Features: Advanced UI, 3D Effects, Animations, Real-time Predictions]
+[2025-07-25 14:46:42,602: INFO: app: Access the application at: http://localhost:5000]
+[2025-07-25 14:46:42,622: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 14:46:42,656: INFO: _internal:  * Debugger PIN: 497-071-536]
+[2025-07-25 14:47:34,938: INFO: app: Rendering index page]
+[2025-07-25 14:47:35,157: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:47:35] "GET / HTTP/1.1" 200 -]
+[2025-07-25 14:48:03,744: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:48:03] "GET /static/js/main.js HTTP/1.1" 200 -]
+[2025-07-25 14:48:03,767: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:48:03] "GET /static/css/style.css HTTP/1.1" 200 -]
+[2025-07-25 14:49:25,830: INFO: app: Rendering prediction form]
+[2025-07-25 14:49:26,214: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:49:26] "GET /predictdata HTTP/1.1" 200 -]
+[2025-07-25 14:49:26,315: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:49:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 14:49:26,618: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:49:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -]
+[2025-07-25 14:50:24,089: INFO: app: Processing prediction request]
+[2025-07-25 14:50:24,144: INFO: app: Input data shape: (1, 7)]
+[2025-07-25 14:50:24,214: INFO: app: Input data: {'gender': 'male', 'race_ethnicity': 'group A', 'parental_level_of_education': "master's degree", 'lunch': 'standard', 'test_preparation_course': 'completed', 'reading_score': 79.0, 'writing_score': 90.0}]
+[2025-07-25 14:50:24,228: INFO: prediction_pipeline: Loading model and preprocessor]
+[2025-07-25 14:50:24,231: ERROR: prediction_pipeline: Error in prediction pipeline: load_bin() got an unexpected keyword argument 'file_path']
+[2025-07-25 14:50:24,235: ERROR: app: Prediction error: load_bin() got an unexpected keyword argument 'file_path']
+[2025-07-25 14:50:24,254: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:50:24] "POST /predictdata HTTP/1.1" 200 -]
+[2025-07-25 14:50:24,318: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:50:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 14:50:24,376: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:50:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -]
+[2025-07-25 14:50:51,109: INFO: app: Rendering index page]
+[2025-07-25 14:50:51,110: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:50:51] "GET / HTTP/1.1" 200 -]
+[2025-07-25 14:50:51,251: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:50:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 14:50:51,386: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:50:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -]
+[2025-07-25 14:51:09,637: INFO: app: Rendering prediction form]
+[2025-07-25 14:51:09,638: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:51:09] "GET /predictdata HTTP/1.1" 200 -]
+[2025-07-25 14:51:09,967: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:51:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 14:51:09,968: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:51:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -]
+[2025-07-25 14:51:30,335: INFO: app: Processing prediction request]
+[2025-07-25 14:51:30,341: INFO: app: Input data shape: (1, 7)]
+[2025-07-25 14:51:30,346: INFO: app: Input data: {'gender': 'male', 'race_ethnicity': 'group D', 'parental_level_of_education': 'high school', 'lunch': 'free/reduced', 'test_preparation_course': 'completed', 'reading_score': 88.0, 'writing_score': 89.0}]
+[2025-07-25 14:51:30,347: INFO: prediction_pipeline: Loading model and preprocessor]
+[2025-07-25 14:51:30,347: ERROR: prediction_pipeline: Error in prediction pipeline: load_bin() got an unexpected keyword argument 'file_path']
+[2025-07-25 14:51:30,348: ERROR: app: Prediction error: load_bin() got an unexpected keyword argument 'file_path']
+[2025-07-25 14:51:30,350: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:51:30] "POST /predictdata HTTP/1.1" 200 -]
+[2025-07-25 14:51:30,399: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:51:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 14:51:30,608: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 14:51:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -]
+[2025-07-25 15:14:41,643: INFO: _internal:  * Detected change in 'C:\\Users\\varni\\anaconda3\\Lib\\socketserver.py', reloading]
+[2025-07-25 15:14:42,543: INFO: _internal:  * Detected change in 'C:\\Users\\varni\\anaconda3\\Lib\\socket.py', reloading]
+[2025-07-25 15:22:07,036: INFO: demo: ============================================================]
+[2025-07-25 15:22:07,067: INFO: demo: PROJECT STRUCTURE]
+[2025-07-25 15:22:07,067: INFO: demo: ============================================================]
+[2025-07-25 15:22:07,112: INFO: demo: ============================================================]
+[2025-07-25 15:22:07,112: INFO: demo: STUDENT PERFORMANCE ML PROJECT - TRAINING DEMO]
+[2025-07-25 15:22:07,112: INFO: demo: ============================================================]
+[2025-07-25 15:22:07,113: INFO: training_pipeline: Starting complete training pipeline]
+[2025-07-25 15:22:07,113: INFO: training_pipeline: >>>>>> stage DataIngestionTrainingPipeline started <<<<<<]
+[2025-07-25 15:22:07,282: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-25 15:22:07,396: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-25 15:22:07,573: INFO: common: yaml file: config\schema.yaml loaded successfully]
+[2025-07-25 15:22:07,645: INFO: common: Created directory at: artifacts]
+[2025-07-25 15:22:07,646: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-07-25 15:22:07,647: INFO: data_ingestion: Starting data ingestion process]
+[2025-07-25 15:22:08,535: INFO: data_ingestion: File copied from data/student-scores.csv to artifacts/data_ingestion/data.csv]
+[2025-07-25 15:22:08,537: INFO: data_ingestion: File size: ~ 218 KB]
+[2025-07-25 15:22:08,538: INFO: data_ingestion: Data ingestion completed successfully]
+[2025-07-25 15:22:08,906: INFO: data_ingestion: Data shape: (2000, 17)]
+[2025-07-25 15:22:08,906: INFO: data_ingestion: Data columns: ['id', 'first_name', 'last_name', 'email', 'gender', 'part_time_job', 'absence_days', 'extracurricular_activities', 'weekly_self_study_hours', 'career_aspiration', 'math_score', 'history_score', 'physics_score', 'chemistry_score', 'biology_score', 'english_score', 'geography_score']]
+[2025-07-25 15:22:08,923: INFO: data_ingestion: Data info: 
+None]
+[2025-07-25 15:22:08,949: INFO: data_ingestion: Data description: 
+                id  absence_days  ...  english_score  geography_score
+count  2000.000000   2000.000000  ...    2000.000000      2000.000000
+mean   1000.500000      3.665500  ...      81.277500        80.888000
+std     577.494589      2.629271  ...      12.027087        11.637705
+min       1.000000      0.000000  ...      50.000000        60.000000
+25%     500.750000      2.000000  ...      72.000000        71.000000
+50%    1000.500000      3.000000  ...      83.000000        81.000000
+75%    1500.250000      5.000000  ...      91.000000        91.000000
+max    2000.000000     10.000000  ...      99.000000       100.000000
+
+[8 rows x 10 columns]]
+[2025-07-25 15:22:08,950: INFO: training_pipeline: >>>>>> stage DataIngestionTrainingPipeline completed <<<<<<
+
+x==========x]
+[2025-07-25 15:22:08,950: INFO: training_pipeline: >>>>>> stage DataTransformationTrainingPipeline started <<<<<<]
+[2025-07-25 15:22:08,953: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-25 15:22:08,955: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-25 15:22:08,958: INFO: common: yaml file: config\schema.yaml loaded successfully]
+[2025-07-25 15:22:08,959: INFO: common: Created directory at: artifacts]
+[2025-07-25 15:22:08,960: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-07-25 15:22:08,967: INFO: data_transformation: Read data completed]
+[2025-07-25 15:22:08,967: INFO: data_transformation: Data shape: (2000, 17)]
+[2025-07-25 15:22:09,632: INFO: data_transformation: Train test split completed]
+[2025-07-25 15:22:09,717: INFO: data_transformation: Read train and test data completed]
+[2025-07-25 15:22:09,718: INFO: data_transformation: Obtaining preprocessing object]
+[2025-07-25 15:22:09,718: INFO: data_transformation: Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']]
+[2025-07-25 15:22:09,719: INFO: data_transformation: Numerical columns: ['writing_score', 'reading_score']]
+[2025-07-25 15:22:09,725: INFO: data_transformation: Applying preprocessing object on training dataframe and testing dataframe.]
+[2025-07-25 15:22:09,727: ERROR: data_transformation: Error in initiate_data_transformation: A given column is not a column of the dataframe]
+[2025-07-25 15:22:09,728: ERROR: data_transformation: Error in initiate_data_transformation_from_config: A given column is not a column of the dataframe]
+[2025-07-25 15:22:09,729: ERROR: training_pipeline: Error in Model Evaluation stage: A given column is not a column of the dataframe]
+[2025-07-25 15:22:09,729: ERROR: training_pipeline: Error in complete training pipeline: A given column is not a column of the dataframe]
+[2025-07-25 15:22:09,730: ERROR: demo: Training pipeline demonstration failed: A given column is not a column of the dataframe]
+[2025-07-25 15:22:09,731: ERROR: demo: Training pipeline failed. Please check the logs.]
+[2025-07-25 15:42:42,793: INFO: demo: ============================================================]
+[2025-07-25 15:42:42,796: INFO: demo: PROJECT STRUCTURE]
+[2025-07-25 15:42:42,797: INFO: demo: ============================================================]
+[2025-07-25 15:42:42,822: INFO: demo: ============================================================]
+[2025-07-25 15:42:42,823: INFO: demo: STUDENT PERFORMANCE ML PROJECT - TRAINING DEMO]
+[2025-07-25 15:42:42,824: INFO: demo: ============================================================]
+[2025-07-25 15:42:42,824: INFO: training_pipeline: Starting complete training pipeline]
+[2025-07-25 15:42:42,825: INFO: training_pipeline: >>>>>> stage DataIngestionTrainingPipeline started <<<<<<]
+[2025-07-25 15:42:42,972: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-25 15:42:43,330: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-25 15:42:43,348: INFO: common: yaml file: config\schema.yaml loaded successfully]
+[2025-07-25 15:42:43,352: INFO: common: Created directory at: artifacts]
+[2025-07-25 15:42:43,353: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-07-25 15:42:43,353: INFO: data_ingestion: Starting data ingestion process]
+[2025-07-25 15:42:43,355: INFO: data_ingestion: File already exists of size: ~ 218 KB]
+[2025-07-25 15:42:43,355: INFO: data_ingestion: Data ingestion completed successfully]
+[2025-07-25 15:42:43,401: INFO: data_ingestion: Data shape: (2000, 17)]
+[2025-07-25 15:42:43,401: INFO: data_ingestion: Data columns: ['id', 'first_name', 'last_name', 'email', 'gender', 'part_time_job', 'absence_days', 'extracurricular_activities', 'weekly_self_study_hours', 'career_aspiration', 'math_score', 'history_score', 'physics_score', 'chemistry_score', 'biology_score', 'english_score', 'geography_score']]
+[2025-07-25 15:42:43,419: INFO: data_ingestion: Data info: 
+None]
+[2025-07-25 15:42:43,449: INFO: data_ingestion: Data description: 
+                id  absence_days  ...  english_score  geography_score
+count  2000.000000   2000.000000  ...    2000.000000      2000.000000
+mean   1000.500000      3.665500  ...      81.277500        80.888000
+std     577.494589      2.629271  ...      12.027087        11.637705
+min       1.000000      0.000000  ...      50.000000        60.000000
+25%     500.750000      2.000000  ...      72.000000        71.000000
+50%    1000.500000      3.000000  ...      83.000000        81.000000
+75%    1500.250000      5.000000  ...      91.000000        91.000000
+max    2000.000000     10.000000  ...      99.000000       100.000000
+
+[8 rows x 10 columns]]
+[2025-07-25 15:42:43,449: INFO: training_pipeline: >>>>>> stage DataIngestionTrainingPipeline completed <<<<<<
+
+x==========x]
+[2025-07-25 15:42:43,450: INFO: training_pipeline: >>>>>> stage DataTransformationTrainingPipeline started <<<<<<]
+[2025-07-25 15:42:43,452: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-25 15:42:43,456: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-25 15:42:43,459: INFO: common: yaml file: config\schema.yaml loaded successfully]
+[2025-07-25 15:42:43,459: INFO: common: Created directory at: artifacts]
+[2025-07-25 15:42:43,460: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-07-25 15:42:43,468: INFO: data_transformation: Read data completed]
+[2025-07-25 15:42:43,468: INFO: data_transformation: Data shape: (2000, 17)]
+[2025-07-25 15:42:43,497: INFO: data_transformation: Train test split completed]
+[2025-07-25 15:42:43,566: INFO: data_transformation: Read train and test data completed]
+[2025-07-25 15:42:43,566: INFO: data_transformation: Obtaining preprocessing object]
+[2025-07-25 15:42:43,566: INFO: data_transformation: Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']]
+[2025-07-25 15:42:43,567: INFO: data_transformation: Numerical columns: ['writing_score', 'reading_score']]
+[2025-07-25 15:42:43,569: INFO: data_transformation: Applying preprocessing object on training dataframe and testing dataframe.]
+[2025-07-25 15:42:43,570: ERROR: data_transformation: Error in initiate_data_transformation: A given column is not a column of the dataframe]
+[2025-07-25 15:42:43,570: ERROR: data_transformation: Error in initiate_data_transformation_from_config: A given column is not a column of the dataframe]
+[2025-07-25 15:42:43,570: ERROR: training_pipeline: Error in Model Evaluation stage: A given column is not a column of the dataframe]
+[2025-07-25 15:42:43,570: ERROR: training_pipeline: Error in complete training pipeline: A given column is not a column of the dataframe]
+[2025-07-25 15:42:43,570: ERROR: demo: Training pipeline demonstration failed: A given column is not a column of the dataframe]
+[2025-07-25 15:42:43,571: ERROR: demo: Training pipeline failed. Please check the logs.]
+[2025-07-25 16:01:06,865: INFO: demo: ============================================================]
+[2025-07-25 16:01:06,870: INFO: demo: PROJECT STRUCTURE]
+[2025-07-25 16:01:06,871: INFO: demo: ============================================================]
+[2025-07-25 16:01:06,879: INFO: demo: ============================================================]
+[2025-07-25 16:01:06,880: INFO: demo: STUDENT PERFORMANCE ML PROJECT - TRAINING DEMO]
+[2025-07-25 16:01:06,880: INFO: demo: ============================================================]
+[2025-07-25 16:01:06,880: INFO: training_pipeline: Starting complete training pipeline]
+[2025-07-25 16:01:06,880: INFO: training_pipeline: >>>>>> stage DataIngestionTrainingPipeline started <<<<<<]
+[2025-07-25 16:01:06,883: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-25 16:01:07,250: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-25 16:01:07,298: INFO: common: yaml file: config\schema.yaml loaded successfully]
+[2025-07-25 16:01:07,320: INFO: common: Created directory at: artifacts]
+[2025-07-25 16:01:07,324: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-07-25 16:01:07,326: INFO: data_ingestion: Starting data ingestion process]
+[2025-07-25 16:01:07,389: INFO: data_ingestion: File copied from data/student-scores.xlsx to artifacts/data_ingestion/data.xlsx]
+[2025-07-25 16:01:07,389: INFO: data_ingestion: File size: ~ 136 KB]
+[2025-07-25 16:01:18,375: INFO: data_ingestion: Converted Excel file to CSV: artifacts/data_ingestion/data.csv]
+[2025-07-25 16:01:18,375: ERROR: data_ingestion: Error converting Excel to CSV: cannot assign to field 'local_data_file']
+[2025-07-25 16:01:18,375: ERROR: data_ingestion: Error in data ingestion: cannot assign to field 'local_data_file']
+[2025-07-25 16:01:18,376: ERROR: training_pipeline: Error in Model Evaluation stage: cannot assign to field 'local_data_file']
+[2025-07-25 16:01:18,376: ERROR: training_pipeline: Error in complete training pipeline: cannot assign to field 'local_data_file']
+[2025-07-25 16:01:18,376: ERROR: demo: Training pipeline demonstration failed: cannot assign to field 'local_data_file']
+[2025-07-25 16:01:18,377: ERROR: demo: Training pipeline failed. Please check the logs.]
+[2025-07-26 15:47:01,315: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-07-26 15:47:12,775: INFO: main: >>>>>> Starting Student Performance ML Training Pipeline <<<<<<]
+[2025-07-26 15:47:12,775: INFO: training_pipeline: Starting complete training pipeline]
+[2025-07-26 15:47:12,775: INFO: training_pipeline: >>>>>> stage DataIngestionTrainingPipeline started <<<<<<]
+[2025-07-26 15:47:12,881: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\config.yaml loaded successfully]
+[2025-07-26 15:47:12,890: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\params.yaml loaded successfully]
+[2025-07-26 15:47:12,902: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\schema.yaml loaded successfully]
+[2025-07-26 15:47:12,907: INFO: common: Created directory at: artifacts]
+[2025-07-26 15:47:12,909: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-07-26 15:47:12,909: INFO: data_ingestion: Starting data ingestion process]
+[2025-07-26 15:47:12,910: INFO: data_ingestion: File already exists of size: ~ 136 KB]
+[2025-07-26 15:47:14,028: INFO: data_ingestion: Converted Excel file to CSV: artifacts/data_ingestion/data.csv]
+[2025-07-26 15:47:14,029: INFO: data_ingestion: Excel file converted to CSV: artifacts/data_ingestion/data.csv]
+[2025-07-26 15:47:14,030: INFO: data_ingestion: Data ingestion completed successfully]
+[2025-07-26 15:47:14,060: INFO: data_ingestion: Data shape: (1000, 23)]
+[2025-07-26 15:47:14,061: INFO: data_ingestion: Data columns: ['id', 'first_name', 'last_name', 'email', 'gender', 'part_time_job', 'absence_days', 'extracurricular_activities', 'weekly_self_study_hours', 'career_aspiration', 'math_score', 'history_score', 'physics_score', 'chemistry_score', 'biology_score', 'english_score', 'geography_score', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course', 'writing_score', 'reading_score']]
+[2025-07-26 15:47:14,069: INFO: data_ingestion: Data types: 
+id                               int64
+first_name                      object
+last_name                       object
+email                           object
+gender                          object
+part_time_job                   object
+absence_days                     int64
+extracurricular_activities      object
+weekly_self_study_hours        float64
+career_aspiration               object
+math_score                       int64
+history_score                    int64
+physics_score                    int64
+chemistry_score                  int64
+biology_score                    int64
+english_score                    int64
+geography_score                  int64
+race_ethnicity                  object
+parental_level_of_education     object
+lunch                           object
+test_preparation_course         object
+writing_score                    int64
+reading_score                    int64
+dtype: object]
+[2025-07-26 15:47:14,087: INFO: data_ingestion: Missing values: 
+id                               0
+first_name                       0
+last_name                        0
+email                            0
+gender                           0
+part_time_job                    0
+absence_days                     0
+extracurricular_activities       0
+weekly_self_study_hours          0
+career_aspiration                0
+math_score                       0
+history_score                    0
+physics_score                    0
+chemistry_score                  0
+biology_score                    0
+english_score                    0
+geography_score                  0
+race_ethnicity                   0
+parental_level_of_education      0
+lunch                            0
+test_preparation_course        490
+writing_score                    0
+reading_score                    0
+dtype: int64]
+[2025-07-26 15:47:14,184: INFO: data_ingestion: Data description: 
+                id  absence_days  weekly_self_study_hours   math_score  ...  english_score  geography_score  writing_score  reading_score
+count  1000.000000   1000.000000              1000.000000  1000.000000  ...    1000.000000      1000.000000    1000.000000    1000.000000
+mean    500.500000      9.952000                10.127800    50.395000  ...      51.156000        50.534000      49.636000      51.251000
+std     288.819436      5.971713                 5.838002    29.939294  ...      29.326638        28.676597      29.411435      29.152459
+min       1.000000      0.000000                 0.000000     0.000000  ...       0.000000         0.000000       0.000000       0.000000
+25%     250.750000      5.000000                 5.100000    24.000000  ...      25.000000        26.000000      23.000000      26.000000
+50%     500.500000     10.000000                 9.900000    50.500000  ...      51.000000        51.000000      50.000000      51.000000
+75%     750.250000     15.000000                15.200000    77.000000  ...      77.000000        75.000000      75.000000      77.000000
+max    1000.000000     20.000000                20.000000   100.000000  ...     100.000000       100.000000     100.000000     100.000000
+
+[8 rows x 12 columns]]
+[2025-07-26 15:47:14,187: INFO: data_ingestion: Unique values in first_name: ['Navya' 'Anay' 'Raghav' 'Mamooty' 'Sara' 'Parinaaz' 'Inaaya ' 'Kiara'
+ 'Arhaan' 'Divij' 'Mehul' 'Lavanya' 'Jhanvi' 'Saanvi' 'Rati' 'Aaina'
+ 'Alia' 'Ranbir' 'Aarush' 'Zara' 'Rasha' 'Shlok' 'Indrans' 'Tarini'
+ 'Ehsaan' 'Vaibhav' 'Taimur' 'Shray' 'Prerak' 'Azad' 'Amira' 'Gatik'
+ 'Dhanush' 'Ritvik' 'Mishti' 'Taran' 'Kartik' 'Darshit' 'Nitara' 'Trisha'
+ 'Divyansh' 'Myra' 'Tejas' 'Tushar' 'Lakshay' 'Priyansh' 'Pihu' 'Devansh'
+ 'Hazel' 'Nirvaan' 'Anahi' 'Purab' 'Prisha' 'Madhup' 'Shaan' 'Tiya'
+ 'Bhavin' 'Saksham' 'Lakshit' 'Charvi' 'Nayantara' 'Hridaan' 'Hiran'
+ 'Shanaya' 'Heer' 'Siya' 'Aaryahi' 'Keya' 'Bhamini' 'Tanya' 'Faiyaz'
+ 'Vritika' 'Aarna' 'Chirag' 'Anahita' 'Ojas' 'Aayush' 'Saira' 'Adira'
+ 'Amani' 'Damini' 'Jayesh' 'Emir' 'Mahika' 'Hrishita' 'Eva' 'Kismat'
+ 'Ayesha' 'Nakul' 'Jiya' 'Dharmajan' 'Aradhya' 'Gokul' 'Nirvi' 'Ira'
+ 'Riya' 'Yakshit' 'Nehmat' 'Advika' 'Ela' 'Fateh' 'Shayak' 'Khushi'
+ 'Manikya' 'Mohanlal' 'Shalv' 'Drishya' 'Samaira' 'Kaira' 'Anika'
+ 'Vardaniya' 'Kanav' 'Divit' 'Adah' 'Samiha' 'Pari' 'Neelofar' 'Biju'
+ 'Yasmin' 'Jivin' 'Dhanuk' 'Badal' 'Abram' 'Suhana' 'Miraan' 'Yuvraj '
+ 'Anya' 'Vidur' 'Sana' 'Ivana' 'Anvi' 'Kabir' 'Kimaya' 'Kavya' 'Arnav'
+ 'Jivika' 'Lagan' 'Vivaan' 'Oorja' 'Rohan' 'Stuvan' 'Raunak' 'Romil'
+ 'Nitya' 'Ishita' 'Himmat' 'Farhan' 'Baiju' 'Aarav' 'Ishaan' 'Ahana '
+ 'Renee' 'Indrajit' 'Armaan' 'Yashvi' 'Sumer' 'Zoya' 'Zain' 'Shamik'
+ 'Nishith' 'Indranil' 'Anaya' 'Krish' 'Ryan' 'Aniruddh' 'Pranay' 'Vedika'
+ 'Diya' 'Veer' 'Kashvi' 'Onkar' 'Rhea' 'Piya' 'Seher' 'Sahil' 'Yuvaan'
+ 'Jayant' 'Reyansh' 'Neysa' 'Jayan' 'Kiaan' 'Manjari' 'Dishani' 'Elakshi'
+ 'Samar' 'Rania' 'Zeeshan' 'Ivan' 'Misha' 'Tara' 'Advik' 'Vanya' 'Akarsh'
+ 'Uthkarsh' 'Urvi' 'Dhruv' 'Alisha' 'Eshani' 'Riaan' 'Miraya' 'Zaina'
+ 'Samarth' 'Hansh' 'Madhav' 'Hunar' 'Mannat' 'Umang']]
+[2025-07-26 15:47:14,189: INFO: data_ingestion: Unique values in last_name: ['Bhalla' 'Shanker' 'Das' 'Boase' 'Behl' 'Bassi' 'Kakar' 'Aurora' 'Chopra'
+ 'Krishnan' 'Arya' 'Chaudhary' 'Sachar' 'Mahajan' 'Choudhary' 'Raja'
+ 'Tailor' 'Sibal' 'Buch' 'Dewan' 'Chokshi' 'Ganguly' 'Batra' 'Bava'
+ 'Vaidya' 'Ramakrishnan' 'Swamy' 'Sethi' 'Loyal' 'Gulati' 'Majumdar'
+ 'Thakkar' 'Ranganathan' 'Mani' 'Sarraf' 'Bajaj' 'Comar' 'Dhillon' 'Varma'
+ 'Verma' 'Gupta' 'Karan' 'Tiwari' 'Bumb' 'Goel' 'Sampath' 'Sarna'
+ 'Sabharwal' 'Ramanathan' 'Chada' 'Reddy' 'Mallick' 'Sani' 'Upadhyay'
+ 'Soni' 'Contractor' 'Swaminathan' 'Iyer' 'Bali' 'Mander' 'Dugar' 'Sagar'
+ 'Hora' 'Karnik' 'Deo' 'Dasgupta' 'Mand' 'Deep' 'Master' 'Yadav' 'Iyengar'
+ 'Kumar' 'Bath' 'Bajwa' 'Bose' 'Sangha' 'Raju' 'Hans' 'Lalla' 'Malhotra'
+ 'Bhandari' 'Wali' 'Sheth' 'Sodhi' 'Garde' 'Din' 'Brar' 'Agarwal' 'Vora'
+ 'Singh' 'Kulkarni' 'Virk' 'Dixit' 'Grover' 'Sood' 'Acharya' 'Edwin'
+ 'Andra' 'Golla' 'Dube' 'Balakrishnan' 'Vyas' 'Baral' 'Setty' 'Tandon'
+ 'Sidhu' 'Sinha' 'Bhatt' 'Khanna' 'Butala' 'Madan' 'Chaudhry' 'Dugal'
+ 'Yogi' 'Kara' 'Balay' 'Anne' 'Aggarwal' 'Sathe' 'Balan' 'Bandi' 'Vasa'
+ 'Banik' 'Dani' 'Sami' 'Chhabra' 'Bhatti' 'Wadhwa' 'Dara' 'Khalsa' 'Jani'
+ 'Batta' 'Sahni' 'Jha' 'Venkatesh' 'Bala' 'Sachdeva' 'Bawa' 'Jaggi' 'Gara'
+ 'Venkataraman' 'Dash' 'Chandran' 'Kapur' 'Kant' 'Sachdev' 'Toor' 'Vala'
+ 'Chacko' 'Kibe' 'Zacharia' 'Srinivasan' 'Dhar' 'Sarin' 'Sahota' 'Kohli'
+ 'Mann' 'Shenoy' 'Krishnamurthy' 'Varghese' 'Banerjee' 'Walia' 'Rajan'
+ 'Rao' 'Kadakia' 'Manne' 'Lal' 'De' 'Roy' 'Agrawal' 'Rastogi' 'Bedi'
+ 'Luthra' 'Wable' 'Goyal' 'Thaman' 'Ramesh' 'Taneja' 'Doctor' 'Ben'
+ 'Sharaf' 'Brahmbhatt' 'Dhaliwal' 'Cheema' 'Garg' 'Sankar' 'Varkey' 'Dass'
+ 'Bains' 'Ganesan' 'Bhattacharyya' 'Kala' 'Barad' 'Borah' 'Sridhar'
+ 'Wagle' 'Sura' 'Chakrabarti' 'Arora' 'Shan' 'Srinivas' 'Suresh' 'Tak'
+ 'Deol' 'Subramaniam' 'Bhagat' 'Viswanathan' 'Varughese' 'Choudhry' 'Gill'
+ 'Tara' 'Choudhury' 'Som' 'Sane' 'Gandhi' 'Bhardwaj' 'Chakraborty' 'Kalla'
+ 'Raman' 'Kamdar' 'Lad' 'Sem' 'Chaudhari' 'Kale' 'Salvi' 'Ratta' 'Saini'
+ 'Sama' 'Gade' 'Char' 'Sandhu' 'Randhawa' 'Dora' 'Mahal' 'Doshi'
+ 'Srivastava' 'Dyal' 'Sandal' 'Kumer' 'Sundaram' 'Shah' 'Dalal' 'Dubey'
+ 'Bansal' 'Johal' 'Sekhon' 'Handa' 'Sankaran' 'Warrior' 'Suri' 'Bakshi'
+ 'Kari' 'Mammen' 'Dutt' 'Walla' 'Kapoor' 'Kar' 'Trivedi' 'Devi' 'Dar'
+ 'Kannan' 'Saxena' 'Ganesh' 'Baria' 'Borra' 'Kaul' 'Balasubramanian'
+ 'Hayer' 'Khare' 'Goda' 'Shetty' 'Deshpande' 'Sur' 'Sengupta' 'Loke'
+ 'Hegde' 'Manda' 'Rout' 'Bir' 'Chand' 'Thakur' 'Date' 'Keer' 'Shere' 'Bal'
+ 'Shroff' 'Tripathi' 'Sarma' 'Issac' 'Rajagopalan' 'Rama' 'Bhasin'
+ 'Mandal' 'Bail' 'Lata' 'Ahuja' 'Tata' 'Bera' 'Sha' 'Khurana' 'Kata'
+ 'Ramaswamy' 'Atwal' 'Cherian' 'Mall' 'Kuruvilla' 'Basak' 'Konda' 'Sant'
+ 'Korpal' 'Sule' 'Saraf' 'Dua' 'Mannan' 'Lanka' 'Maharaj' 'D’Alia' 'Sen'
+ 'Chanda' 'Divan' 'Gole' 'Bhatnagar' 'Sarkar' 'Ray' 'Mangat' 'Rau' 'Borde'
+ 'Bhargava' 'Singhal' 'Subramanian' 'Chowdhury' 'Mane' 'Shankar' 'Rattan'
+ 'Jayaraman' 'Babu' 'Dhawan' 'Dada' 'Thaker' 'Bhatia' 'Kanda' 'Ram' 'Raj'
+ 'Chahal' 'Chana' 'Talwar' 'Ghosh' 'Gala' 'Saran' 'Tella' 'Saha' 'Kashyap'
+ 'Krish' 'Dhingra' 'Sastry' 'Bora' 'Mangal' 'Badami' 'Vohra' 'Raval'
+ 'Kapadia' 'Sunder' 'Karpe' 'Halder' 'Gola' 'Sharma' 'Ratti' 'Dave' 'Kaur'
+ 'Bobal' 'Gour' 'Grewal' 'Dey' 'Yohannan' 'Chauhan' 'Anand' 'Kade'
+ 'Khatri' 'Sawhney' 'Jhaveri' 'Datta' 'Vig' 'Uppal' 'Rana' 'Ravel' 'Guha'
+ 'Gaba' 'Kunda' 'Gera' 'Bhakta']]
+[2025-07-26 15:47:14,194: INFO: data_ingestion: Unique values in email: ['navya.bhalla26@outlook.com' 'anay.shanker226@yahoo.com'
+ 'raghav.das550@gmail.com' 'mamooty.boase285@yahoo.com'
+ 'sara.behl948@outlook.com' 'parinaaz.shanker143@gmail.com'
+ 'inaaya .bassi395@yahoo.com' 'kiara.kakar465@gmail.com'
+ 'arhaan.aurora20@gmail.com' 'divij.chopra541@outlook.com'
+ 'mehul.krishnan8@gmail.com' 'lavanya.arya827@yahoo.com'
+ 'jhanvi.chaudhary197@gmail.com' 'saanvi.sachar493@gmail.com'
+ 'rati.mahajan304@gmail.com' 'aaina.choudhary123@outlook.com'
+ 'alia.raja688@outlook.com' 'ranbir.tailor379@yahoo.com'
+ 'aarush.sibal289@outlook.com' 'zara.buch166@outlook.com'
+ 'rasha.kakar921@gmail.com' 'shlok.dewan822@outlook.com'
+ 'indrans.chokshi286@gmail.com' 'tarini.ganguly447@outlook.com'
+ 'ehsaan.batra639@yahoo.com' 'vaibhav.bava312@yahoo.com'
+ 'taimur.vaidya689@yahoo.com' 'shray.ramakrishnan672@outlook.com'
+ 'prerak.swamy851@outlook.com' 'azad.sethi279@yahoo.com'
+ 'amira.loyal853@yahoo.com' 'gatik.gulati280@yahoo.com'
+ 'dhanush.majumdar139@yahoo.com' 'ritvik.thakkar230@outlook.com'
+ 'mishti.ranganathan172@outlook.com' 'taran.mani356@outlook.com'
+ 'kartik.sarraf477@yahoo.com' 'darshit.bajaj500@gmail.com'
+ 'nitara.comar459@gmail.com' 'trisha.dhillon314@yahoo.com'
+ 'dhanush.varma304@gmail.com' 'mehul.verma491@yahoo.com'
+ 'divyansh.gupta255@gmail.com' 'ranbir.karan271@outlook.com'
+ 'myra.tiwari704@gmail.com' 'tejas.bumb480@outlook.com'
+ 'tushar.goel591@gmail.com' 'lakshay.sampath422@outlook.com'
+ 'priyansh.sarna193@outlook.com' 'pihu.sabharwal565@gmail.com'
+ 'devansh.ramanathan468@outlook.com' 'myra.chada887@gmail.com'
+ 'hazel.sethi763@yahoo.com' 'nirvaan.bumb77@yahoo.com'
+ 'anahi.gupta233@outlook.com' 'purab.reddy251@outlook.com'
+ 'prisha.mallick683@gmail.com' 'madhup.sani586@yahoo.com'
+ 'shaan.upadhyay652@gmail.com' 'tiya.soni206@gmail.com'
+ 'bhavin.contractor810@yahoo.com' 'arhaan.swaminathan664@gmail.com'
+ 'saksham.iyer671@gmail.com' 'priyansh.bali283@gmail.com'
+ 'lakshit.mander833@gmail.com' 'saanvi.dugar272@gmail.com'
+ 'lakshit.sagar63@yahoo.com' 'charvi.hora465@outlook.com'
+ 'nayantara.karnik438@yahoo.com' 'hridaan.deo421@yahoo.com'
+ 'hiran.dasgupta588@gmail.com' 'shanaya.mand72@gmail.com'
+ 'heer.deep691@gmail.com' 'siya.master226@yahoo.com'
+ 'aaryahi.yadav513@outlook.com' 'keya.iyengar990@yahoo.com'
+ 'taran.choudhary798@gmail.com' 'hiran.kumar182@outlook.com'
+ 'bhamini.bath361@outlook.com' 'tanya.bajwa330@outlook.com'
+ 'faiyaz.bose940@yahoo.com' 'mishti.buch597@outlook.com'
+ 'vritika.sangha19@yahoo.com' 'aarna.raju612@yahoo.com'
+ 'chirag.hans547@gmail.com' 'vaibhav.raju657@yahoo.com'
+ 'anahita.lalla953@gmail.com' 'ojas.malhotra940@yahoo.com'
+ 'aayush.sangha49@gmail.com' 'saira.bhandari247@outlook.com'
+ 'pihu.wali766@gmail.com' 'heer.sheth713@yahoo.com'
+ 'priyansh.sodhi772@outlook.com' 'nayantara.garde377@outlook.com'
+ 'faiyaz.din360@yahoo.com' 'adira.brar130@gmail.com'
+ 'amani.agarwal322@outlook.com' 'saira.vora126@gmail.com'
+ 'saira.deep521@gmail.com' 'damini.singh539@yahoo.com'
+ 'jayesh.kulkarni515@gmail.com' 'emir.virk515@outlook.com'
+ 'mishti.dixit510@outlook.com' 'navya.kulkarni622@gmail.com'
+ 'mahika.chaudhary52@yahoo.com' 'indrans.grover24@gmail.com'
+ 'tarini.buch138@yahoo.com' 'hrishita.sood999@gmail.com'
+ 'eva.acharya153@outlook.com' 'kismat.edwin340@outlook.com'
+ 'ayesha.andra175@outlook.com' 'faiyaz.golla532@gmail.com'
+ 'zara.dube286@outlook.com' 'nakul.balakrishnan839@yahoo.com'
+ 'nakul.vyas631@outlook.com' 'jiya.baral417@outlook.com'
+ 'dharmajan.setty904@gmail.com' 'aradhya.tandon280@gmail.com'
+ 'darshit.sidhu89@yahoo.com' 'hazel.sinha710@gmail.com'
+ 'gokul.bhatt490@gmail.com' 'nirvi.khanna940@outlook.com'
+ 'ira.butala136@outlook.com' 'prerak.lalla555@gmail.com'
+ 'mahika.kakar670@yahoo.com' 'lakshit.madan472@yahoo.com'
+ 'tanya.sethi613@outlook.com' 'prisha.chaudhry898@gmail.com'
+ 'riya.dugal419@gmail.com' 'yakshit.sampath262@gmail.com'
+ 'nehmat.grover824@outlook.com' 'advika.yogi566@yahoo.com'
+ 'ela.kara47@outlook.com' 'fateh.dasgupta782@yahoo.com'
+ 'mamooty.balay423@gmail.com' 'shayak.anne18@outlook.com'
+ 'khushi.malhotra815@yahoo.com' 'manikya.raja58@outlook.com'
+ 'madhup.aggarwal701@yahoo.com' 'devansh.sathe774@outlook.com'
+ 'mohanlal.balan234@yahoo.com' 'manikya.bandi325@yahoo.com'
+ 'arhaan.vasa92@yahoo.com' 'shalv.banik276@yahoo.com'
+ 'drishya.dani139@yahoo.com' 'ranbir.sami182@yahoo.com'
+ 'aradhya.chhabra966@outlook.com' 'hrishita.bhatti460@outlook.com'
+ 'samaira.wadhwa663@outlook.com' 'kaira.mani401@yahoo.com'
+ 'anika.dara100@yahoo.com' 'vardaniya.khalsa574@yahoo.com'
+ 'zara.jani211@yahoo.com' 'kanav.batta602@gmail.com'
+ 'divit.sahni383@outlook.com' 'adah.goel144@gmail.com'
+ 'aarna.jha85@outlook.com' 'anahita.venkatesh794@outlook.com'
+ 'samiha.bala450@gmail.com' 'pari.sachdeva721@yahoo.com'
+ 'neelofar.bawa729@yahoo.com' 'biju.jaggi974@yahoo.com'
+ 'samiha.gara507@yahoo.com' 'yasmin.venkataraman468@gmail.com'
+ 'emir.dash440@outlook.com' 'kartik.chandran73@gmail.com'
+ 'heer.kapur360@outlook.com' 'hiran.kakar254@yahoo.com'
+ 'jivin.dewan396@gmail.com' 'anahi.dash15@yahoo.com'
+ 'dhanuk.kant318@gmail.com' 'zara.venkataraman119@yahoo.com'
+ 'ira.bawa751@gmail.com' 'badal.sachdev262@gmail.com'
+ 'hrishita.toor255@yahoo.com' 'abram.batra567@yahoo.com'
+ 'suhana.vala955@yahoo.com' 'miraan.chacko985@gmail.com'
+ 'yuvraj .kibe446@outlook.com' 'anya.chhabra169@yahoo.com'
+ 'yakshit.zacharia152@gmail.com' 'biju.butala125@gmail.com'
+ 'vaibhav.agarwal95@yahoo.com' 'vidur.deo457@gmail.com'
+ 'vardaniya.srinivasan801@outlook.com' 'amani.dhar786@outlook.com'
+ 'aarna.sarin936@outlook.com' 'sana.srinivasan340@outlook.com'
+ 'ivana.sahota601@gmail.com' 'saanvi.kohli315@outlook.com'
+ 'indrans.chandran340@outlook.com' 'ritvik.chopra263@gmail.com'
+ 'bhavin.mann76@gmail.com' 'sara.madan966@outlook.com'
+ 'biju.shenoy99@gmail.com' 'saksham.balakrishnan84@yahoo.com'
+ 'badal.master477@yahoo.com' 'anvi.krishnamurthy989@outlook.com'
+ 'eva.brar996@gmail.com' 'bhavin.kumar533@yahoo.com'
+ 'dhanush.varghese393@outlook.com' 'kabir.banerjee943@yahoo.com'
+ 'kimaya.bandi193@yahoo.com' 'pari.venkataraman897@gmail.com'
+ 'miraan.jaggi182@yahoo.com' 'fateh.walia668@yahoo.com'
+ 'jiya.dasgupta259@gmail.com' 'kavya.rajan656@yahoo.com'
+ 'arnav.rao929@yahoo.com' 'dhanush.kadakia861@outlook.com'
+ 'nirvi.manne808@yahoo.com' 'jivika.lal56@gmail.com'
+ 'saksham.de281@gmail.com' 'lagan.sami749@yahoo.com'
+ 'saanvi.dugar844@gmail.com' 'nakul.deo230@outlook.com'
+ 'vivaan.bhatti670@gmail.com' 'oorja.roy638@outlook.com'
+ 'rohan.karnik303@gmail.com' 'saksham.sheth927@yahoo.com'
+ 'devansh.agrawal680@outlook.com' 'amira.rastogi665@gmail.com'
+ 'jivika.bedi495@yahoo.com' 'devansh.luthra678@outlook.com'
+ 'lakshit.kulkarni329@gmail.com' 'prerak.bhatti510@outlook.com'
+ 'stuvan.wadhwa846@gmail.com' 'darshit.wable561@outlook.com'
+ 'nirvaan.goyal845@gmail.com' 'raunak.brar859@outlook.com'
+ 'advika.thaman987@yahoo.com' 'inaaya .sarraf640@outlook.com'
+ 'romil.ramesh899@yahoo.com' 'zara.sachdeva772@outlook.com'
+ 'eva.agrawal397@yahoo.com' 'nitya.taneja460@gmail.com'
+ 'ishita.doctor41@gmail.com' 'nitara.ben806@outlook.com'
+ 'himmat.deo457@gmail.com' 'farhan.walia304@outlook.com'
+ 'emir.sharaf551@outlook.com' 'ishita.brahmbhatt418@yahoo.com'
+ 'purab.dhaliwal297@outlook.com' 'lavanya.cheema694@outlook.com'
+ 'saanvi.garg189@gmail.com' 'lagan.sankar975@yahoo.com'
+ 'myra.varkey173@gmail.com' 'prerak.krishnan180@outlook.com'
+ 'ayesha.dass565@yahoo.com' 'baiju.batra776@outlook.com'
+ 'myra.kakar240@gmail.com' 'raghav.bains375@outlook.com'
+ 'aarav.ganesan527@outlook.com' 'trisha.bhattacharyya605@gmail.com'
+ 'navya.deep900@outlook.com' 'ishaan.shanker945@yahoo.com'
+ 'ahana .majumdar494@outlook.com' 'renee.kala604@outlook.com'
+ 'jhanvi.agrawal671@gmail.com' 'faiyaz.barad566@outlook.com'
+ 'prisha.zacharia103@gmail.com' 'indrajit.mahajan954@yahoo.com'
+ 'armaan.tiwari369@gmail.com' 'tushar.manne987@yahoo.com'
+ 'ishita.borah898@outlook.com' 'adah.bhatt649@gmail.com'
+ 'arnav.dube363@gmail.com' 'tejas.yogi693@outlook.com'
+ 'yashvi.vasa769@outlook.com' 'arnav.yogi691@gmail.com'
+ 'taimur.cheema430@outlook.com' 'pihu.dash820@outlook.com'
+ 'nitya.behl708@gmail.com' 'sumer.sridhar360@outlook.com'
+ 'jhanvi.wagle890@gmail.com' 'yuvraj .rao800@yahoo.com'
+ 'siya.brahmbhatt66@yahoo.com' 'miraan.venkatesh135@outlook.com'
+ 'ishaan.sura931@yahoo.com' 'zoya.chakrabarti705@yahoo.com'
+ 'zain.arora849@yahoo.com' 'jayesh.shan187@gmail.com'
+ 'shamik.srinivas129@outlook.com' 'zain.suresh273@yahoo.com'
+ 'oorja.venkatesh753@gmail.com' 'sara.tak909@gmail.com'
+ 'nishith.deol790@gmail.com' 'indranil.subramaniam325@outlook.com'
+ 'rati.bhagat557@yahoo.com' 'vaibhav.viswanathan905@gmail.com'
+ 'armaan.varughese657@yahoo.com' 'anaya.choudhry376@gmail.com'
+ 'krish.taneja855@yahoo.com' 'amira.gill691@yahoo.com'
+ 'ryan.tara783@outlook.com' 'yashvi.viswanathan531@gmail.com'
+ 'manikya.choudhury365@gmail.com' 'anay.sahni500@outlook.com'
+ 'kartik.iyengar56@yahoo.com' 'shalv.dewan297@yahoo.com'
+ 'darshit.som405@outlook.com' 'ranbir.gill353@outlook.com'
+ 'nayantara.kumar249@outlook.com' 'yakshit.sane712@outlook.com'
+ 'heer.gandhi20@yahoo.com' 'aniruddh.bhardwaj945@outlook.com'
+ 'pranay.chakraborty967@outlook.com' 'kavya.deo994@yahoo.com'
+ 'armaan.bhagat70@outlook.com' 'kimaya.kalla190@gmail.com'
+ 'shray.sethi504@yahoo.com' 'vedika.dugar705@yahoo.com'
+ 'adira.raman468@gmail.com' 'diya.bhardwaj433@yahoo.com'
+ 'veer.yogi462@gmail.com' 'kashvi.chandran537@outlook.com'
+ 'onkar.bains317@outlook.com' 'rhea.kamdar603@outlook.com'
+ 'aarav.lad38@gmail.com' 'zara.luthra954@gmail.com'
+ 'piya.sem627@gmail.com' 'seher.shan533@outlook.com'
+ 'oorja.chaudhari342@yahoo.com' 'tejas.kale199@yahoo.com'
+ 'darshit.salvi569@outlook.com' 'shalv.ratta886@yahoo.com'
+ 'saksham.saini519@gmail.com' 'gatik.sem731@outlook.com'
+ 'rohan.kulkarni206@gmail.com' 'sahil.sama278@gmail.com'
+ 'yuvraj .gade437@yahoo.com' 'yuvaan.sarin100@yahoo.com'
+ 'ritvik.malhotra487@gmail.com' 'gokul.char411@outlook.com'
+ 'aaina.salvi758@outlook.com' 'vaibhav.sandhu223@gmail.com'
+ 'siya.zacharia92@outlook.com' 'jayant.randhawa720@outlook.com'
+ 'jiya.dora296@outlook.com' 'yuvaan.mahal522@yahoo.com'
+ 'aarav.doshi582@yahoo.com' 'reyansh.cheema646@outlook.com'
+ 'adah.srivastava172@gmail.com' 'kavya.raman872@yahoo.com'
+ 'neysa.dyal497@gmail.com' 'anahita.kant774@gmail.com'
+ 'ahana .sandal296@yahoo.com' 'lakshit.kumer752@outlook.com'
+ 'anika.sundaram743@yahoo.com' 'yashvi.shah918@gmail.com'
+ 'jayan.sahni796@gmail.com' 'dharmajan.dhar629@outlook.com'
+ 'drishya.saini717@yahoo.com' 'myra.rao581@outlook.com'
+ 'shamik.batra991@yahoo.com' 'suhana.dalal399@gmail.com'
+ 'pari.dubey948@gmail.com' 'mamooty.swaminathan856@outlook.com'
+ 'kiaan.borah783@gmail.com' 'anay.bajaj797@gmail.com'
+ 'nirvaan.khanna422@gmail.com' 'manjari.varghese634@yahoo.com'
+ 'tiya.bansal446@yahoo.com' 'amani.johal204@outlook.com'
+ 'mohanlal.mani951@outlook.com' 'kartik.sekhon873@yahoo.com'
+ 'rasha.handa858@yahoo.com' 'bhamini.iyengar436@outlook.com'
+ 'nirvaan.borah492@outlook.com' 'neysa.sankaran395@outlook.com'
+ 'aarush.warrior114@yahoo.com' 'suhana.vasa772@outlook.com'
+ 'trisha.wali463@outlook.com' 'emir.sood896@gmail.com'
+ 'aarna.choudhary422@outlook.com' 'jayesh.suri995@yahoo.com'
+ 'rasha.lad325@outlook.com' 'anahi.bakshi415@yahoo.com'
+ 'ivana.dash706@gmail.com' 'gatik.kari201@gmail.com'
+ 'himmat.suresh396@yahoo.com' 'anahi.sama856@outlook.com'
+ 'eva.mammen205@gmail.com' 'kimaya.dutt128@outlook.com'
+ 'tanya.walla644@outlook.com' 'ahana .ramesh370@yahoo.com'
+ 'saira.walla278@outlook.com' 'dishani.kala815@outlook.com'
+ 'ira.kapoor30@outlook.com' 'indranil.sharaf44@gmail.com'
+ 'anika.kar30@gmail.com' 'pranay.sheth176@outlook.com'
+ 'nishith.trivedi527@gmail.com' 'navya.devi395@yahoo.com'
+ 'tiya.sood406@yahoo.com' 'elakshi.kibe743@yahoo.com'
+ 'mishti.dar257@yahoo.com' 'raghav.kannan677@outlook.com'
+ 'dhanuk.saxena323@yahoo.com' 'reyansh.dalal488@outlook.com'
+ 'purab.ganesh358@outlook.com' 'samar.warrior118@yahoo.com'
+ 'hrishita.baria587@gmail.com' 'hiran.borra272@gmail.com'
+ 'mehul.handa356@gmail.com' 'rania.bose219@outlook.com'
+ 'renee.chhabra650@gmail.com' 'chirag.johal433@outlook.com'
+ 'yuvraj .gandhi888@gmail.com' 'hrishita.kaul244@outlook.com'
+ 'zeeshan.balasubramanian884@outlook.com' 'lagan.thaman661@outlook.com'
+ 'aaina.hayer93@gmail.com' 'trisha.master898@gmail.com'
+ 'rasha.anne411@gmail.com' 'tarini.mani178@outlook.com'
+ 'vaibhav.khare204@yahoo.com' 'aarush.goda230@outlook.com'
+ 'rohan.shetty30@yahoo.com' 'vidur.varkey754@outlook.com'
+ 'aaina.luthra405@outlook.com' 'siya.shah321@gmail.com'
+ 'inaaya .sura55@gmail.com' 'lavanya.yadav116@outlook.com'
+ 'madhup.kohli943@gmail.com' 'madhup.deshpande465@outlook.com'
+ 'adira.kibe762@gmail.com' 'aniruddh.hayer503@yahoo.com'
+ 'shayak.sami629@gmail.com' 'parinaaz.sur448@gmail.com'
+ 'yuvaan.sengupta97@yahoo.com' 'ivan.trivedi322@outlook.com'
+ 'anahita.bhatt120@gmail.com' 'misha.loke15@gmail.com'
+ 'anay.hegde433@gmail.com' 'kiara.manda646@outlook.com'
+ 'nitara.arya541@gmail.com' 'dharmajan.rout481@yahoo.com'
+ 'aaryahi.bir637@gmail.com' 'anahi.chand366@outlook.com'
+ 'badal.de874@outlook.com' 'vaibhav.gade892@gmail.com'
+ 'lakshit.karan252@yahoo.com' 'shaan.ganguly424@yahoo.com'
+ 'tara.wable778@gmail.com' 'vaibhav.dewan718@yahoo.com'
+ 'suhana.thakur400@outlook.com' 'aaina.date744@yahoo.com'
+ 'dhanush.keer359@yahoo.com' 'advik.shere84@gmail.com'
+ 'hrishita.bal706@yahoo.com' 'stuvan.choudhury944@gmail.com'
+ 'nehmat.banerjee50@yahoo.com' 'vanya.sachdev487@outlook.com'
+ 'arnav.shroff982@outlook.com' 'aniruddh.dasgupta769@yahoo.com'
+ 'krish.tripathi349@yahoo.com' 'akarsh.rastogi976@yahoo.com'
+ 'indrans.dar771@outlook.com' 'gokul.khalsa782@outlook.com'
+ 'oorja.bhandari2@yahoo.com' 'jivika.chopra308@gmail.com'
+ 'anahita.sarma216@yahoo.com' 'onkar.sinha914@outlook.com'
+ 'tushar.chacko761@gmail.com' 'mahika.raman841@outlook.com'
+ 'siya.sekhon131@yahoo.com' 'farhan.sood865@yahoo.com'
+ 'ishaan.dugal84@outlook.com' 'emir.mann254@gmail.com'
+ 'anay.dugal998@gmail.com' 'kashvi.sandhu302@yahoo.com'
+ 'uthkarsh.issac530@yahoo.com' 'saanvi.chaudhary141@gmail.com'
+ 'dhanuk.rajagopalan994@gmail.com' 'prisha.thakur615@outlook.com'
+ 'mishti.dara245@yahoo.com' 'ehsaan.sarin999@gmail.com'
+ 'trisha.dora671@gmail.com' 'piya.rama712@yahoo.com'
+ 'zara.bhasin215@outlook.com' 'yashvi.mandal486@yahoo.com'
+ 'vardaniya.bail303@yahoo.com' 'shray.lata240@yahoo.com'
+ 'aaryahi.sahota202@outlook.com' 'tushar.banerjee843@yahoo.com'
+ 'dishani.sabharwal811@gmail.com' 'shlok.ahuja348@gmail.com'
+ 'aaina.tata972@yahoo.com' 'ayesha.bera192@gmail.com'
+ 'adah.golla133@outlook.com' 'myra.walla283@gmail.com'
+ 'amira.sathe356@outlook.com' 'indrans.kalla281@outlook.com'
+ 'jayesh.sha213@outlook.com' 'elakshi.sachdev335@outlook.com'
+ 'purab.randhawa128@outlook.com' 'zara.luthra400@outlook.com'
+ 'urvi.khurana841@gmail.com' 'anahita.kamdar962@yahoo.com'
+ 'sana.rajagopalan69@gmail.com' 'priyansh.edwin651@outlook.com'
+ 'nirvaan.thakur243@outlook.com' 'dhruv.dewan326@outlook.com'
+ 'alisha.dara534@yahoo.com' 'suhana.kata437@outlook.com'
+ 'jiya.ramaswamy408@yahoo.com' 'oorja.gupta390@yahoo.com'
+ 'shayak.atwal948@yahoo.com' 'bhamini.varghese714@gmail.com'
+ 'shaan.chand254@outlook.com' 'aradhya.cherian601@yahoo.com'
+ 'sumer.sur72@outlook.com' 'pranay.garde191@gmail.com'
+ 'ranbir.wable351@gmail.com' 'kimaya.sarna955@yahoo.com'
+ 'raghav.mall892@outlook.com' 'aayush.kuruvilla654@yahoo.com'
+ 'kanav.basak675@outlook.com' 'nakul.sem978@gmail.com'
+ 'yuvraj .konda682@yahoo.com' 'ivana.sibal266@gmail.com'
+ 'nakul.sant605@outlook.com' 'anika.roy836@yahoo.com'
+ 'riya.korpal299@outlook.com' 'alia.sule346@yahoo.com'
+ 'advik.batra671@gmail.com' 'ritvik.choudhry696@gmail.com'
+ 'yuvaan.saraf407@yahoo.com' 'nirvaan.dua123@gmail.com'
+ 'nitara.mannan661@outlook.com' 'tushar.khalsa989@outlook.com'
+ 'ishita.lanka519@yahoo.com' 'shray.kala621@outlook.com'
+ 'shanaya.maharaj267@yahoo.com' 'shalv.goda430@gmail.com'
+ 'rati.karan797@yahoo.com' 'purab.dua565@yahoo.com'
+ 'ojas.d’alia704@outlook.com' 'fateh.sen363@yahoo.com'
+ 'kartik.dugar590@gmail.com' 'fateh.sharaf632@gmail.com'
+ 'heer.singh860@gmail.com' 'prisha.chanda3@outlook.com'
+ 'kartik.chokshi6@yahoo.com' 'seher.khurana405@yahoo.com'
+ 'raghav.sengupta195@yahoo.com' 'khushi.sidhu770@yahoo.com'
+ 'eshani.raju445@yahoo.com' 'raunak.bedi486@outlook.com'
+ 'kartik.divan632@gmail.com' 'manikya.gole276@yahoo.com'
+ 'jayesh.dora259@yahoo.com' 'abram.sathe216@outlook.com'
+ 'hazel.bhatnagar780@gmail.com' 'raghav.bajaj537@outlook.com'
+ 'baiju.malhotra769@outlook.com' 'riaan.sarkar304@outlook.com'
+ 'gokul.ray2@outlook.com' 'suhana.korpal263@gmail.com'
+ 'ehsaan.viswanathan378@gmail.com' 'abram.mangat72@gmail.com'
+ 'raunak.keer847@gmail.com' 'anvi.kannan836@gmail.com'
+ 'shlok.chanda2@gmail.com' 'baiju.date366@gmail.com'
+ 'anvi.bhandari897@gmail.com' 'chirag.iyer116@outlook.com'
+ 'ayesha.bansal393@yahoo.com' 'kashvi.rau3@gmail.com'
+ 'piya.bala765@gmail.com' 'indrajit.borde145@gmail.com'
+ 'zoya.manda801@outlook.com' 'romil.basak434@gmail.com'
+ 'nishith.bhargava321@outlook.com' 'ivana.singhal555@gmail.com'
+ 'zeeshan.raman323@gmail.com' 'kimaya.subramanian25@outlook.com'
+ 'miraya.chowdhury805@gmail.com' 'urvi.lal147@yahoo.com'
+ 'vaibhav.kar263@yahoo.com' 'ahana .dixit519@yahoo.com'
+ 'khushi.kala686@gmail.com' 'ryan.mane351@outlook.com'
+ 'miraya.balan809@yahoo.com' 'manjari.shankar895@outlook.com'
+ 'divyansh.singh989@outlook.com' 'lakshay.rattan919@yahoo.com'
+ 'lakshit.deo431@outlook.com' 'nitara.baria421@yahoo.com'
+ 'indranil.dar866@outlook.com' 'jayant.majumdar684@yahoo.com'
+ 'dhanuk.brar275@outlook.com' 'aarav.jayaraman570@yahoo.com'
+ 'alisha.sankaran728@gmail.com' 'kimaya.keer586@yahoo.com'
+ 'riaan.babu958@gmail.com' 'mehul.dhawan815@gmail.com'
+ 'renee.dhaliwal352@yahoo.com' 'rati.vasa31@yahoo.com'
+ 'amani.banik945@gmail.com' 'piya.dada836@yahoo.com'
+ 'prerak.subramaniam31@gmail.com' 'vritika.rattan219@yahoo.com'
+ 'khushi.sahota833@yahoo.com' 'zaina.chaudhary19@outlook.com'
+ 'aarna.bhandari772@yahoo.com' 'inaaya .chowdhury143@gmail.com'
+ 'neelofar.borde338@outlook.com' 'priyansh.thaker678@yahoo.com'
+ 'hridaan.banik62@gmail.com' 'biju.butala937@gmail.com'
+ 'vritika.dube473@gmail.com' 'kimaya.shere155@yahoo.com'
+ 'jiya.dhawan532@yahoo.com' 'advika.bhatia104@gmail.com'
+ 'anahita.sankaran175@yahoo.com' 'romil.sarma598@gmail.com'
+ 'yuvaan.deshpande464@yahoo.com' 'damini.madan152@yahoo.com'
+ 'bhamini.kanda982@outlook.com' 'dhanush.ram581@yahoo.com'
+ 'arnav.walia819@yahoo.com' 'adah.shah900@yahoo.com'
+ 'samarth.ramakrishnan991@gmail.com' 'ojas.arya88@yahoo.com'
+ 'divij.contractor431@yahoo.com' 'pari.toor129@yahoo.com'
+ 'kashvi.raj759@outlook.com' 'akarsh.singhal1@gmail.com'
+ 'pari.tara880@outlook.com' 'priyansh.mani684@gmail.com'
+ 'arnav.singh661@outlook.com' 'tanya.chahal672@gmail.com'
+ 'anaya.lad133@outlook.com' 'nehmat.kant791@outlook.com'
+ 'ranbir.chana329@gmail.com' 'keya.kamdar89@outlook.com'
+ 'myra.talwar585@yahoo.com' 'ayesha.bath53@outlook.com'
+ 'anaya.ghosh560@outlook.com' 'yuvraj .ganesan242@yahoo.com'
+ 'samarth.sampath666@yahoo.com' 'ehsaan.varughese785@yahoo.com'
+ 'ishaan.gala423@outlook.com' 'zain.saran674@gmail.com'
+ 'bhamini.dhawan715@outlook.com' 'nitara.iyer37@gmail.com'
+ 'tara.maharaj884@yahoo.com' 'armaan.karan776@gmail.com'
+ 'dhruv.dugar167@yahoo.com' 'ojas.edwin676@yahoo.com'
+ 'farhan.som594@gmail.com' 'yuvaan.venkatesh671@gmail.com'
+ 'drishya.tella112@gmail.com' 'aarav.saha919@outlook.com'
+ 'hrishita.kashyap851@outlook.com' 'zain.bala676@outlook.com'
+ 'kanav.lad371@gmail.com' 'taran.rastogi815@yahoo.com'
+ 'tanya.krish784@outlook.com' 'mishti.kant730@yahoo.com'
+ 'tara.bal717@gmail.com' 'lagan.deol305@yahoo.com'
+ 'ira.bhatti292@gmail.com' 'reyansh.kanda613@gmail.com'
+ 'rasha.kibe911@yahoo.com' 'gatik.atwal646@outlook.com'
+ 'mohanlal.ramanathan690@gmail.com' 'yasmin.dar572@outlook.com'
+ 'rhea.buch502@outlook.com' 'sahil.majumdar476@yahoo.com'
+ 'abram.majumdar268@outlook.com' 'yuvraj .batra587@gmail.com'
+ 'mamooty.trivedi671@gmail.com' 'farhan.kashyap866@gmail.com'
+ 'fateh.sabharwal135@outlook.com' 'indrans.krish804@yahoo.com'
+ 'saanvi.dhingra292@outlook.com' 'diya.sastry489@outlook.com'
+ 'purab.johal61@yahoo.com' 'anya.keer983@outlook.com'
+ 'nirvaan.kari203@yahoo.com' 'ishita.bora630@yahoo.com'
+ 'veer.chandran11@yahoo.com' 'kismat.kumar359@outlook.com'
+ 'siya.wable106@outlook.com' 'himmat.venkatesh173@gmail.com'
+ 'darshit.devi310@outlook.com' 'trisha.subramanian574@yahoo.com'
+ 'zeeshan.garde184@outlook.com' 'vedika.kulkarni408@gmail.com'
+ 'priyansh.tara628@outlook.com' 'aarav.dhaliwal920@outlook.com'
+ 'samaira.dixit455@gmail.com' 'khushi.mann120@gmail.com'
+ 'nirvi.konda766@outlook.com' 'indrajit.kapoor271@gmail.com'
+ 'heer.khurana662@outlook.com' 'shray.ganesan487@gmail.com'
+ 'ishita.singh664@gmail.com' 'inaaya .gulati259@outlook.com'
+ 'amani.dyal525@gmail.com' 'kanav.sarkar472@gmail.com'
+ 'nakul.mangal353@gmail.com' 'veer.dada840@outlook.com'
+ 'urvi.jha626@outlook.com' 'azad.dutt692@yahoo.com'
+ 'shanaya.khalsa589@outlook.com' 'renee.tak730@yahoo.com'
+ 'vaibhav.hans476@yahoo.com' 'nitara.sule366@yahoo.com'
+ 'nehmat.borra649@yahoo.com' 'bhamini.badami525@outlook.com'
+ 'gokul.krishnamurthy711@gmail.com' 'kiara.gandhi6@yahoo.com'
+ 'divyansh.vohra603@yahoo.com' 'advika.bedi413@gmail.com'
+ 'eshani.kari640@outlook.com' 'abram.sen406@gmail.com'
+ 'hridaan.jayaraman646@gmail.com' 'neysa.brahmbhatt700@gmail.com'
+ 'dhanuk.keer625@gmail.com' 'vardaniya.deo960@outlook.com'
+ 'shayak.ratta251@yahoo.com' 'rania.issac848@outlook.com'
+ 'nehmat.baria777@outlook.com' 'shalv.varkey351@yahoo.com'
+ 'pari.varughese968@outlook.com' 'hazel.gupta598@yahoo.com'
+ 'samar.rattan887@yahoo.com' 'saanvi.wali511@yahoo.com'
+ 'tara.kohli581@outlook.com' 'hrishita.badami751@gmail.com'
+ 'miraya.banerjee120@yahoo.com' 'miraan.raval258@yahoo.com'
+ 'piya.dhawan775@gmail.com' 'manikya.shenoy798@gmail.com'
+ 'divij.kalla805@gmail.com' 'divyansh.sidhu314@yahoo.com'
+ 'myra.sarraf214@outlook.com' 'divyansh.kapadia165@yahoo.com'
+ 'ivan.saran655@yahoo.com' 'rohan.zacharia449@gmail.com'
+ 'aniruddh.bajaj329@yahoo.com' 'shaan.sunder852@outlook.com'
+ 'bhavin.din545@gmail.com' 'taimur.grover664@outlook.com'
+ 'adah.bora546@yahoo.com' 'nirvaan.lanka978@gmail.com'
+ 'zain.mandal455@outlook.com' 'pihu.sule124@yahoo.com'
+ 'jivin.chada370@yahoo.com' 'jayant.baral579@gmail.com'
+ 'manjari.virk179@outlook.com' 'vaibhav.rao340@gmail.com'
+ 'pihu.dara68@gmail.com' 'charvi.manne505@outlook.com'
+ 'hridaan.d’alia190@outlook.com' 'anahi.ray814@gmail.com'
+ 'onkar.karpe465@outlook.com' 'onkar.sama65@yahoo.com'
+ 'aayush.yogi990@outlook.com' 'zaina.kaul711@outlook.com'
+ 'reyansh.sandhu304@yahoo.com' 'inaaya .brar144@gmail.com'
+ 'devansh.kant211@yahoo.com' 'shray.raj73@outlook.com'
+ 'rohan.reddy248@outlook.com' 'aarna.sant14@gmail.com'
+ 'ojas.kari605@outlook.com' 'romil.chaudhary963@yahoo.com'
+ 'veer.varkey284@yahoo.com' 'anya.bera342@yahoo.com'
+ 'miraan.halder346@yahoo.com' 'kaira.gola204@gmail.com'
+ 'kashvi.divan454@gmail.com' 'rati.divan988@gmail.com'
+ 'akarsh.thakkar380@yahoo.com' 'nirvi.hora827@outlook.com'
+ 'raghav.agrawal489@outlook.com' 'jivika.venkatesh552@outlook.com'
+ 'piya.sood629@gmail.com' 'shanaya.bakshi825@yahoo.com'
+ 'mahika.sharma360@outlook.com' 'charvi.thaman394@yahoo.com'
+ 'reyansh.soni724@gmail.com' 'yasmin.contractor628@yahoo.com'
+ 'mahika.suresh939@yahoo.com' 'sumer.choudhary782@gmail.com'
+ 'myra.chandran541@gmail.com' 'miraya.dass988@outlook.com'
+ 'parinaaz.shroff585@outlook.com' 'saira.sinha614@gmail.com'
+ 'nirvi.sangha43@outlook.com' 'hiran.ratti292@outlook.com'
+ 'divit.zacharia189@gmail.com' 'mishti.roy972@gmail.com'
+ 'arnav.dubey26@yahoo.com' 'vedika.kannan40@gmail.com'
+ 'arhaan.mann960@outlook.com' 'tejas.setty294@outlook.com'
+ 'hansh.bath214@yahoo.com' 'ritvik.gade583@gmail.com'
+ 'siya.johal346@outlook.com' 'jayant.chaudhry422@yahoo.com'
+ 'hansh.srivastava943@gmail.com' 'hrishita.vora297@yahoo.com'
+ 'tejas.lanka680@gmail.com' 'damini.deshpande994@yahoo.com'
+ 'ivan.dave364@outlook.com' 'anya.swaminathan460@yahoo.com'
+ 'ritvik.shenoy205@yahoo.com' 'shayak.suri501@yahoo.com'
+ 'farhan.kaur586@gmail.com' 'dhanuk.bobal205@outlook.com'
+ 'tanya.chowdhury726@yahoo.com' 'parinaaz.sengupta193@gmail.com'
+ 'pari.issac289@gmail.com' 'zaina.mallick715@outlook.com'
+ 'tejas.bath44@outlook.com' 'vritika.hora892@outlook.com'
+ 'abram.deo23@yahoo.com' 'heer.bhatia985@gmail.com'
+ 'amani.gour614@gmail.com' 'pari.shere650@yahoo.com'
+ 'pari.deep577@yahoo.com' 'keya.halder729@gmail.com'
+ 'navya.grewal981@outlook.com' 'emir.sandal30@outlook.com'
+ 'mehul.keer724@outlook.com' 'anay.rao406@gmail.com'
+ 'jhanvi.gade156@gmail.com' 'manjari.choudhry562@gmail.com'
+ 'neelofar.balay777@gmail.com' 'myra.tata604@gmail.com'
+ 'anahi.sarma524@yahoo.com' 'romil.sachar43@yahoo.com'
+ 'yuvraj .bhardwaj524@gmail.com' 'hiran.bajaj815@outlook.com'
+ 'armaan.doshi221@outlook.com' 'bhamini.bhardwaj179@gmail.com'
+ 'divit.dalal31@gmail.com' 'heer.bir987@gmail.com'
+ 'vidur.karan841@yahoo.com' 'tushar.sampath834@outlook.com'
+ 'shanaya.sarin519@outlook.com' 'hrishita.kadakia261@outlook.com'
+ 'khushi.sharaf656@outlook.com' 'samiha.brahmbhatt25@gmail.com'
+ 'zeeshan.sagar384@gmail.com' 'divyansh.thaman972@outlook.com'
+ 'ayesha.randhawa619@yahoo.com' 'yuvraj .dey475@yahoo.com'
+ 'arhaan.sant992@gmail.com' 'tushar.chopra828@outlook.com'
+ 'ahana .kapadia486@gmail.com' 'miraan.varma457@outlook.com'
+ 'taran.bawa381@gmail.com' 'piya.gour398@outlook.com'
+ 'inaaya .yohannan417@gmail.com' 'neelofar.gola614@outlook.com'
+ 'biju.issac476@outlook.com' 'raghav.chandran94@outlook.com'
+ 'gatik.vala531@outlook.com' 'amani.bath818@yahoo.com'
+ 'nitara.cherian150@yahoo.com' 'nayantara.reddy53@yahoo.com'
+ 'kimaya.anne803@gmail.com' 'badal.srivastava861@gmail.com'
+ 'shamik.dara253@yahoo.com' 'gokul.srivastava103@gmail.com'
+ 'jivika.chauhan512@outlook.com' 'darshit.thakkar255@outlook.com'
+ 'tarini.malhotra21@yahoo.com' 'lakshay.raj374@gmail.com'
+ 'madhav.talwar420@yahoo.com' 'mehul.gala18@gmail.com'
+ 'urvi.borah334@gmail.com' 'vedika.yohannan466@gmail.com'
+ 'kimaya.agarwal806@outlook.com' 'raghav.varughese383@gmail.com'
+ 'hunar.bhattacharyya146@gmail.com' 'hrishita.dass55@yahoo.com'
+ 'yasmin.chahal150@outlook.com' 'faiyaz.sahota821@outlook.com'
+ 'anay.bhatti148@gmail.com' 'abram.gola1@gmail.com'
+ 'vritika.subramaniam591@outlook.com' 'miraan.raja337@outlook.com'
+ 'samarth.anand761@yahoo.com' 'jayant.deo32@yahoo.com'
+ 'baiju.bhatnagar874@gmail.com' 'seher.kade299@yahoo.com'
+ 'eshani.bhandari608@yahoo.com' 'shanaya.balay873@yahoo.com'
+ 'anika.kapur721@gmail.com' 'vanya.golla446@yahoo.com'
+ 'drishya.rajagopalan833@yahoo.com' 'emir.kara96@yahoo.com'
+ 'damini.choudhry346@gmail.com' 'mannat.bains466@outlook.com'
+ 'samiha.srinivasan272@yahoo.com' 'nirvi.lad514@outlook.com'
+ 'romil.karnik15@outlook.com' 'nayantara.aurora747@gmail.com'
+ 'biju.khatri346@gmail.com' 'yakshit.kala65@gmail.com'
+ 'piya.bhagat195@outlook.com' 'ayesha.sawhney193@gmail.com'
+ 'ahana .bansal567@outlook.com' 'dhanush.dyal157@yahoo.com'
+ 'mahika.borah372@gmail.com' 'chirag.bhatnagar103@yahoo.com'
+ 'raghav.ratta555@gmail.com' 'myra.master698@outlook.com'
+ 'ira.sawhney276@gmail.com' 'shaan.halder729@gmail.com'
+ 'kimaya.lanka350@gmail.com' 'ritvik.karan399@yahoo.com'
+ 'dishani.ramakrishnan424@gmail.com' 'adah.bawa705@yahoo.com'
+ 'yashvi.sarna739@yahoo.com' 'farhan.varkey153@gmail.com'
+ 'neysa.sachdev686@outlook.com' 'tiya.majumdar707@gmail.com'
+ 'saira.verma224@yahoo.com' 'madhav.kale811@outlook.com'
+ 'alisha.wali1@yahoo.com' 'manikya.jhaveri201@gmail.com'
+ 'shayak.thaker705@gmail.com' 'amani.iyengar446@gmail.com'
+ 'zeeshan.sethi949@outlook.com' 'divit.dugar55@outlook.com'
+ 'aaryahi.dugar341@outlook.com' 'nitya.datta472@gmail.com'
+ 'umang.bose493@gmail.com' 'piya.khalsa164@gmail.com'
+ 'darshit.bath520@yahoo.com' 'dharmajan.batra577@gmail.com'
+ 'adah.bava55@yahoo.com' 'shanaya.shankar275@gmail.com'
+ 'umang.tak529@gmail.com' 'hansh.mall163@gmail.com'
+ 'biju.raj364@yahoo.com' 'jhanvi.mand316@yahoo.com'
+ 'shalv.sampath690@outlook.com' 'gatik.jha746@gmail.com'
+ 'sumer.vohra222@gmail.com' 'nitya.sheth984@outlook.com'
+ 'aarna.vig342@yahoo.com' 'saira.bal319@outlook.com'
+ 'reyansh.rama622@outlook.com' 'sahil.goda646@gmail.com'
+ 'ehsaan.mani533@gmail.com' 'dishani.cherian920@yahoo.com'
+ 'indrans.saha768@gmail.com' 'anya.choudhury218@gmail.com'
+ 'emir.gill588@gmail.com' 'ivana.gour92@outlook.com'
+ 'farhan.singh111@gmail.com' 'ranbir.mangat783@yahoo.com'
+ 'mamooty.swamy857@yahoo.com' 'aaryahi.uppal677@yahoo.com'
+ 'jhanvi.sinha258@gmail.com' 'misha.rana930@yahoo.com'
+ 'pari.rout627@outlook.com' 'ivana.arya52@outlook.com'
+ 'mahika.saha611@gmail.com' 'rania.deol69@gmail.com'
+ 'aniruddh.chana870@gmail.com' 'purab.sarna195@gmail.com'
+ 'tarini.dubey292@gmail.com' 'shayak.gill854@gmail.com'
+ 'aarush.chana896@outlook.com' 'hridaan.mandal465@yahoo.com'
+ 'nirvi.iyer645@yahoo.com' 'darshit.bobal75@outlook.com'
+ 'seher.ravel130@gmail.com' 'aniruddh.bath291@yahoo.com'
+ 'siya.lanka553@outlook.com' 'madhav.guha518@yahoo.com'
+ 'aaina.karan54@outlook.com' 'shlok.brar873@yahoo.com'
+ 'tushar.dugal851@gmail.com' 'saira.gaba992@outlook.com'
+ 'urvi.mander27@outlook.com' 'kimaya.basak314@outlook.com'
+ 'baiju.brahmbhatt859@yahoo.com' 'indranil.shroff746@outlook.com'
+ 'miraya.bakshi393@outlook.com' 'pari.baria912@gmail.com'
+ 'purab.kant523@yahoo.com' 'nitara.kala341@gmail.com'
+ 'aradhya.raman71@gmail.com' 'ahana .johal601@outlook.com'
+ 'purab.chokshi867@outlook.com' 'tanya.kunda642@yahoo.com'
+ 'farhan.gera414@outlook.com' 'adah.bhakta334@gmail.com']]
+[2025-07-26 15:47:14,199: INFO: data_ingestion: Unique values in gender: ['Male' 'Female']]
+[2025-07-26 15:47:14,199: INFO: data_ingestion: Unique values in part_time_job: ['No' 'Yes']]
+[2025-07-26 15:47:14,199: INFO: data_ingestion: Unique values in extracurricular_activities: ['Yes' 'No']]
+[2025-07-26 15:47:14,200: INFO: data_ingestion: Unique values in career_aspiration: ['Engineer' 'Scientist' 'Entrepreneur' 'Teacher' 'Artist' 'Civil Servant'
+ 'Doctor']]
+[2025-07-26 15:47:14,200: INFO: data_ingestion: Unique values in race_ethnicity: ['Group B' 'Group C' 'Group D' 'Group A' 'Group E']]
+[2025-07-26 15:47:14,201: INFO: data_ingestion: Unique values in parental_level_of_education: ['High school' 'Some college' 'Some high school' 'Associate degree'
+ 'Master’s degree' 'Bachelor’s degree']]
+[2025-07-26 15:47:14,201: INFO: data_ingestion: Unique values in lunch: ['Standard' 'Free/reduced']]
+[2025-07-26 15:47:14,202: INFO: data_ingestion: Unique values in test_preparation_course: [nan 'Completed']]
+[2025-07-26 15:47:14,203: INFO: training_pipeline: >>>>>> stage DataIngestionTrainingPipeline completed <<<<<<
+
+x==========x]
+[2025-07-26 15:47:14,203: INFO: training_pipeline: >>>>>> stage DataTransformationTrainingPipeline started <<<<<<]
+[2025-07-26 15:47:14,206: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\config.yaml loaded successfully]
+[2025-07-26 15:47:14,210: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\params.yaml loaded successfully]
+[2025-07-26 15:47:14,216: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\schema.yaml loaded successfully]
+[2025-07-26 15:47:14,217: INFO: common: Created directory at: artifacts]
+[2025-07-26 15:47:14,217: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-07-26 15:47:14,224: INFO: data_transformation: Read data completed]
+[2025-07-26 15:47:14,224: INFO: data_transformation: Data shape: (1000, 23)]
+[2025-07-26 15:47:14,372: INFO: data_transformation: Train test split completed]
+[2025-07-26 15:47:14,421: INFO: data_transformation: Read train and test data completed]
+[2025-07-26 15:47:14,422: INFO: data_transformation: Obtaining preprocessing object]
+[2025-07-26 15:47:14,427: INFO: data_transformation: Categorical columns: ['gender', 'part_time_job', 'extracurricular_activities', 'career_aspiration', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']]
+[2025-07-26 15:47:14,427: INFO: data_transformation: Numerical columns: ['absence_days', 'weekly_self_study_hours', 'history_score', 'physics_score', 'chemistry_score', 'biology_score', 'english_score', 'geography_score', 'writing_score', 'reading_score']]
+[2025-07-26 15:47:14,433: INFO: data_transformation: Applying preprocessing object on training dataframe and testing dataframe.]
+[2025-07-26 15:47:14,461: INFO: data_transformation: Saved preprocessing object.]
+[2025-07-26 15:47:14,466: INFO: common: binary file saved at: artifacts/data_transformation/preprocessor.pkl]
+[2025-07-26 15:47:14,466: INFO: data_transformation: Data transformation completed]
+[2025-07-26 15:47:14,467: INFO: training_pipeline: >>>>>> stage DataTransformationTrainingPipeline completed <<<<<<
+
+x==========x]
+[2025-07-26 15:47:14,467: INFO: training_pipeline: >>>>>> stage ModelTrainerTrainingPipeline started <<<<<<]
+[2025-07-26 15:47:14,470: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\config.yaml loaded successfully]
+[2025-07-26 15:47:14,473: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\params.yaml loaded successfully]
+[2025-07-26 15:47:14,480: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\schema.yaml loaded successfully]
+[2025-07-26 15:47:14,481: INFO: common: Created directory at: artifacts]
+[2025-07-26 15:47:14,486: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-07-26 15:47:14,486: INFO: model_trainer: Split training and test input data]
+[2025-07-26 15:50:05,298: WARNING: model_trainer: No best model found with score > 0.0]
+[2025-07-26 15:50:05,299: INFO: model_trainer: Best model score achieved: -0.010015046745478706]
+[2025-07-26 15:50:05,299: ERROR: model_trainer: Error in model training: No best model found]
+[2025-07-26 15:50:05,299: ERROR: training_pipeline: Error in Model Evaluation stage: No best model found]
+[2025-07-26 15:50:05,300: ERROR: training_pipeline: Error in complete training pipeline: No best model found]
+[2025-07-26 15:50:05,300: ERROR: main: Training pipeline failed: No best model found]
+[2025-07-26 16:06:34,433: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-07-26 16:06:39,311: INFO: main: >>>>>> Starting Student Performance ML Training Pipeline <<<<<<]
+[2025-07-26 16:06:39,311: INFO: training_pipeline: Starting complete training pipeline]
+[2025-07-26 16:06:39,311: INFO: training_pipeline: >>>>>> stage DataIngestionTrainingPipeline started <<<<<<]
+[2025-07-26 16:06:39,314: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\config.yaml loaded successfully]
+[2025-07-26 16:06:39,319: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\params.yaml loaded successfully]
+[2025-07-26 16:06:39,325: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\schema.yaml loaded successfully]
+[2025-07-26 16:06:39,326: INFO: common: Created directory at: artifacts]
+[2025-07-26 16:06:39,327: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-07-26 16:06:39,327: INFO: data_ingestion: Starting data ingestion process]
+[2025-07-26 16:06:39,328: INFO: data_ingestion: File already exists of size: ~ 136 KB]
+[2025-07-26 16:06:40,553: INFO: data_ingestion: Converted Excel file to CSV: artifacts/data_ingestion/data.csv]
+[2025-07-26 16:06:40,553: INFO: data_ingestion: Excel file converted to CSV: artifacts/data_ingestion/data.csv]
+[2025-07-26 16:06:40,554: INFO: data_ingestion: Data ingestion completed successfully]
+[2025-07-26 16:06:40,618: INFO: data_ingestion: Data shape: (1000, 23)]
+[2025-07-26 16:06:40,618: INFO: data_ingestion: Data columns: ['id', 'first_name', 'last_name', 'email', 'gender', 'part_time_job', 'absence_days', 'extracurricular_activities', 'weekly_self_study_hours', 'career_aspiration', 'math_score', 'history_score', 'physics_score', 'chemistry_score', 'biology_score', 'english_score', 'geography_score', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course', 'writing_score', 'reading_score']]
+[2025-07-26 16:06:40,620: INFO: data_ingestion: Data types: 
+id                               int64
+first_name                      object
+last_name                       object
+email                           object
+gender                          object
+part_time_job                   object
+absence_days                     int64
+extracurricular_activities      object
+weekly_self_study_hours        float64
+career_aspiration               object
+math_score                       int64
+history_score                    int64
+physics_score                    int64
+chemistry_score                  int64
+biology_score                    int64
+english_score                    int64
+geography_score                  int64
+race_ethnicity                  object
+parental_level_of_education     object
+lunch                           object
+test_preparation_course         object
+writing_score                    int64
+reading_score                    int64
+dtype: object]
+[2025-07-26 16:06:40,621: INFO: data_ingestion: Missing values: 
+id                               0
+first_name                       0
+last_name                        0
+email                            0
+gender                           0
+part_time_job                    0
+absence_days                     0
+extracurricular_activities       0
+weekly_self_study_hours          0
+career_aspiration                0
+math_score                       0
+history_score                    0
+physics_score                    0
+chemistry_score                  0
+biology_score                    0
+english_score                    0
+geography_score                  0
+race_ethnicity                   0
+parental_level_of_education      0
+lunch                            0
+test_preparation_course        490
+writing_score                    0
+reading_score                    0
+dtype: int64]
+[2025-07-26 16:06:40,648: INFO: data_ingestion: Data description: 
+                id  absence_days  weekly_self_study_hours   math_score  ...  english_score  geography_score  writing_score  reading_score
+count  1000.000000   1000.000000              1000.000000  1000.000000  ...    1000.000000      1000.000000    1000.000000    1000.000000
+mean    500.500000      9.952000                10.127800    50.395000  ...      51.156000        50.534000      49.636000      51.251000
+std     288.819436      5.971713                 5.838002    29.939294  ...      29.326638        28.676597      29.411435      29.152459
+min       1.000000      0.000000                 0.000000     0.000000  ...       0.000000         0.000000       0.000000       0.000000
+25%     250.750000      5.000000                 5.100000    24.000000  ...      25.000000        26.000000      23.000000      26.000000
+50%     500.500000     10.000000                 9.900000    50.500000  ...      51.000000        51.000000      50.000000      51.000000
+75%     750.250000     15.000000                15.200000    77.000000  ...      77.000000        75.000000      75.000000      77.000000
+max    1000.000000     20.000000                20.000000   100.000000  ...     100.000000       100.000000     100.000000     100.000000
+
+[8 rows x 12 columns]]
+[2025-07-26 16:06:40,649: INFO: data_ingestion: Unique values in first_name: ['Navya' 'Anay' 'Raghav' 'Mamooty' 'Sara' 'Parinaaz' 'Inaaya ' 'Kiara'
+ 'Arhaan' 'Divij' 'Mehul' 'Lavanya' 'Jhanvi' 'Saanvi' 'Rati' 'Aaina'
+ 'Alia' 'Ranbir' 'Aarush' 'Zara' 'Rasha' 'Shlok' 'Indrans' 'Tarini'
+ 'Ehsaan' 'Vaibhav' 'Taimur' 'Shray' 'Prerak' 'Azad' 'Amira' 'Gatik'
+ 'Dhanush' 'Ritvik' 'Mishti' 'Taran' 'Kartik' 'Darshit' 'Nitara' 'Trisha'
+ 'Divyansh' 'Myra' 'Tejas' 'Tushar' 'Lakshay' 'Priyansh' 'Pihu' 'Devansh'
+ 'Hazel' 'Nirvaan' 'Anahi' 'Purab' 'Prisha' 'Madhup' 'Shaan' 'Tiya'
+ 'Bhavin' 'Saksham' 'Lakshit' 'Charvi' 'Nayantara' 'Hridaan' 'Hiran'
+ 'Shanaya' 'Heer' 'Siya' 'Aaryahi' 'Keya' 'Bhamini' 'Tanya' 'Faiyaz'
+ 'Vritika' 'Aarna' 'Chirag' 'Anahita' 'Ojas' 'Aayush' 'Saira' 'Adira'
+ 'Amani' 'Damini' 'Jayesh' 'Emir' 'Mahika' 'Hrishita' 'Eva' 'Kismat'
+ 'Ayesha' 'Nakul' 'Jiya' 'Dharmajan' 'Aradhya' 'Gokul' 'Nirvi' 'Ira'
+ 'Riya' 'Yakshit' 'Nehmat' 'Advika' 'Ela' 'Fateh' 'Shayak' 'Khushi'
+ 'Manikya' 'Mohanlal' 'Shalv' 'Drishya' 'Samaira' 'Kaira' 'Anika'
+ 'Vardaniya' 'Kanav' 'Divit' 'Adah' 'Samiha' 'Pari' 'Neelofar' 'Biju'
+ 'Yasmin' 'Jivin' 'Dhanuk' 'Badal' 'Abram' 'Suhana' 'Miraan' 'Yuvraj '
+ 'Anya' 'Vidur' 'Sana' 'Ivana' 'Anvi' 'Kabir' 'Kimaya' 'Kavya' 'Arnav'
+ 'Jivika' 'Lagan' 'Vivaan' 'Oorja' 'Rohan' 'Stuvan' 'Raunak' 'Romil'
+ 'Nitya' 'Ishita' 'Himmat' 'Farhan' 'Baiju' 'Aarav' 'Ishaan' 'Ahana '
+ 'Renee' 'Indrajit' 'Armaan' 'Yashvi' 'Sumer' 'Zoya' 'Zain' 'Shamik'
+ 'Nishith' 'Indranil' 'Anaya' 'Krish' 'Ryan' 'Aniruddh' 'Pranay' 'Vedika'
+ 'Diya' 'Veer' 'Kashvi' 'Onkar' 'Rhea' 'Piya' 'Seher' 'Sahil' 'Yuvaan'
+ 'Jayant' 'Reyansh' 'Neysa' 'Jayan' 'Kiaan' 'Manjari' 'Dishani' 'Elakshi'
+ 'Samar' 'Rania' 'Zeeshan' 'Ivan' 'Misha' 'Tara' 'Advik' 'Vanya' 'Akarsh'
+ 'Uthkarsh' 'Urvi' 'Dhruv' 'Alisha' 'Eshani' 'Riaan' 'Miraya' 'Zaina'
+ 'Samarth' 'Hansh' 'Madhav' 'Hunar' 'Mannat' 'Umang']]
+[2025-07-26 16:06:40,661: INFO: data_ingestion: Unique values in last_name: ['Bhalla' 'Shanker' 'Das' 'Boase' 'Behl' 'Bassi' 'Kakar' 'Aurora' 'Chopra'
+ 'Krishnan' 'Arya' 'Chaudhary' 'Sachar' 'Mahajan' 'Choudhary' 'Raja'
+ 'Tailor' 'Sibal' 'Buch' 'Dewan' 'Chokshi' 'Ganguly' 'Batra' 'Bava'
+ 'Vaidya' 'Ramakrishnan' 'Swamy' 'Sethi' 'Loyal' 'Gulati' 'Majumdar'
+ 'Thakkar' 'Ranganathan' 'Mani' 'Sarraf' 'Bajaj' 'Comar' 'Dhillon' 'Varma'
+ 'Verma' 'Gupta' 'Karan' 'Tiwari' 'Bumb' 'Goel' 'Sampath' 'Sarna'
+ 'Sabharwal' 'Ramanathan' 'Chada' 'Reddy' 'Mallick' 'Sani' 'Upadhyay'
+ 'Soni' 'Contractor' 'Swaminathan' 'Iyer' 'Bali' 'Mander' 'Dugar' 'Sagar'
+ 'Hora' 'Karnik' 'Deo' 'Dasgupta' 'Mand' 'Deep' 'Master' 'Yadav' 'Iyengar'
+ 'Kumar' 'Bath' 'Bajwa' 'Bose' 'Sangha' 'Raju' 'Hans' 'Lalla' 'Malhotra'
+ 'Bhandari' 'Wali' 'Sheth' 'Sodhi' 'Garde' 'Din' 'Brar' 'Agarwal' 'Vora'
+ 'Singh' 'Kulkarni' 'Virk' 'Dixit' 'Grover' 'Sood' 'Acharya' 'Edwin'
+ 'Andra' 'Golla' 'Dube' 'Balakrishnan' 'Vyas' 'Baral' 'Setty' 'Tandon'
+ 'Sidhu' 'Sinha' 'Bhatt' 'Khanna' 'Butala' 'Madan' 'Chaudhry' 'Dugal'
+ 'Yogi' 'Kara' 'Balay' 'Anne' 'Aggarwal' 'Sathe' 'Balan' 'Bandi' 'Vasa'
+ 'Banik' 'Dani' 'Sami' 'Chhabra' 'Bhatti' 'Wadhwa' 'Dara' 'Khalsa' 'Jani'
+ 'Batta' 'Sahni' 'Jha' 'Venkatesh' 'Bala' 'Sachdeva' 'Bawa' 'Jaggi' 'Gara'
+ 'Venkataraman' 'Dash' 'Chandran' 'Kapur' 'Kant' 'Sachdev' 'Toor' 'Vala'
+ 'Chacko' 'Kibe' 'Zacharia' 'Srinivasan' 'Dhar' 'Sarin' 'Sahota' 'Kohli'
+ 'Mann' 'Shenoy' 'Krishnamurthy' 'Varghese' 'Banerjee' 'Walia' 'Rajan'
+ 'Rao' 'Kadakia' 'Manne' 'Lal' 'De' 'Roy' 'Agrawal' 'Rastogi' 'Bedi'
+ 'Luthra' 'Wable' 'Goyal' 'Thaman' 'Ramesh' 'Taneja' 'Doctor' 'Ben'
+ 'Sharaf' 'Brahmbhatt' 'Dhaliwal' 'Cheema' 'Garg' 'Sankar' 'Varkey' 'Dass'
+ 'Bains' 'Ganesan' 'Bhattacharyya' 'Kala' 'Barad' 'Borah' 'Sridhar'
+ 'Wagle' 'Sura' 'Chakrabarti' 'Arora' 'Shan' 'Srinivas' 'Suresh' 'Tak'
+ 'Deol' 'Subramaniam' 'Bhagat' 'Viswanathan' 'Varughese' 'Choudhry' 'Gill'
+ 'Tara' 'Choudhury' 'Som' 'Sane' 'Gandhi' 'Bhardwaj' 'Chakraborty' 'Kalla'
+ 'Raman' 'Kamdar' 'Lad' 'Sem' 'Chaudhari' 'Kale' 'Salvi' 'Ratta' 'Saini'
+ 'Sama' 'Gade' 'Char' 'Sandhu' 'Randhawa' 'Dora' 'Mahal' 'Doshi'
+ 'Srivastava' 'Dyal' 'Sandal' 'Kumer' 'Sundaram' 'Shah' 'Dalal' 'Dubey'
+ 'Bansal' 'Johal' 'Sekhon' 'Handa' 'Sankaran' 'Warrior' 'Suri' 'Bakshi'
+ 'Kari' 'Mammen' 'Dutt' 'Walla' 'Kapoor' 'Kar' 'Trivedi' 'Devi' 'Dar'
+ 'Kannan' 'Saxena' 'Ganesh' 'Baria' 'Borra' 'Kaul' 'Balasubramanian'
+ 'Hayer' 'Khare' 'Goda' 'Shetty' 'Deshpande' 'Sur' 'Sengupta' 'Loke'
+ 'Hegde' 'Manda' 'Rout' 'Bir' 'Chand' 'Thakur' 'Date' 'Keer' 'Shere' 'Bal'
+ 'Shroff' 'Tripathi' 'Sarma' 'Issac' 'Rajagopalan' 'Rama' 'Bhasin'
+ 'Mandal' 'Bail' 'Lata' 'Ahuja' 'Tata' 'Bera' 'Sha' 'Khurana' 'Kata'
+ 'Ramaswamy' 'Atwal' 'Cherian' 'Mall' 'Kuruvilla' 'Basak' 'Konda' 'Sant'
+ 'Korpal' 'Sule' 'Saraf' 'Dua' 'Mannan' 'Lanka' 'Maharaj' 'D’Alia' 'Sen'
+ 'Chanda' 'Divan' 'Gole' 'Bhatnagar' 'Sarkar' 'Ray' 'Mangat' 'Rau' 'Borde'
+ 'Bhargava' 'Singhal' 'Subramanian' 'Chowdhury' 'Mane' 'Shankar' 'Rattan'
+ 'Jayaraman' 'Babu' 'Dhawan' 'Dada' 'Thaker' 'Bhatia' 'Kanda' 'Ram' 'Raj'
+ 'Chahal' 'Chana' 'Talwar' 'Ghosh' 'Gala' 'Saran' 'Tella' 'Saha' 'Kashyap'
+ 'Krish' 'Dhingra' 'Sastry' 'Bora' 'Mangal' 'Badami' 'Vohra' 'Raval'
+ 'Kapadia' 'Sunder' 'Karpe' 'Halder' 'Gola' 'Sharma' 'Ratti' 'Dave' 'Kaur'
+ 'Bobal' 'Gour' 'Grewal' 'Dey' 'Yohannan' 'Chauhan' 'Anand' 'Kade'
+ 'Khatri' 'Sawhney' 'Jhaveri' 'Datta' 'Vig' 'Uppal' 'Rana' 'Ravel' 'Guha'
+ 'Gaba' 'Kunda' 'Gera' 'Bhakta']]
+[2025-07-26 16:06:40,664: INFO: data_ingestion: Unique values in email: ['navya.bhalla26@outlook.com' 'anay.shanker226@yahoo.com'
+ 'raghav.das550@gmail.com' 'mamooty.boase285@yahoo.com'
+ 'sara.behl948@outlook.com' 'parinaaz.shanker143@gmail.com'
+ 'inaaya .bassi395@yahoo.com' 'kiara.kakar465@gmail.com'
+ 'arhaan.aurora20@gmail.com' 'divij.chopra541@outlook.com'
+ 'mehul.krishnan8@gmail.com' 'lavanya.arya827@yahoo.com'
+ 'jhanvi.chaudhary197@gmail.com' 'saanvi.sachar493@gmail.com'
+ 'rati.mahajan304@gmail.com' 'aaina.choudhary123@outlook.com'
+ 'alia.raja688@outlook.com' 'ranbir.tailor379@yahoo.com'
+ 'aarush.sibal289@outlook.com' 'zara.buch166@outlook.com'
+ 'rasha.kakar921@gmail.com' 'shlok.dewan822@outlook.com'
+ 'indrans.chokshi286@gmail.com' 'tarini.ganguly447@outlook.com'
+ 'ehsaan.batra639@yahoo.com' 'vaibhav.bava312@yahoo.com'
+ 'taimur.vaidya689@yahoo.com' 'shray.ramakrishnan672@outlook.com'
+ 'prerak.swamy851@outlook.com' 'azad.sethi279@yahoo.com'
+ 'amira.loyal853@yahoo.com' 'gatik.gulati280@yahoo.com'
+ 'dhanush.majumdar139@yahoo.com' 'ritvik.thakkar230@outlook.com'
+ 'mishti.ranganathan172@outlook.com' 'taran.mani356@outlook.com'
+ 'kartik.sarraf477@yahoo.com' 'darshit.bajaj500@gmail.com'
+ 'nitara.comar459@gmail.com' 'trisha.dhillon314@yahoo.com'
+ 'dhanush.varma304@gmail.com' 'mehul.verma491@yahoo.com'
+ 'divyansh.gupta255@gmail.com' 'ranbir.karan271@outlook.com'
+ 'myra.tiwari704@gmail.com' 'tejas.bumb480@outlook.com'
+ 'tushar.goel591@gmail.com' 'lakshay.sampath422@outlook.com'
+ 'priyansh.sarna193@outlook.com' 'pihu.sabharwal565@gmail.com'
+ 'devansh.ramanathan468@outlook.com' 'myra.chada887@gmail.com'
+ 'hazel.sethi763@yahoo.com' 'nirvaan.bumb77@yahoo.com'
+ 'anahi.gupta233@outlook.com' 'purab.reddy251@outlook.com'
+ 'prisha.mallick683@gmail.com' 'madhup.sani586@yahoo.com'
+ 'shaan.upadhyay652@gmail.com' 'tiya.soni206@gmail.com'
+ 'bhavin.contractor810@yahoo.com' 'arhaan.swaminathan664@gmail.com'
+ 'saksham.iyer671@gmail.com' 'priyansh.bali283@gmail.com'
+ 'lakshit.mander833@gmail.com' 'saanvi.dugar272@gmail.com'
+ 'lakshit.sagar63@yahoo.com' 'charvi.hora465@outlook.com'
+ 'nayantara.karnik438@yahoo.com' 'hridaan.deo421@yahoo.com'
+ 'hiran.dasgupta588@gmail.com' 'shanaya.mand72@gmail.com'
+ 'heer.deep691@gmail.com' 'siya.master226@yahoo.com'
+ 'aaryahi.yadav513@outlook.com' 'keya.iyengar990@yahoo.com'
+ 'taran.choudhary798@gmail.com' 'hiran.kumar182@outlook.com'
+ 'bhamini.bath361@outlook.com' 'tanya.bajwa330@outlook.com'
+ 'faiyaz.bose940@yahoo.com' 'mishti.buch597@outlook.com'
+ 'vritika.sangha19@yahoo.com' 'aarna.raju612@yahoo.com'
+ 'chirag.hans547@gmail.com' 'vaibhav.raju657@yahoo.com'
+ 'anahita.lalla953@gmail.com' 'ojas.malhotra940@yahoo.com'
+ 'aayush.sangha49@gmail.com' 'saira.bhandari247@outlook.com'
+ 'pihu.wali766@gmail.com' 'heer.sheth713@yahoo.com'
+ 'priyansh.sodhi772@outlook.com' 'nayantara.garde377@outlook.com'
+ 'faiyaz.din360@yahoo.com' 'adira.brar130@gmail.com'
+ 'amani.agarwal322@outlook.com' 'saira.vora126@gmail.com'
+ 'saira.deep521@gmail.com' 'damini.singh539@yahoo.com'
+ 'jayesh.kulkarni515@gmail.com' 'emir.virk515@outlook.com'
+ 'mishti.dixit510@outlook.com' 'navya.kulkarni622@gmail.com'
+ 'mahika.chaudhary52@yahoo.com' 'indrans.grover24@gmail.com'
+ 'tarini.buch138@yahoo.com' 'hrishita.sood999@gmail.com'
+ 'eva.acharya153@outlook.com' 'kismat.edwin340@outlook.com'
+ 'ayesha.andra175@outlook.com' 'faiyaz.golla532@gmail.com'
+ 'zara.dube286@outlook.com' 'nakul.balakrishnan839@yahoo.com'
+ 'nakul.vyas631@outlook.com' 'jiya.baral417@outlook.com'
+ 'dharmajan.setty904@gmail.com' 'aradhya.tandon280@gmail.com'
+ 'darshit.sidhu89@yahoo.com' 'hazel.sinha710@gmail.com'
+ 'gokul.bhatt490@gmail.com' 'nirvi.khanna940@outlook.com'
+ 'ira.butala136@outlook.com' 'prerak.lalla555@gmail.com'
+ 'mahika.kakar670@yahoo.com' 'lakshit.madan472@yahoo.com'
+ 'tanya.sethi613@outlook.com' 'prisha.chaudhry898@gmail.com'
+ 'riya.dugal419@gmail.com' 'yakshit.sampath262@gmail.com'
+ 'nehmat.grover824@outlook.com' 'advika.yogi566@yahoo.com'
+ 'ela.kara47@outlook.com' 'fateh.dasgupta782@yahoo.com'
+ 'mamooty.balay423@gmail.com' 'shayak.anne18@outlook.com'
+ 'khushi.malhotra815@yahoo.com' 'manikya.raja58@outlook.com'
+ 'madhup.aggarwal701@yahoo.com' 'devansh.sathe774@outlook.com'
+ 'mohanlal.balan234@yahoo.com' 'manikya.bandi325@yahoo.com'
+ 'arhaan.vasa92@yahoo.com' 'shalv.banik276@yahoo.com'
+ 'drishya.dani139@yahoo.com' 'ranbir.sami182@yahoo.com'
+ 'aradhya.chhabra966@outlook.com' 'hrishita.bhatti460@outlook.com'
+ 'samaira.wadhwa663@outlook.com' 'kaira.mani401@yahoo.com'
+ 'anika.dara100@yahoo.com' 'vardaniya.khalsa574@yahoo.com'
+ 'zara.jani211@yahoo.com' 'kanav.batta602@gmail.com'
+ 'divit.sahni383@outlook.com' 'adah.goel144@gmail.com'
+ 'aarna.jha85@outlook.com' 'anahita.venkatesh794@outlook.com'
+ 'samiha.bala450@gmail.com' 'pari.sachdeva721@yahoo.com'
+ 'neelofar.bawa729@yahoo.com' 'biju.jaggi974@yahoo.com'
+ 'samiha.gara507@yahoo.com' 'yasmin.venkataraman468@gmail.com'
+ 'emir.dash440@outlook.com' 'kartik.chandran73@gmail.com'
+ 'heer.kapur360@outlook.com' 'hiran.kakar254@yahoo.com'
+ 'jivin.dewan396@gmail.com' 'anahi.dash15@yahoo.com'
+ 'dhanuk.kant318@gmail.com' 'zara.venkataraman119@yahoo.com'
+ 'ira.bawa751@gmail.com' 'badal.sachdev262@gmail.com'
+ 'hrishita.toor255@yahoo.com' 'abram.batra567@yahoo.com'
+ 'suhana.vala955@yahoo.com' 'miraan.chacko985@gmail.com'
+ 'yuvraj .kibe446@outlook.com' 'anya.chhabra169@yahoo.com'
+ 'yakshit.zacharia152@gmail.com' 'biju.butala125@gmail.com'
+ 'vaibhav.agarwal95@yahoo.com' 'vidur.deo457@gmail.com'
+ 'vardaniya.srinivasan801@outlook.com' 'amani.dhar786@outlook.com'
+ 'aarna.sarin936@outlook.com' 'sana.srinivasan340@outlook.com'
+ 'ivana.sahota601@gmail.com' 'saanvi.kohli315@outlook.com'
+ 'indrans.chandran340@outlook.com' 'ritvik.chopra263@gmail.com'
+ 'bhavin.mann76@gmail.com' 'sara.madan966@outlook.com'
+ 'biju.shenoy99@gmail.com' 'saksham.balakrishnan84@yahoo.com'
+ 'badal.master477@yahoo.com' 'anvi.krishnamurthy989@outlook.com'
+ 'eva.brar996@gmail.com' 'bhavin.kumar533@yahoo.com'
+ 'dhanush.varghese393@outlook.com' 'kabir.banerjee943@yahoo.com'
+ 'kimaya.bandi193@yahoo.com' 'pari.venkataraman897@gmail.com'
+ 'miraan.jaggi182@yahoo.com' 'fateh.walia668@yahoo.com'
+ 'jiya.dasgupta259@gmail.com' 'kavya.rajan656@yahoo.com'
+ 'arnav.rao929@yahoo.com' 'dhanush.kadakia861@outlook.com'
+ 'nirvi.manne808@yahoo.com' 'jivika.lal56@gmail.com'
+ 'saksham.de281@gmail.com' 'lagan.sami749@yahoo.com'
+ 'saanvi.dugar844@gmail.com' 'nakul.deo230@outlook.com'
+ 'vivaan.bhatti670@gmail.com' 'oorja.roy638@outlook.com'
+ 'rohan.karnik303@gmail.com' 'saksham.sheth927@yahoo.com'
+ 'devansh.agrawal680@outlook.com' 'amira.rastogi665@gmail.com'
+ 'jivika.bedi495@yahoo.com' 'devansh.luthra678@outlook.com'
+ 'lakshit.kulkarni329@gmail.com' 'prerak.bhatti510@outlook.com'
+ 'stuvan.wadhwa846@gmail.com' 'darshit.wable561@outlook.com'
+ 'nirvaan.goyal845@gmail.com' 'raunak.brar859@outlook.com'
+ 'advika.thaman987@yahoo.com' 'inaaya .sarraf640@outlook.com'
+ 'romil.ramesh899@yahoo.com' 'zara.sachdeva772@outlook.com'
+ 'eva.agrawal397@yahoo.com' 'nitya.taneja460@gmail.com'
+ 'ishita.doctor41@gmail.com' 'nitara.ben806@outlook.com'
+ 'himmat.deo457@gmail.com' 'farhan.walia304@outlook.com'
+ 'emir.sharaf551@outlook.com' 'ishita.brahmbhatt418@yahoo.com'
+ 'purab.dhaliwal297@outlook.com' 'lavanya.cheema694@outlook.com'
+ 'saanvi.garg189@gmail.com' 'lagan.sankar975@yahoo.com'
+ 'myra.varkey173@gmail.com' 'prerak.krishnan180@outlook.com'
+ 'ayesha.dass565@yahoo.com' 'baiju.batra776@outlook.com'
+ 'myra.kakar240@gmail.com' 'raghav.bains375@outlook.com'
+ 'aarav.ganesan527@outlook.com' 'trisha.bhattacharyya605@gmail.com'
+ 'navya.deep900@outlook.com' 'ishaan.shanker945@yahoo.com'
+ 'ahana .majumdar494@outlook.com' 'renee.kala604@outlook.com'
+ 'jhanvi.agrawal671@gmail.com' 'faiyaz.barad566@outlook.com'
+ 'prisha.zacharia103@gmail.com' 'indrajit.mahajan954@yahoo.com'
+ 'armaan.tiwari369@gmail.com' 'tushar.manne987@yahoo.com'
+ 'ishita.borah898@outlook.com' 'adah.bhatt649@gmail.com'
+ 'arnav.dube363@gmail.com' 'tejas.yogi693@outlook.com'
+ 'yashvi.vasa769@outlook.com' 'arnav.yogi691@gmail.com'
+ 'taimur.cheema430@outlook.com' 'pihu.dash820@outlook.com'
+ 'nitya.behl708@gmail.com' 'sumer.sridhar360@outlook.com'
+ 'jhanvi.wagle890@gmail.com' 'yuvraj .rao800@yahoo.com'
+ 'siya.brahmbhatt66@yahoo.com' 'miraan.venkatesh135@outlook.com'
+ 'ishaan.sura931@yahoo.com' 'zoya.chakrabarti705@yahoo.com'
+ 'zain.arora849@yahoo.com' 'jayesh.shan187@gmail.com'
+ 'shamik.srinivas129@outlook.com' 'zain.suresh273@yahoo.com'
+ 'oorja.venkatesh753@gmail.com' 'sara.tak909@gmail.com'
+ 'nishith.deol790@gmail.com' 'indranil.subramaniam325@outlook.com'
+ 'rati.bhagat557@yahoo.com' 'vaibhav.viswanathan905@gmail.com'
+ 'armaan.varughese657@yahoo.com' 'anaya.choudhry376@gmail.com'
+ 'krish.taneja855@yahoo.com' 'amira.gill691@yahoo.com'
+ 'ryan.tara783@outlook.com' 'yashvi.viswanathan531@gmail.com'
+ 'manikya.choudhury365@gmail.com' 'anay.sahni500@outlook.com'
+ 'kartik.iyengar56@yahoo.com' 'shalv.dewan297@yahoo.com'
+ 'darshit.som405@outlook.com' 'ranbir.gill353@outlook.com'
+ 'nayantara.kumar249@outlook.com' 'yakshit.sane712@outlook.com'
+ 'heer.gandhi20@yahoo.com' 'aniruddh.bhardwaj945@outlook.com'
+ 'pranay.chakraborty967@outlook.com' 'kavya.deo994@yahoo.com'
+ 'armaan.bhagat70@outlook.com' 'kimaya.kalla190@gmail.com'
+ 'shray.sethi504@yahoo.com' 'vedika.dugar705@yahoo.com'
+ 'adira.raman468@gmail.com' 'diya.bhardwaj433@yahoo.com'
+ 'veer.yogi462@gmail.com' 'kashvi.chandran537@outlook.com'
+ 'onkar.bains317@outlook.com' 'rhea.kamdar603@outlook.com'
+ 'aarav.lad38@gmail.com' 'zara.luthra954@gmail.com'
+ 'piya.sem627@gmail.com' 'seher.shan533@outlook.com'
+ 'oorja.chaudhari342@yahoo.com' 'tejas.kale199@yahoo.com'
+ 'darshit.salvi569@outlook.com' 'shalv.ratta886@yahoo.com'
+ 'saksham.saini519@gmail.com' 'gatik.sem731@outlook.com'
+ 'rohan.kulkarni206@gmail.com' 'sahil.sama278@gmail.com'
+ 'yuvraj .gade437@yahoo.com' 'yuvaan.sarin100@yahoo.com'
+ 'ritvik.malhotra487@gmail.com' 'gokul.char411@outlook.com'
+ 'aaina.salvi758@outlook.com' 'vaibhav.sandhu223@gmail.com'
+ 'siya.zacharia92@outlook.com' 'jayant.randhawa720@outlook.com'
+ 'jiya.dora296@outlook.com' 'yuvaan.mahal522@yahoo.com'
+ 'aarav.doshi582@yahoo.com' 'reyansh.cheema646@outlook.com'
+ 'adah.srivastava172@gmail.com' 'kavya.raman872@yahoo.com'
+ 'neysa.dyal497@gmail.com' 'anahita.kant774@gmail.com'
+ 'ahana .sandal296@yahoo.com' 'lakshit.kumer752@outlook.com'
+ 'anika.sundaram743@yahoo.com' 'yashvi.shah918@gmail.com'
+ 'jayan.sahni796@gmail.com' 'dharmajan.dhar629@outlook.com'
+ 'drishya.saini717@yahoo.com' 'myra.rao581@outlook.com'
+ 'shamik.batra991@yahoo.com' 'suhana.dalal399@gmail.com'
+ 'pari.dubey948@gmail.com' 'mamooty.swaminathan856@outlook.com'
+ 'kiaan.borah783@gmail.com' 'anay.bajaj797@gmail.com'
+ 'nirvaan.khanna422@gmail.com' 'manjari.varghese634@yahoo.com'
+ 'tiya.bansal446@yahoo.com' 'amani.johal204@outlook.com'
+ 'mohanlal.mani951@outlook.com' 'kartik.sekhon873@yahoo.com'
+ 'rasha.handa858@yahoo.com' 'bhamini.iyengar436@outlook.com'
+ 'nirvaan.borah492@outlook.com' 'neysa.sankaran395@outlook.com'
+ 'aarush.warrior114@yahoo.com' 'suhana.vasa772@outlook.com'
+ 'trisha.wali463@outlook.com' 'emir.sood896@gmail.com'
+ 'aarna.choudhary422@outlook.com' 'jayesh.suri995@yahoo.com'
+ 'rasha.lad325@outlook.com' 'anahi.bakshi415@yahoo.com'
+ 'ivana.dash706@gmail.com' 'gatik.kari201@gmail.com'
+ 'himmat.suresh396@yahoo.com' 'anahi.sama856@outlook.com'
+ 'eva.mammen205@gmail.com' 'kimaya.dutt128@outlook.com'
+ 'tanya.walla644@outlook.com' 'ahana .ramesh370@yahoo.com'
+ 'saira.walla278@outlook.com' 'dishani.kala815@outlook.com'
+ 'ira.kapoor30@outlook.com' 'indranil.sharaf44@gmail.com'
+ 'anika.kar30@gmail.com' 'pranay.sheth176@outlook.com'
+ 'nishith.trivedi527@gmail.com' 'navya.devi395@yahoo.com'
+ 'tiya.sood406@yahoo.com' 'elakshi.kibe743@yahoo.com'
+ 'mishti.dar257@yahoo.com' 'raghav.kannan677@outlook.com'
+ 'dhanuk.saxena323@yahoo.com' 'reyansh.dalal488@outlook.com'
+ 'purab.ganesh358@outlook.com' 'samar.warrior118@yahoo.com'
+ 'hrishita.baria587@gmail.com' 'hiran.borra272@gmail.com'
+ 'mehul.handa356@gmail.com' 'rania.bose219@outlook.com'
+ 'renee.chhabra650@gmail.com' 'chirag.johal433@outlook.com'
+ 'yuvraj .gandhi888@gmail.com' 'hrishita.kaul244@outlook.com'
+ 'zeeshan.balasubramanian884@outlook.com' 'lagan.thaman661@outlook.com'
+ 'aaina.hayer93@gmail.com' 'trisha.master898@gmail.com'
+ 'rasha.anne411@gmail.com' 'tarini.mani178@outlook.com'
+ 'vaibhav.khare204@yahoo.com' 'aarush.goda230@outlook.com'
+ 'rohan.shetty30@yahoo.com' 'vidur.varkey754@outlook.com'
+ 'aaina.luthra405@outlook.com' 'siya.shah321@gmail.com'
+ 'inaaya .sura55@gmail.com' 'lavanya.yadav116@outlook.com'
+ 'madhup.kohli943@gmail.com' 'madhup.deshpande465@outlook.com'
+ 'adira.kibe762@gmail.com' 'aniruddh.hayer503@yahoo.com'
+ 'shayak.sami629@gmail.com' 'parinaaz.sur448@gmail.com'
+ 'yuvaan.sengupta97@yahoo.com' 'ivan.trivedi322@outlook.com'
+ 'anahita.bhatt120@gmail.com' 'misha.loke15@gmail.com'
+ 'anay.hegde433@gmail.com' 'kiara.manda646@outlook.com'
+ 'nitara.arya541@gmail.com' 'dharmajan.rout481@yahoo.com'
+ 'aaryahi.bir637@gmail.com' 'anahi.chand366@outlook.com'
+ 'badal.de874@outlook.com' 'vaibhav.gade892@gmail.com'
+ 'lakshit.karan252@yahoo.com' 'shaan.ganguly424@yahoo.com'
+ 'tara.wable778@gmail.com' 'vaibhav.dewan718@yahoo.com'
+ 'suhana.thakur400@outlook.com' 'aaina.date744@yahoo.com'
+ 'dhanush.keer359@yahoo.com' 'advik.shere84@gmail.com'
+ 'hrishita.bal706@yahoo.com' 'stuvan.choudhury944@gmail.com'
+ 'nehmat.banerjee50@yahoo.com' 'vanya.sachdev487@outlook.com'
+ 'arnav.shroff982@outlook.com' 'aniruddh.dasgupta769@yahoo.com'
+ 'krish.tripathi349@yahoo.com' 'akarsh.rastogi976@yahoo.com'
+ 'indrans.dar771@outlook.com' 'gokul.khalsa782@outlook.com'
+ 'oorja.bhandari2@yahoo.com' 'jivika.chopra308@gmail.com'
+ 'anahita.sarma216@yahoo.com' 'onkar.sinha914@outlook.com'
+ 'tushar.chacko761@gmail.com' 'mahika.raman841@outlook.com'
+ 'siya.sekhon131@yahoo.com' 'farhan.sood865@yahoo.com'
+ 'ishaan.dugal84@outlook.com' 'emir.mann254@gmail.com'
+ 'anay.dugal998@gmail.com' 'kashvi.sandhu302@yahoo.com'
+ 'uthkarsh.issac530@yahoo.com' 'saanvi.chaudhary141@gmail.com'
+ 'dhanuk.rajagopalan994@gmail.com' 'prisha.thakur615@outlook.com'
+ 'mishti.dara245@yahoo.com' 'ehsaan.sarin999@gmail.com'
+ 'trisha.dora671@gmail.com' 'piya.rama712@yahoo.com'
+ 'zara.bhasin215@outlook.com' 'yashvi.mandal486@yahoo.com'
+ 'vardaniya.bail303@yahoo.com' 'shray.lata240@yahoo.com'
+ 'aaryahi.sahota202@outlook.com' 'tushar.banerjee843@yahoo.com'
+ 'dishani.sabharwal811@gmail.com' 'shlok.ahuja348@gmail.com'
+ 'aaina.tata972@yahoo.com' 'ayesha.bera192@gmail.com'
+ 'adah.golla133@outlook.com' 'myra.walla283@gmail.com'
+ 'amira.sathe356@outlook.com' 'indrans.kalla281@outlook.com'
+ 'jayesh.sha213@outlook.com' 'elakshi.sachdev335@outlook.com'
+ 'purab.randhawa128@outlook.com' 'zara.luthra400@outlook.com'
+ 'urvi.khurana841@gmail.com' 'anahita.kamdar962@yahoo.com'
+ 'sana.rajagopalan69@gmail.com' 'priyansh.edwin651@outlook.com'
+ 'nirvaan.thakur243@outlook.com' 'dhruv.dewan326@outlook.com'
+ 'alisha.dara534@yahoo.com' 'suhana.kata437@outlook.com'
+ 'jiya.ramaswamy408@yahoo.com' 'oorja.gupta390@yahoo.com'
+ 'shayak.atwal948@yahoo.com' 'bhamini.varghese714@gmail.com'
+ 'shaan.chand254@outlook.com' 'aradhya.cherian601@yahoo.com'
+ 'sumer.sur72@outlook.com' 'pranay.garde191@gmail.com'
+ 'ranbir.wable351@gmail.com' 'kimaya.sarna955@yahoo.com'
+ 'raghav.mall892@outlook.com' 'aayush.kuruvilla654@yahoo.com'
+ 'kanav.basak675@outlook.com' 'nakul.sem978@gmail.com'
+ 'yuvraj .konda682@yahoo.com' 'ivana.sibal266@gmail.com'
+ 'nakul.sant605@outlook.com' 'anika.roy836@yahoo.com'
+ 'riya.korpal299@outlook.com' 'alia.sule346@yahoo.com'
+ 'advik.batra671@gmail.com' 'ritvik.choudhry696@gmail.com'
+ 'yuvaan.saraf407@yahoo.com' 'nirvaan.dua123@gmail.com'
+ 'nitara.mannan661@outlook.com' 'tushar.khalsa989@outlook.com'
+ 'ishita.lanka519@yahoo.com' 'shray.kala621@outlook.com'
+ 'shanaya.maharaj267@yahoo.com' 'shalv.goda430@gmail.com'
+ 'rati.karan797@yahoo.com' 'purab.dua565@yahoo.com'
+ 'ojas.d’alia704@outlook.com' 'fateh.sen363@yahoo.com'
+ 'kartik.dugar590@gmail.com' 'fateh.sharaf632@gmail.com'
+ 'heer.singh860@gmail.com' 'prisha.chanda3@outlook.com'
+ 'kartik.chokshi6@yahoo.com' 'seher.khurana405@yahoo.com'
+ 'raghav.sengupta195@yahoo.com' 'khushi.sidhu770@yahoo.com'
+ 'eshani.raju445@yahoo.com' 'raunak.bedi486@outlook.com'
+ 'kartik.divan632@gmail.com' 'manikya.gole276@yahoo.com'
+ 'jayesh.dora259@yahoo.com' 'abram.sathe216@outlook.com'
+ 'hazel.bhatnagar780@gmail.com' 'raghav.bajaj537@outlook.com'
+ 'baiju.malhotra769@outlook.com' 'riaan.sarkar304@outlook.com'
+ 'gokul.ray2@outlook.com' 'suhana.korpal263@gmail.com'
+ 'ehsaan.viswanathan378@gmail.com' 'abram.mangat72@gmail.com'
+ 'raunak.keer847@gmail.com' 'anvi.kannan836@gmail.com'
+ 'shlok.chanda2@gmail.com' 'baiju.date366@gmail.com'
+ 'anvi.bhandari897@gmail.com' 'chirag.iyer116@outlook.com'
+ 'ayesha.bansal393@yahoo.com' 'kashvi.rau3@gmail.com'
+ 'piya.bala765@gmail.com' 'indrajit.borde145@gmail.com'
+ 'zoya.manda801@outlook.com' 'romil.basak434@gmail.com'
+ 'nishith.bhargava321@outlook.com' 'ivana.singhal555@gmail.com'
+ 'zeeshan.raman323@gmail.com' 'kimaya.subramanian25@outlook.com'
+ 'miraya.chowdhury805@gmail.com' 'urvi.lal147@yahoo.com'
+ 'vaibhav.kar263@yahoo.com' 'ahana .dixit519@yahoo.com'
+ 'khushi.kala686@gmail.com' 'ryan.mane351@outlook.com'
+ 'miraya.balan809@yahoo.com' 'manjari.shankar895@outlook.com'
+ 'divyansh.singh989@outlook.com' 'lakshay.rattan919@yahoo.com'
+ 'lakshit.deo431@outlook.com' 'nitara.baria421@yahoo.com'
+ 'indranil.dar866@outlook.com' 'jayant.majumdar684@yahoo.com'
+ 'dhanuk.brar275@outlook.com' 'aarav.jayaraman570@yahoo.com'
+ 'alisha.sankaran728@gmail.com' 'kimaya.keer586@yahoo.com'
+ 'riaan.babu958@gmail.com' 'mehul.dhawan815@gmail.com'
+ 'renee.dhaliwal352@yahoo.com' 'rati.vasa31@yahoo.com'
+ 'amani.banik945@gmail.com' 'piya.dada836@yahoo.com'
+ 'prerak.subramaniam31@gmail.com' 'vritika.rattan219@yahoo.com'
+ 'khushi.sahota833@yahoo.com' 'zaina.chaudhary19@outlook.com'
+ 'aarna.bhandari772@yahoo.com' 'inaaya .chowdhury143@gmail.com'
+ 'neelofar.borde338@outlook.com' 'priyansh.thaker678@yahoo.com'
+ 'hridaan.banik62@gmail.com' 'biju.butala937@gmail.com'
+ 'vritika.dube473@gmail.com' 'kimaya.shere155@yahoo.com'
+ 'jiya.dhawan532@yahoo.com' 'advika.bhatia104@gmail.com'
+ 'anahita.sankaran175@yahoo.com' 'romil.sarma598@gmail.com'
+ 'yuvaan.deshpande464@yahoo.com' 'damini.madan152@yahoo.com'
+ 'bhamini.kanda982@outlook.com' 'dhanush.ram581@yahoo.com'
+ 'arnav.walia819@yahoo.com' 'adah.shah900@yahoo.com'
+ 'samarth.ramakrishnan991@gmail.com' 'ojas.arya88@yahoo.com'
+ 'divij.contractor431@yahoo.com' 'pari.toor129@yahoo.com'
+ 'kashvi.raj759@outlook.com' 'akarsh.singhal1@gmail.com'
+ 'pari.tara880@outlook.com' 'priyansh.mani684@gmail.com'
+ 'arnav.singh661@outlook.com' 'tanya.chahal672@gmail.com'
+ 'anaya.lad133@outlook.com' 'nehmat.kant791@outlook.com'
+ 'ranbir.chana329@gmail.com' 'keya.kamdar89@outlook.com'
+ 'myra.talwar585@yahoo.com' 'ayesha.bath53@outlook.com'
+ 'anaya.ghosh560@outlook.com' 'yuvraj .ganesan242@yahoo.com'
+ 'samarth.sampath666@yahoo.com' 'ehsaan.varughese785@yahoo.com'
+ 'ishaan.gala423@outlook.com' 'zain.saran674@gmail.com'
+ 'bhamini.dhawan715@outlook.com' 'nitara.iyer37@gmail.com'
+ 'tara.maharaj884@yahoo.com' 'armaan.karan776@gmail.com'
+ 'dhruv.dugar167@yahoo.com' 'ojas.edwin676@yahoo.com'
+ 'farhan.som594@gmail.com' 'yuvaan.venkatesh671@gmail.com'
+ 'drishya.tella112@gmail.com' 'aarav.saha919@outlook.com'
+ 'hrishita.kashyap851@outlook.com' 'zain.bala676@outlook.com'
+ 'kanav.lad371@gmail.com' 'taran.rastogi815@yahoo.com'
+ 'tanya.krish784@outlook.com' 'mishti.kant730@yahoo.com'
+ 'tara.bal717@gmail.com' 'lagan.deol305@yahoo.com'
+ 'ira.bhatti292@gmail.com' 'reyansh.kanda613@gmail.com'
+ 'rasha.kibe911@yahoo.com' 'gatik.atwal646@outlook.com'
+ 'mohanlal.ramanathan690@gmail.com' 'yasmin.dar572@outlook.com'
+ 'rhea.buch502@outlook.com' 'sahil.majumdar476@yahoo.com'
+ 'abram.majumdar268@outlook.com' 'yuvraj .batra587@gmail.com'
+ 'mamooty.trivedi671@gmail.com' 'farhan.kashyap866@gmail.com'
+ 'fateh.sabharwal135@outlook.com' 'indrans.krish804@yahoo.com'
+ 'saanvi.dhingra292@outlook.com' 'diya.sastry489@outlook.com'
+ 'purab.johal61@yahoo.com' 'anya.keer983@outlook.com'
+ 'nirvaan.kari203@yahoo.com' 'ishita.bora630@yahoo.com'
+ 'veer.chandran11@yahoo.com' 'kismat.kumar359@outlook.com'
+ 'siya.wable106@outlook.com' 'himmat.venkatesh173@gmail.com'
+ 'darshit.devi310@outlook.com' 'trisha.subramanian574@yahoo.com'
+ 'zeeshan.garde184@outlook.com' 'vedika.kulkarni408@gmail.com'
+ 'priyansh.tara628@outlook.com' 'aarav.dhaliwal920@outlook.com'
+ 'samaira.dixit455@gmail.com' 'khushi.mann120@gmail.com'
+ 'nirvi.konda766@outlook.com' 'indrajit.kapoor271@gmail.com'
+ 'heer.khurana662@outlook.com' 'shray.ganesan487@gmail.com'
+ 'ishita.singh664@gmail.com' 'inaaya .gulati259@outlook.com'
+ 'amani.dyal525@gmail.com' 'kanav.sarkar472@gmail.com'
+ 'nakul.mangal353@gmail.com' 'veer.dada840@outlook.com'
+ 'urvi.jha626@outlook.com' 'azad.dutt692@yahoo.com'
+ 'shanaya.khalsa589@outlook.com' 'renee.tak730@yahoo.com'
+ 'vaibhav.hans476@yahoo.com' 'nitara.sule366@yahoo.com'
+ 'nehmat.borra649@yahoo.com' 'bhamini.badami525@outlook.com'
+ 'gokul.krishnamurthy711@gmail.com' 'kiara.gandhi6@yahoo.com'
+ 'divyansh.vohra603@yahoo.com' 'advika.bedi413@gmail.com'
+ 'eshani.kari640@outlook.com' 'abram.sen406@gmail.com'
+ 'hridaan.jayaraman646@gmail.com' 'neysa.brahmbhatt700@gmail.com'
+ 'dhanuk.keer625@gmail.com' 'vardaniya.deo960@outlook.com'
+ 'shayak.ratta251@yahoo.com' 'rania.issac848@outlook.com'
+ 'nehmat.baria777@outlook.com' 'shalv.varkey351@yahoo.com'
+ 'pari.varughese968@outlook.com' 'hazel.gupta598@yahoo.com'
+ 'samar.rattan887@yahoo.com' 'saanvi.wali511@yahoo.com'
+ 'tara.kohli581@outlook.com' 'hrishita.badami751@gmail.com'
+ 'miraya.banerjee120@yahoo.com' 'miraan.raval258@yahoo.com'
+ 'piya.dhawan775@gmail.com' 'manikya.shenoy798@gmail.com'
+ 'divij.kalla805@gmail.com' 'divyansh.sidhu314@yahoo.com'
+ 'myra.sarraf214@outlook.com' 'divyansh.kapadia165@yahoo.com'
+ 'ivan.saran655@yahoo.com' 'rohan.zacharia449@gmail.com'
+ 'aniruddh.bajaj329@yahoo.com' 'shaan.sunder852@outlook.com'
+ 'bhavin.din545@gmail.com' 'taimur.grover664@outlook.com'
+ 'adah.bora546@yahoo.com' 'nirvaan.lanka978@gmail.com'
+ 'zain.mandal455@outlook.com' 'pihu.sule124@yahoo.com'
+ 'jivin.chada370@yahoo.com' 'jayant.baral579@gmail.com'
+ 'manjari.virk179@outlook.com' 'vaibhav.rao340@gmail.com'
+ 'pihu.dara68@gmail.com' 'charvi.manne505@outlook.com'
+ 'hridaan.d’alia190@outlook.com' 'anahi.ray814@gmail.com'
+ 'onkar.karpe465@outlook.com' 'onkar.sama65@yahoo.com'
+ 'aayush.yogi990@outlook.com' 'zaina.kaul711@outlook.com'
+ 'reyansh.sandhu304@yahoo.com' 'inaaya .brar144@gmail.com'
+ 'devansh.kant211@yahoo.com' 'shray.raj73@outlook.com'
+ 'rohan.reddy248@outlook.com' 'aarna.sant14@gmail.com'
+ 'ojas.kari605@outlook.com' 'romil.chaudhary963@yahoo.com'
+ 'veer.varkey284@yahoo.com' 'anya.bera342@yahoo.com'
+ 'miraan.halder346@yahoo.com' 'kaira.gola204@gmail.com'
+ 'kashvi.divan454@gmail.com' 'rati.divan988@gmail.com'
+ 'akarsh.thakkar380@yahoo.com' 'nirvi.hora827@outlook.com'
+ 'raghav.agrawal489@outlook.com' 'jivika.venkatesh552@outlook.com'
+ 'piya.sood629@gmail.com' 'shanaya.bakshi825@yahoo.com'
+ 'mahika.sharma360@outlook.com' 'charvi.thaman394@yahoo.com'
+ 'reyansh.soni724@gmail.com' 'yasmin.contractor628@yahoo.com'
+ 'mahika.suresh939@yahoo.com' 'sumer.choudhary782@gmail.com'
+ 'myra.chandran541@gmail.com' 'miraya.dass988@outlook.com'
+ 'parinaaz.shroff585@outlook.com' 'saira.sinha614@gmail.com'
+ 'nirvi.sangha43@outlook.com' 'hiran.ratti292@outlook.com'
+ 'divit.zacharia189@gmail.com' 'mishti.roy972@gmail.com'
+ 'arnav.dubey26@yahoo.com' 'vedika.kannan40@gmail.com'
+ 'arhaan.mann960@outlook.com' 'tejas.setty294@outlook.com'
+ 'hansh.bath214@yahoo.com' 'ritvik.gade583@gmail.com'
+ 'siya.johal346@outlook.com' 'jayant.chaudhry422@yahoo.com'
+ 'hansh.srivastava943@gmail.com' 'hrishita.vora297@yahoo.com'
+ 'tejas.lanka680@gmail.com' 'damini.deshpande994@yahoo.com'
+ 'ivan.dave364@outlook.com' 'anya.swaminathan460@yahoo.com'
+ 'ritvik.shenoy205@yahoo.com' 'shayak.suri501@yahoo.com'
+ 'farhan.kaur586@gmail.com' 'dhanuk.bobal205@outlook.com'
+ 'tanya.chowdhury726@yahoo.com' 'parinaaz.sengupta193@gmail.com'
+ 'pari.issac289@gmail.com' 'zaina.mallick715@outlook.com'
+ 'tejas.bath44@outlook.com' 'vritika.hora892@outlook.com'
+ 'abram.deo23@yahoo.com' 'heer.bhatia985@gmail.com'
+ 'amani.gour614@gmail.com' 'pari.shere650@yahoo.com'
+ 'pari.deep577@yahoo.com' 'keya.halder729@gmail.com'
+ 'navya.grewal981@outlook.com' 'emir.sandal30@outlook.com'
+ 'mehul.keer724@outlook.com' 'anay.rao406@gmail.com'
+ 'jhanvi.gade156@gmail.com' 'manjari.choudhry562@gmail.com'
+ 'neelofar.balay777@gmail.com' 'myra.tata604@gmail.com'
+ 'anahi.sarma524@yahoo.com' 'romil.sachar43@yahoo.com'
+ 'yuvraj .bhardwaj524@gmail.com' 'hiran.bajaj815@outlook.com'
+ 'armaan.doshi221@outlook.com' 'bhamini.bhardwaj179@gmail.com'
+ 'divit.dalal31@gmail.com' 'heer.bir987@gmail.com'
+ 'vidur.karan841@yahoo.com' 'tushar.sampath834@outlook.com'
+ 'shanaya.sarin519@outlook.com' 'hrishita.kadakia261@outlook.com'
+ 'khushi.sharaf656@outlook.com' 'samiha.brahmbhatt25@gmail.com'
+ 'zeeshan.sagar384@gmail.com' 'divyansh.thaman972@outlook.com'
+ 'ayesha.randhawa619@yahoo.com' 'yuvraj .dey475@yahoo.com'
+ 'arhaan.sant992@gmail.com' 'tushar.chopra828@outlook.com'
+ 'ahana .kapadia486@gmail.com' 'miraan.varma457@outlook.com'
+ 'taran.bawa381@gmail.com' 'piya.gour398@outlook.com'
+ 'inaaya .yohannan417@gmail.com' 'neelofar.gola614@outlook.com'
+ 'biju.issac476@outlook.com' 'raghav.chandran94@outlook.com'
+ 'gatik.vala531@outlook.com' 'amani.bath818@yahoo.com'
+ 'nitara.cherian150@yahoo.com' 'nayantara.reddy53@yahoo.com'
+ 'kimaya.anne803@gmail.com' 'badal.srivastava861@gmail.com'
+ 'shamik.dara253@yahoo.com' 'gokul.srivastava103@gmail.com'
+ 'jivika.chauhan512@outlook.com' 'darshit.thakkar255@outlook.com'
+ 'tarini.malhotra21@yahoo.com' 'lakshay.raj374@gmail.com'
+ 'madhav.talwar420@yahoo.com' 'mehul.gala18@gmail.com'
+ 'urvi.borah334@gmail.com' 'vedika.yohannan466@gmail.com'
+ 'kimaya.agarwal806@outlook.com' 'raghav.varughese383@gmail.com'
+ 'hunar.bhattacharyya146@gmail.com' 'hrishita.dass55@yahoo.com'
+ 'yasmin.chahal150@outlook.com' 'faiyaz.sahota821@outlook.com'
+ 'anay.bhatti148@gmail.com' 'abram.gola1@gmail.com'
+ 'vritika.subramaniam591@outlook.com' 'miraan.raja337@outlook.com'
+ 'samarth.anand761@yahoo.com' 'jayant.deo32@yahoo.com'
+ 'baiju.bhatnagar874@gmail.com' 'seher.kade299@yahoo.com'
+ 'eshani.bhandari608@yahoo.com' 'shanaya.balay873@yahoo.com'
+ 'anika.kapur721@gmail.com' 'vanya.golla446@yahoo.com'
+ 'drishya.rajagopalan833@yahoo.com' 'emir.kara96@yahoo.com'
+ 'damini.choudhry346@gmail.com' 'mannat.bains466@outlook.com'
+ 'samiha.srinivasan272@yahoo.com' 'nirvi.lad514@outlook.com'
+ 'romil.karnik15@outlook.com' 'nayantara.aurora747@gmail.com'
+ 'biju.khatri346@gmail.com' 'yakshit.kala65@gmail.com'
+ 'piya.bhagat195@outlook.com' 'ayesha.sawhney193@gmail.com'
+ 'ahana .bansal567@outlook.com' 'dhanush.dyal157@yahoo.com'
+ 'mahika.borah372@gmail.com' 'chirag.bhatnagar103@yahoo.com'
+ 'raghav.ratta555@gmail.com' 'myra.master698@outlook.com'
+ 'ira.sawhney276@gmail.com' 'shaan.halder729@gmail.com'
+ 'kimaya.lanka350@gmail.com' 'ritvik.karan399@yahoo.com'
+ 'dishani.ramakrishnan424@gmail.com' 'adah.bawa705@yahoo.com'
+ 'yashvi.sarna739@yahoo.com' 'farhan.varkey153@gmail.com'
+ 'neysa.sachdev686@outlook.com' 'tiya.majumdar707@gmail.com'
+ 'saira.verma224@yahoo.com' 'madhav.kale811@outlook.com'
+ 'alisha.wali1@yahoo.com' 'manikya.jhaveri201@gmail.com'
+ 'shayak.thaker705@gmail.com' 'amani.iyengar446@gmail.com'
+ 'zeeshan.sethi949@outlook.com' 'divit.dugar55@outlook.com'
+ 'aaryahi.dugar341@outlook.com' 'nitya.datta472@gmail.com'
+ 'umang.bose493@gmail.com' 'piya.khalsa164@gmail.com'
+ 'darshit.bath520@yahoo.com' 'dharmajan.batra577@gmail.com'
+ 'adah.bava55@yahoo.com' 'shanaya.shankar275@gmail.com'
+ 'umang.tak529@gmail.com' 'hansh.mall163@gmail.com'
+ 'biju.raj364@yahoo.com' 'jhanvi.mand316@yahoo.com'
+ 'shalv.sampath690@outlook.com' 'gatik.jha746@gmail.com'
+ 'sumer.vohra222@gmail.com' 'nitya.sheth984@outlook.com'
+ 'aarna.vig342@yahoo.com' 'saira.bal319@outlook.com'
+ 'reyansh.rama622@outlook.com' 'sahil.goda646@gmail.com'
+ 'ehsaan.mani533@gmail.com' 'dishani.cherian920@yahoo.com'
+ 'indrans.saha768@gmail.com' 'anya.choudhury218@gmail.com'
+ 'emir.gill588@gmail.com' 'ivana.gour92@outlook.com'
+ 'farhan.singh111@gmail.com' 'ranbir.mangat783@yahoo.com'
+ 'mamooty.swamy857@yahoo.com' 'aaryahi.uppal677@yahoo.com'
+ 'jhanvi.sinha258@gmail.com' 'misha.rana930@yahoo.com'
+ 'pari.rout627@outlook.com' 'ivana.arya52@outlook.com'
+ 'mahika.saha611@gmail.com' 'rania.deol69@gmail.com'
+ 'aniruddh.chana870@gmail.com' 'purab.sarna195@gmail.com'
+ 'tarini.dubey292@gmail.com' 'shayak.gill854@gmail.com'
+ 'aarush.chana896@outlook.com' 'hridaan.mandal465@yahoo.com'
+ 'nirvi.iyer645@yahoo.com' 'darshit.bobal75@outlook.com'
+ 'seher.ravel130@gmail.com' 'aniruddh.bath291@yahoo.com'
+ 'siya.lanka553@outlook.com' 'madhav.guha518@yahoo.com'
+ 'aaina.karan54@outlook.com' 'shlok.brar873@yahoo.com'
+ 'tushar.dugal851@gmail.com' 'saira.gaba992@outlook.com'
+ 'urvi.mander27@outlook.com' 'kimaya.basak314@outlook.com'
+ 'baiju.brahmbhatt859@yahoo.com' 'indranil.shroff746@outlook.com'
+ 'miraya.bakshi393@outlook.com' 'pari.baria912@gmail.com'
+ 'purab.kant523@yahoo.com' 'nitara.kala341@gmail.com'
+ 'aradhya.raman71@gmail.com' 'ahana .johal601@outlook.com'
+ 'purab.chokshi867@outlook.com' 'tanya.kunda642@yahoo.com'
+ 'farhan.gera414@outlook.com' 'adah.bhakta334@gmail.com']]
+[2025-07-26 16:06:40,667: INFO: data_ingestion: Unique values in gender: ['Male' 'Female']]
+[2025-07-26 16:06:40,668: INFO: data_ingestion: Unique values in part_time_job: ['No' 'Yes']]
+[2025-07-26 16:06:40,668: INFO: data_ingestion: Unique values in extracurricular_activities: ['Yes' 'No']]
+[2025-07-26 16:06:40,669: INFO: data_ingestion: Unique values in career_aspiration: ['Engineer' 'Scientist' 'Entrepreneur' 'Teacher' 'Artist' 'Civil Servant'
+ 'Doctor']]
+[2025-07-26 16:06:40,669: INFO: data_ingestion: Unique values in race_ethnicity: ['Group B' 'Group C' 'Group D' 'Group A' 'Group E']]
+[2025-07-26 16:06:40,669: INFO: data_ingestion: Unique values in parental_level_of_education: ['High school' 'Some college' 'Some high school' 'Associate degree'
+ 'Master’s degree' 'Bachelor’s degree']]
+[2025-07-26 16:06:40,670: INFO: data_ingestion: Unique values in lunch: ['Standard' 'Free/reduced']]
+[2025-07-26 16:06:40,670: INFO: data_ingestion: Unique values in test_preparation_course: [nan 'Completed']]
+[2025-07-26 16:06:40,671: INFO: training_pipeline: >>>>>> stage DataIngestionTrainingPipeline completed <<<<<<
+
+x==========x]
+[2025-07-26 16:06:40,671: INFO: training_pipeline: >>>>>> stage DataTransformationTrainingPipeline started <<<<<<]
+[2025-07-26 16:06:40,673: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\config.yaml loaded successfully]
+[2025-07-26 16:06:40,676: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\params.yaml loaded successfully]
+[2025-07-26 16:06:40,682: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\schema.yaml loaded successfully]
+[2025-07-26 16:06:40,683: INFO: common: Created directory at: artifacts]
+[2025-07-26 16:06:40,683: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-07-26 16:06:40,688: INFO: data_transformation: Read data completed]
+[2025-07-26 16:06:40,689: INFO: data_transformation: Data shape: (1000, 23)]
+[2025-07-26 16:06:40,729: INFO: data_transformation: Train test split completed]
+[2025-07-26 16:06:40,752: INFO: data_transformation: Read train and test data completed]
+[2025-07-26 16:06:40,752: INFO: data_transformation: Obtaining preprocessing object]
+[2025-07-26 16:06:40,753: INFO: data_transformation: Categorical columns: ['gender', 'part_time_job', 'extracurricular_activities', 'career_aspiration', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']]
+[2025-07-26 16:06:40,753: INFO: data_transformation: Numerical columns: ['absence_days', 'weekly_self_study_hours', 'history_score', 'physics_score', 'chemistry_score', 'biology_score', 'english_score', 'geography_score', 'writing_score', 'reading_score']]
+[2025-07-26 16:06:40,755: INFO: data_transformation: Applying preprocessing object on training dataframe and testing dataframe.]
+[2025-07-26 16:06:40,773: INFO: data_transformation: Saved preprocessing object.]
+[2025-07-26 16:06:40,776: INFO: common: binary file saved at: artifacts/data_transformation/preprocessor.pkl]
+[2025-07-26 16:06:40,777: INFO: data_transformation: Data transformation completed]
+[2025-07-26 16:06:40,777: INFO: training_pipeline: >>>>>> stage DataTransformationTrainingPipeline completed <<<<<<
+
+x==========x]
+[2025-07-26 16:06:40,777: INFO: training_pipeline: >>>>>> stage ModelTrainerTrainingPipeline started <<<<<<]
+[2025-07-26 16:06:40,780: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\config.yaml loaded successfully]
+[2025-07-26 16:06:40,784: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\params.yaml loaded successfully]
+[2025-07-26 16:06:40,792: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\schema.yaml loaded successfully]
+[2025-07-26 16:06:40,793: INFO: common: Created directory at: artifacts]
+[2025-07-26 16:06:40,794: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-07-26 16:06:40,794: INFO: model_trainer: Split training and test input data]
+[2025-07-26 16:09:01,245: INFO: model_trainer: Model performance report:]
+[2025-07-26 16:09:01,246: INFO: model_trainer: Random Forest: -0.05996329016308111]
+[2025-07-26 16:09:01,246: INFO: model_trainer: Decision Tree: -1.2105465588327906]
+[2025-07-26 16:09:01,246: INFO: model_trainer: Gradient Boosting: -0.010743573615488833]
+[2025-07-26 16:09:01,246: INFO: model_trainer: Linear Regression: -0.07573410880228959]
+[2025-07-26 16:09:01,246: INFO: model_trainer: XGBRegressor: -0.011917820875588125]
+[2025-07-26 16:09:01,247: INFO: model_trainer: CatBoosting Regressor: -0.02170039036514071]
+[2025-07-26 16:09:01,247: INFO: model_trainer: AdaBoost Regressor: -0.02806310624333319]
+[2025-07-26 16:09:01,247: INFO: model_trainer: Expected accuracy threshold: -0.5]
+[2025-07-26 16:09:01,247: INFO: model_trainer: Best model score achieved: -0.010743573615488833]
+[2025-07-26 16:09:01,247: INFO: model_trainer: Best model name: Gradient Boosting]
+[2025-07-26 16:09:01,248: INFO: model_trainer: Best found model on both training and testing dataset: Gradient Boosting]
+[2025-07-26 16:09:01,248: INFO: model_trainer: Best model score: -0.010743573615488833]
+[2025-07-26 16:09:01,251: INFO: common: binary file saved at: artifacts/model_trainer\model.pkl]
+[2025-07-26 16:09:01,252: INFO: model_trainer: R2 Score: -0.010743573615488833]
+[2025-07-26 16:09:01,256: INFO: training_pipeline: >>>>>> stage ModelTrainerTrainingPipeline completed <<<<<<
+
+x==========x]
+[2025-07-26 16:09:01,256: INFO: training_pipeline: >>>>>> stage ModelEvaluationTrainingPipeline started <<<<<<]
+[2025-07-26 16:09:01,258: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\config.yaml loaded successfully]
+[2025-07-26 16:09:01,262: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\params.yaml loaded successfully]
+[2025-07-26 16:09:01,269: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\schema.yaml loaded successfully]
+[2025-07-26 16:09:01,270: INFO: common: Created directory at: artifacts]
+[2025-07-26 16:09:01,271: INFO: common: Created directory at: artifacts/model_evaluation]
+[2025-07-26 16:09:02,573: ERROR: model_evaluation: Error in MLflow logging: could not convert string to float: 'Ivana']
+[2025-07-26 16:09:02,573: ERROR: training_pipeline: Error in Model Evaluation stage: could not convert string to float: 'Ivana']
+[2025-07-26 16:09:02,574: ERROR: training_pipeline: Error in complete training pipeline: could not convert string to float: 'Ivana']
+[2025-07-26 16:09:02,574: ERROR: main: Training pipeline failed: could not convert string to float: 'Ivana']
+[2025-07-26 17:31:19,802: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-07-26 17:31:25,934: INFO: main: >>>>>> Starting Student Performance ML Training Pipeline <<<<<<]
+[2025-07-26 17:31:25,935: INFO: training_pipeline: Starting complete training pipeline]
+[2025-07-26 17:31:25,935: INFO: training_pipeline: >>>>>> stage DataIngestionTrainingPipeline started <<<<<<]
+[2025-07-26 17:31:25,971: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\config.yaml loaded successfully]
+[2025-07-26 17:31:25,983: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\params.yaml loaded successfully]
+[2025-07-26 17:31:26,000: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\schema.yaml loaded successfully]
+[2025-07-26 17:31:26,002: INFO: common: Created directory at: artifacts]
+[2025-07-26 17:31:26,051: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-07-26 17:31:26,051: INFO: data_ingestion: Starting data ingestion process]
+[2025-07-26 17:31:26,052: INFO: data_ingestion: File already exists of size: ~ 136 KB]
+[2025-07-26 17:31:26,916: INFO: data_ingestion: Converted Excel file to CSV: artifacts/data_ingestion/data.csv]
+[2025-07-26 17:31:26,917: INFO: data_ingestion: Excel file converted to CSV: artifacts/data_ingestion/data.csv]
+[2025-07-26 17:31:26,917: INFO: data_ingestion: Data ingestion completed successfully]
+[2025-07-26 17:31:26,940: INFO: data_ingestion: Data shape: (1000, 23)]
+[2025-07-26 17:31:26,940: INFO: data_ingestion: Data columns: ['id', 'first_name', 'last_name', 'email', 'gender', 'part_time_job', 'absence_days', 'extracurricular_activities', 'weekly_self_study_hours', 'career_aspiration', 'math_score', 'history_score', 'physics_score', 'chemistry_score', 'biology_score', 'english_score', 'geography_score', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course', 'writing_score', 'reading_score']]
+[2025-07-26 17:31:26,943: INFO: data_ingestion: Data types: 
+id                               int64
+first_name                      object
+last_name                       object
+email                           object
+gender                          object
+part_time_job                   object
+absence_days                     int64
+extracurricular_activities      object
+weekly_self_study_hours        float64
+career_aspiration               object
+math_score                       int64
+history_score                    int64
+physics_score                    int64
+chemistry_score                  int64
+biology_score                    int64
+english_score                    int64
+geography_score                  int64
+race_ethnicity                  object
+parental_level_of_education     object
+lunch                           object
+test_preparation_course         object
+writing_score                    int64
+reading_score                    int64
+dtype: object]
+[2025-07-26 17:31:26,944: INFO: data_ingestion: Missing values: 
+id                               0
+first_name                       0
+last_name                        0
+email                            0
+gender                           0
+part_time_job                    0
+absence_days                     0
+extracurricular_activities       0
+weekly_self_study_hours          0
+career_aspiration                0
+math_score                       0
+history_score                    0
+physics_score                    0
+chemistry_score                  0
+biology_score                    0
+english_score                    0
+geography_score                  0
+race_ethnicity                   0
+parental_level_of_education      0
+lunch                            0
+test_preparation_course        490
+writing_score                    0
+reading_score                    0
+dtype: int64]
+[2025-07-26 17:31:26,987: INFO: data_ingestion: Data description: 
+                id  absence_days  weekly_self_study_hours   math_score  ...  english_score  geography_score  writing_score  reading_score
+count  1000.000000   1000.000000              1000.000000  1000.000000  ...    1000.000000      1000.000000    1000.000000    1000.000000
+mean    500.500000      9.952000                10.127800    50.395000  ...      51.156000        50.534000      49.636000      51.251000
+std     288.819436      5.971713                 5.838002    29.939294  ...      29.326638        28.676597      29.411435      29.152459
+min       1.000000      0.000000                 0.000000     0.000000  ...       0.000000         0.000000       0.000000       0.000000
+25%     250.750000      5.000000                 5.100000    24.000000  ...      25.000000        26.000000      23.000000      26.000000
+50%     500.500000     10.000000                 9.900000    50.500000  ...      51.000000        51.000000      50.000000      51.000000
+75%     750.250000     15.000000                15.200000    77.000000  ...      77.000000        75.000000      75.000000      77.000000
+max    1000.000000     20.000000                20.000000   100.000000  ...     100.000000       100.000000     100.000000     100.000000
+
+[8 rows x 12 columns]]
+[2025-07-26 17:31:26,989: INFO: data_ingestion: Unique values in first_name: ['Navya' 'Anay' 'Raghav' 'Mamooty' 'Sara' 'Parinaaz' 'Inaaya ' 'Kiara'
+ 'Arhaan' 'Divij' 'Mehul' 'Lavanya' 'Jhanvi' 'Saanvi' 'Rati' 'Aaina'
+ 'Alia' 'Ranbir' 'Aarush' 'Zara' 'Rasha' 'Shlok' 'Indrans' 'Tarini'
+ 'Ehsaan' 'Vaibhav' 'Taimur' 'Shray' 'Prerak' 'Azad' 'Amira' 'Gatik'
+ 'Dhanush' 'Ritvik' 'Mishti' 'Taran' 'Kartik' 'Darshit' 'Nitara' 'Trisha'
+ 'Divyansh' 'Myra' 'Tejas' 'Tushar' 'Lakshay' 'Priyansh' 'Pihu' 'Devansh'
+ 'Hazel' 'Nirvaan' 'Anahi' 'Purab' 'Prisha' 'Madhup' 'Shaan' 'Tiya'
+ 'Bhavin' 'Saksham' 'Lakshit' 'Charvi' 'Nayantara' 'Hridaan' 'Hiran'
+ 'Shanaya' 'Heer' 'Siya' 'Aaryahi' 'Keya' 'Bhamini' 'Tanya' 'Faiyaz'
+ 'Vritika' 'Aarna' 'Chirag' 'Anahita' 'Ojas' 'Aayush' 'Saira' 'Adira'
+ 'Amani' 'Damini' 'Jayesh' 'Emir' 'Mahika' 'Hrishita' 'Eva' 'Kismat'
+ 'Ayesha' 'Nakul' 'Jiya' 'Dharmajan' 'Aradhya' 'Gokul' 'Nirvi' 'Ira'
+ 'Riya' 'Yakshit' 'Nehmat' 'Advika' 'Ela' 'Fateh' 'Shayak' 'Khushi'
+ 'Manikya' 'Mohanlal' 'Shalv' 'Drishya' 'Samaira' 'Kaira' 'Anika'
+ 'Vardaniya' 'Kanav' 'Divit' 'Adah' 'Samiha' 'Pari' 'Neelofar' 'Biju'
+ 'Yasmin' 'Jivin' 'Dhanuk' 'Badal' 'Abram' 'Suhana' 'Miraan' 'Yuvraj '
+ 'Anya' 'Vidur' 'Sana' 'Ivana' 'Anvi' 'Kabir' 'Kimaya' 'Kavya' 'Arnav'
+ 'Jivika' 'Lagan' 'Vivaan' 'Oorja' 'Rohan' 'Stuvan' 'Raunak' 'Romil'
+ 'Nitya' 'Ishita' 'Himmat' 'Farhan' 'Baiju' 'Aarav' 'Ishaan' 'Ahana '
+ 'Renee' 'Indrajit' 'Armaan' 'Yashvi' 'Sumer' 'Zoya' 'Zain' 'Shamik'
+ 'Nishith' 'Indranil' 'Anaya' 'Krish' 'Ryan' 'Aniruddh' 'Pranay' 'Vedika'
+ 'Diya' 'Veer' 'Kashvi' 'Onkar' 'Rhea' 'Piya' 'Seher' 'Sahil' 'Yuvaan'
+ 'Jayant' 'Reyansh' 'Neysa' 'Jayan' 'Kiaan' 'Manjari' 'Dishani' 'Elakshi'
+ 'Samar' 'Rania' 'Zeeshan' 'Ivan' 'Misha' 'Tara' 'Advik' 'Vanya' 'Akarsh'
+ 'Uthkarsh' 'Urvi' 'Dhruv' 'Alisha' 'Eshani' 'Riaan' 'Miraya' 'Zaina'
+ 'Samarth' 'Hansh' 'Madhav' 'Hunar' 'Mannat' 'Umang']]
+[2025-07-26 17:31:26,990: INFO: data_ingestion: Unique values in last_name: ['Bhalla' 'Shanker' 'Das' 'Boase' 'Behl' 'Bassi' 'Kakar' 'Aurora' 'Chopra'
+ 'Krishnan' 'Arya' 'Chaudhary' 'Sachar' 'Mahajan' 'Choudhary' 'Raja'
+ 'Tailor' 'Sibal' 'Buch' 'Dewan' 'Chokshi' 'Ganguly' 'Batra' 'Bava'
+ 'Vaidya' 'Ramakrishnan' 'Swamy' 'Sethi' 'Loyal' 'Gulati' 'Majumdar'
+ 'Thakkar' 'Ranganathan' 'Mani' 'Sarraf' 'Bajaj' 'Comar' 'Dhillon' 'Varma'
+ 'Verma' 'Gupta' 'Karan' 'Tiwari' 'Bumb' 'Goel' 'Sampath' 'Sarna'
+ 'Sabharwal' 'Ramanathan' 'Chada' 'Reddy' 'Mallick' 'Sani' 'Upadhyay'
+ 'Soni' 'Contractor' 'Swaminathan' 'Iyer' 'Bali' 'Mander' 'Dugar' 'Sagar'
+ 'Hora' 'Karnik' 'Deo' 'Dasgupta' 'Mand' 'Deep' 'Master' 'Yadav' 'Iyengar'
+ 'Kumar' 'Bath' 'Bajwa' 'Bose' 'Sangha' 'Raju' 'Hans' 'Lalla' 'Malhotra'
+ 'Bhandari' 'Wali' 'Sheth' 'Sodhi' 'Garde' 'Din' 'Brar' 'Agarwal' 'Vora'
+ 'Singh' 'Kulkarni' 'Virk' 'Dixit' 'Grover' 'Sood' 'Acharya' 'Edwin'
+ 'Andra' 'Golla' 'Dube' 'Balakrishnan' 'Vyas' 'Baral' 'Setty' 'Tandon'
+ 'Sidhu' 'Sinha' 'Bhatt' 'Khanna' 'Butala' 'Madan' 'Chaudhry' 'Dugal'
+ 'Yogi' 'Kara' 'Balay' 'Anne' 'Aggarwal' 'Sathe' 'Balan' 'Bandi' 'Vasa'
+ 'Banik' 'Dani' 'Sami' 'Chhabra' 'Bhatti' 'Wadhwa' 'Dara' 'Khalsa' 'Jani'
+ 'Batta' 'Sahni' 'Jha' 'Venkatesh' 'Bala' 'Sachdeva' 'Bawa' 'Jaggi' 'Gara'
+ 'Venkataraman' 'Dash' 'Chandran' 'Kapur' 'Kant' 'Sachdev' 'Toor' 'Vala'
+ 'Chacko' 'Kibe' 'Zacharia' 'Srinivasan' 'Dhar' 'Sarin' 'Sahota' 'Kohli'
+ 'Mann' 'Shenoy' 'Krishnamurthy' 'Varghese' 'Banerjee' 'Walia' 'Rajan'
+ 'Rao' 'Kadakia' 'Manne' 'Lal' 'De' 'Roy' 'Agrawal' 'Rastogi' 'Bedi'
+ 'Luthra' 'Wable' 'Goyal' 'Thaman' 'Ramesh' 'Taneja' 'Doctor' 'Ben'
+ 'Sharaf' 'Brahmbhatt' 'Dhaliwal' 'Cheema' 'Garg' 'Sankar' 'Varkey' 'Dass'
+ 'Bains' 'Ganesan' 'Bhattacharyya' 'Kala' 'Barad' 'Borah' 'Sridhar'
+ 'Wagle' 'Sura' 'Chakrabarti' 'Arora' 'Shan' 'Srinivas' 'Suresh' 'Tak'
+ 'Deol' 'Subramaniam' 'Bhagat' 'Viswanathan' 'Varughese' 'Choudhry' 'Gill'
+ 'Tara' 'Choudhury' 'Som' 'Sane' 'Gandhi' 'Bhardwaj' 'Chakraborty' 'Kalla'
+ 'Raman' 'Kamdar' 'Lad' 'Sem' 'Chaudhari' 'Kale' 'Salvi' 'Ratta' 'Saini'
+ 'Sama' 'Gade' 'Char' 'Sandhu' 'Randhawa' 'Dora' 'Mahal' 'Doshi'
+ 'Srivastava' 'Dyal' 'Sandal' 'Kumer' 'Sundaram' 'Shah' 'Dalal' 'Dubey'
+ 'Bansal' 'Johal' 'Sekhon' 'Handa' 'Sankaran' 'Warrior' 'Suri' 'Bakshi'
+ 'Kari' 'Mammen' 'Dutt' 'Walla' 'Kapoor' 'Kar' 'Trivedi' 'Devi' 'Dar'
+ 'Kannan' 'Saxena' 'Ganesh' 'Baria' 'Borra' 'Kaul' 'Balasubramanian'
+ 'Hayer' 'Khare' 'Goda' 'Shetty' 'Deshpande' 'Sur' 'Sengupta' 'Loke'
+ 'Hegde' 'Manda' 'Rout' 'Bir' 'Chand' 'Thakur' 'Date' 'Keer' 'Shere' 'Bal'
+ 'Shroff' 'Tripathi' 'Sarma' 'Issac' 'Rajagopalan' 'Rama' 'Bhasin'
+ 'Mandal' 'Bail' 'Lata' 'Ahuja' 'Tata' 'Bera' 'Sha' 'Khurana' 'Kata'
+ 'Ramaswamy' 'Atwal' 'Cherian' 'Mall' 'Kuruvilla' 'Basak' 'Konda' 'Sant'
+ 'Korpal' 'Sule' 'Saraf' 'Dua' 'Mannan' 'Lanka' 'Maharaj' 'D’Alia' 'Sen'
+ 'Chanda' 'Divan' 'Gole' 'Bhatnagar' 'Sarkar' 'Ray' 'Mangat' 'Rau' 'Borde'
+ 'Bhargava' 'Singhal' 'Subramanian' 'Chowdhury' 'Mane' 'Shankar' 'Rattan'
+ 'Jayaraman' 'Babu' 'Dhawan' 'Dada' 'Thaker' 'Bhatia' 'Kanda' 'Ram' 'Raj'
+ 'Chahal' 'Chana' 'Talwar' 'Ghosh' 'Gala' 'Saran' 'Tella' 'Saha' 'Kashyap'
+ 'Krish' 'Dhingra' 'Sastry' 'Bora' 'Mangal' 'Badami' 'Vohra' 'Raval'
+ 'Kapadia' 'Sunder' 'Karpe' 'Halder' 'Gola' 'Sharma' 'Ratti' 'Dave' 'Kaur'
+ 'Bobal' 'Gour' 'Grewal' 'Dey' 'Yohannan' 'Chauhan' 'Anand' 'Kade'
+ 'Khatri' 'Sawhney' 'Jhaveri' 'Datta' 'Vig' 'Uppal' 'Rana' 'Ravel' 'Guha'
+ 'Gaba' 'Kunda' 'Gera' 'Bhakta']]
+[2025-07-26 17:31:26,993: INFO: data_ingestion: Unique values in email: ['navya.bhalla26@outlook.com' 'anay.shanker226@yahoo.com'
+ 'raghav.das550@gmail.com' 'mamooty.boase285@yahoo.com'
+ 'sara.behl948@outlook.com' 'parinaaz.shanker143@gmail.com'
+ 'inaaya .bassi395@yahoo.com' 'kiara.kakar465@gmail.com'
+ 'arhaan.aurora20@gmail.com' 'divij.chopra541@outlook.com'
+ 'mehul.krishnan8@gmail.com' 'lavanya.arya827@yahoo.com'
+ 'jhanvi.chaudhary197@gmail.com' 'saanvi.sachar493@gmail.com'
+ 'rati.mahajan304@gmail.com' 'aaina.choudhary123@outlook.com'
+ 'alia.raja688@outlook.com' 'ranbir.tailor379@yahoo.com'
+ 'aarush.sibal289@outlook.com' 'zara.buch166@outlook.com'
+ 'rasha.kakar921@gmail.com' 'shlok.dewan822@outlook.com'
+ 'indrans.chokshi286@gmail.com' 'tarini.ganguly447@outlook.com'
+ 'ehsaan.batra639@yahoo.com' 'vaibhav.bava312@yahoo.com'
+ 'taimur.vaidya689@yahoo.com' 'shray.ramakrishnan672@outlook.com'
+ 'prerak.swamy851@outlook.com' 'azad.sethi279@yahoo.com'
+ 'amira.loyal853@yahoo.com' 'gatik.gulati280@yahoo.com'
+ 'dhanush.majumdar139@yahoo.com' 'ritvik.thakkar230@outlook.com'
+ 'mishti.ranganathan172@outlook.com' 'taran.mani356@outlook.com'
+ 'kartik.sarraf477@yahoo.com' 'darshit.bajaj500@gmail.com'
+ 'nitara.comar459@gmail.com' 'trisha.dhillon314@yahoo.com'
+ 'dhanush.varma304@gmail.com' 'mehul.verma491@yahoo.com'
+ 'divyansh.gupta255@gmail.com' 'ranbir.karan271@outlook.com'
+ 'myra.tiwari704@gmail.com' 'tejas.bumb480@outlook.com'
+ 'tushar.goel591@gmail.com' 'lakshay.sampath422@outlook.com'
+ 'priyansh.sarna193@outlook.com' 'pihu.sabharwal565@gmail.com'
+ 'devansh.ramanathan468@outlook.com' 'myra.chada887@gmail.com'
+ 'hazel.sethi763@yahoo.com' 'nirvaan.bumb77@yahoo.com'
+ 'anahi.gupta233@outlook.com' 'purab.reddy251@outlook.com'
+ 'prisha.mallick683@gmail.com' 'madhup.sani586@yahoo.com'
+ 'shaan.upadhyay652@gmail.com' 'tiya.soni206@gmail.com'
+ 'bhavin.contractor810@yahoo.com' 'arhaan.swaminathan664@gmail.com'
+ 'saksham.iyer671@gmail.com' 'priyansh.bali283@gmail.com'
+ 'lakshit.mander833@gmail.com' 'saanvi.dugar272@gmail.com'
+ 'lakshit.sagar63@yahoo.com' 'charvi.hora465@outlook.com'
+ 'nayantara.karnik438@yahoo.com' 'hridaan.deo421@yahoo.com'
+ 'hiran.dasgupta588@gmail.com' 'shanaya.mand72@gmail.com'
+ 'heer.deep691@gmail.com' 'siya.master226@yahoo.com'
+ 'aaryahi.yadav513@outlook.com' 'keya.iyengar990@yahoo.com'
+ 'taran.choudhary798@gmail.com' 'hiran.kumar182@outlook.com'
+ 'bhamini.bath361@outlook.com' 'tanya.bajwa330@outlook.com'
+ 'faiyaz.bose940@yahoo.com' 'mishti.buch597@outlook.com'
+ 'vritika.sangha19@yahoo.com' 'aarna.raju612@yahoo.com'
+ 'chirag.hans547@gmail.com' 'vaibhav.raju657@yahoo.com'
+ 'anahita.lalla953@gmail.com' 'ojas.malhotra940@yahoo.com'
+ 'aayush.sangha49@gmail.com' 'saira.bhandari247@outlook.com'
+ 'pihu.wali766@gmail.com' 'heer.sheth713@yahoo.com'
+ 'priyansh.sodhi772@outlook.com' 'nayantara.garde377@outlook.com'
+ 'faiyaz.din360@yahoo.com' 'adira.brar130@gmail.com'
+ 'amani.agarwal322@outlook.com' 'saira.vora126@gmail.com'
+ 'saira.deep521@gmail.com' 'damini.singh539@yahoo.com'
+ 'jayesh.kulkarni515@gmail.com' 'emir.virk515@outlook.com'
+ 'mishti.dixit510@outlook.com' 'navya.kulkarni622@gmail.com'
+ 'mahika.chaudhary52@yahoo.com' 'indrans.grover24@gmail.com'
+ 'tarini.buch138@yahoo.com' 'hrishita.sood999@gmail.com'
+ 'eva.acharya153@outlook.com' 'kismat.edwin340@outlook.com'
+ 'ayesha.andra175@outlook.com' 'faiyaz.golla532@gmail.com'
+ 'zara.dube286@outlook.com' 'nakul.balakrishnan839@yahoo.com'
+ 'nakul.vyas631@outlook.com' 'jiya.baral417@outlook.com'
+ 'dharmajan.setty904@gmail.com' 'aradhya.tandon280@gmail.com'
+ 'darshit.sidhu89@yahoo.com' 'hazel.sinha710@gmail.com'
+ 'gokul.bhatt490@gmail.com' 'nirvi.khanna940@outlook.com'
+ 'ira.butala136@outlook.com' 'prerak.lalla555@gmail.com'
+ 'mahika.kakar670@yahoo.com' 'lakshit.madan472@yahoo.com'
+ 'tanya.sethi613@outlook.com' 'prisha.chaudhry898@gmail.com'
+ 'riya.dugal419@gmail.com' 'yakshit.sampath262@gmail.com'
+ 'nehmat.grover824@outlook.com' 'advika.yogi566@yahoo.com'
+ 'ela.kara47@outlook.com' 'fateh.dasgupta782@yahoo.com'
+ 'mamooty.balay423@gmail.com' 'shayak.anne18@outlook.com'
+ 'khushi.malhotra815@yahoo.com' 'manikya.raja58@outlook.com'
+ 'madhup.aggarwal701@yahoo.com' 'devansh.sathe774@outlook.com'
+ 'mohanlal.balan234@yahoo.com' 'manikya.bandi325@yahoo.com'
+ 'arhaan.vasa92@yahoo.com' 'shalv.banik276@yahoo.com'
+ 'drishya.dani139@yahoo.com' 'ranbir.sami182@yahoo.com'
+ 'aradhya.chhabra966@outlook.com' 'hrishita.bhatti460@outlook.com'
+ 'samaira.wadhwa663@outlook.com' 'kaira.mani401@yahoo.com'
+ 'anika.dara100@yahoo.com' 'vardaniya.khalsa574@yahoo.com'
+ 'zara.jani211@yahoo.com' 'kanav.batta602@gmail.com'
+ 'divit.sahni383@outlook.com' 'adah.goel144@gmail.com'
+ 'aarna.jha85@outlook.com' 'anahita.venkatesh794@outlook.com'
+ 'samiha.bala450@gmail.com' 'pari.sachdeva721@yahoo.com'
+ 'neelofar.bawa729@yahoo.com' 'biju.jaggi974@yahoo.com'
+ 'samiha.gara507@yahoo.com' 'yasmin.venkataraman468@gmail.com'
+ 'emir.dash440@outlook.com' 'kartik.chandran73@gmail.com'
+ 'heer.kapur360@outlook.com' 'hiran.kakar254@yahoo.com'
+ 'jivin.dewan396@gmail.com' 'anahi.dash15@yahoo.com'
+ 'dhanuk.kant318@gmail.com' 'zara.venkataraman119@yahoo.com'
+ 'ira.bawa751@gmail.com' 'badal.sachdev262@gmail.com'
+ 'hrishita.toor255@yahoo.com' 'abram.batra567@yahoo.com'
+ 'suhana.vala955@yahoo.com' 'miraan.chacko985@gmail.com'
+ 'yuvraj .kibe446@outlook.com' 'anya.chhabra169@yahoo.com'
+ 'yakshit.zacharia152@gmail.com' 'biju.butala125@gmail.com'
+ 'vaibhav.agarwal95@yahoo.com' 'vidur.deo457@gmail.com'
+ 'vardaniya.srinivasan801@outlook.com' 'amani.dhar786@outlook.com'
+ 'aarna.sarin936@outlook.com' 'sana.srinivasan340@outlook.com'
+ 'ivana.sahota601@gmail.com' 'saanvi.kohli315@outlook.com'
+ 'indrans.chandran340@outlook.com' 'ritvik.chopra263@gmail.com'
+ 'bhavin.mann76@gmail.com' 'sara.madan966@outlook.com'
+ 'biju.shenoy99@gmail.com' 'saksham.balakrishnan84@yahoo.com'
+ 'badal.master477@yahoo.com' 'anvi.krishnamurthy989@outlook.com'
+ 'eva.brar996@gmail.com' 'bhavin.kumar533@yahoo.com'
+ 'dhanush.varghese393@outlook.com' 'kabir.banerjee943@yahoo.com'
+ 'kimaya.bandi193@yahoo.com' 'pari.venkataraman897@gmail.com'
+ 'miraan.jaggi182@yahoo.com' 'fateh.walia668@yahoo.com'
+ 'jiya.dasgupta259@gmail.com' 'kavya.rajan656@yahoo.com'
+ 'arnav.rao929@yahoo.com' 'dhanush.kadakia861@outlook.com'
+ 'nirvi.manne808@yahoo.com' 'jivika.lal56@gmail.com'
+ 'saksham.de281@gmail.com' 'lagan.sami749@yahoo.com'
+ 'saanvi.dugar844@gmail.com' 'nakul.deo230@outlook.com'
+ 'vivaan.bhatti670@gmail.com' 'oorja.roy638@outlook.com'
+ 'rohan.karnik303@gmail.com' 'saksham.sheth927@yahoo.com'
+ 'devansh.agrawal680@outlook.com' 'amira.rastogi665@gmail.com'
+ 'jivika.bedi495@yahoo.com' 'devansh.luthra678@outlook.com'
+ 'lakshit.kulkarni329@gmail.com' 'prerak.bhatti510@outlook.com'
+ 'stuvan.wadhwa846@gmail.com' 'darshit.wable561@outlook.com'
+ 'nirvaan.goyal845@gmail.com' 'raunak.brar859@outlook.com'
+ 'advika.thaman987@yahoo.com' 'inaaya .sarraf640@outlook.com'
+ 'romil.ramesh899@yahoo.com' 'zara.sachdeva772@outlook.com'
+ 'eva.agrawal397@yahoo.com' 'nitya.taneja460@gmail.com'
+ 'ishita.doctor41@gmail.com' 'nitara.ben806@outlook.com'
+ 'himmat.deo457@gmail.com' 'farhan.walia304@outlook.com'
+ 'emir.sharaf551@outlook.com' 'ishita.brahmbhatt418@yahoo.com'
+ 'purab.dhaliwal297@outlook.com' 'lavanya.cheema694@outlook.com'
+ 'saanvi.garg189@gmail.com' 'lagan.sankar975@yahoo.com'
+ 'myra.varkey173@gmail.com' 'prerak.krishnan180@outlook.com'
+ 'ayesha.dass565@yahoo.com' 'baiju.batra776@outlook.com'
+ 'myra.kakar240@gmail.com' 'raghav.bains375@outlook.com'
+ 'aarav.ganesan527@outlook.com' 'trisha.bhattacharyya605@gmail.com'
+ 'navya.deep900@outlook.com' 'ishaan.shanker945@yahoo.com'
+ 'ahana .majumdar494@outlook.com' 'renee.kala604@outlook.com'
+ 'jhanvi.agrawal671@gmail.com' 'faiyaz.barad566@outlook.com'
+ 'prisha.zacharia103@gmail.com' 'indrajit.mahajan954@yahoo.com'
+ 'armaan.tiwari369@gmail.com' 'tushar.manne987@yahoo.com'
+ 'ishita.borah898@outlook.com' 'adah.bhatt649@gmail.com'
+ 'arnav.dube363@gmail.com' 'tejas.yogi693@outlook.com'
+ 'yashvi.vasa769@outlook.com' 'arnav.yogi691@gmail.com'
+ 'taimur.cheema430@outlook.com' 'pihu.dash820@outlook.com'
+ 'nitya.behl708@gmail.com' 'sumer.sridhar360@outlook.com'
+ 'jhanvi.wagle890@gmail.com' 'yuvraj .rao800@yahoo.com'
+ 'siya.brahmbhatt66@yahoo.com' 'miraan.venkatesh135@outlook.com'
+ 'ishaan.sura931@yahoo.com' 'zoya.chakrabarti705@yahoo.com'
+ 'zain.arora849@yahoo.com' 'jayesh.shan187@gmail.com'
+ 'shamik.srinivas129@outlook.com' 'zain.suresh273@yahoo.com'
+ 'oorja.venkatesh753@gmail.com' 'sara.tak909@gmail.com'
+ 'nishith.deol790@gmail.com' 'indranil.subramaniam325@outlook.com'
+ 'rati.bhagat557@yahoo.com' 'vaibhav.viswanathan905@gmail.com'
+ 'armaan.varughese657@yahoo.com' 'anaya.choudhry376@gmail.com'
+ 'krish.taneja855@yahoo.com' 'amira.gill691@yahoo.com'
+ 'ryan.tara783@outlook.com' 'yashvi.viswanathan531@gmail.com'
+ 'manikya.choudhury365@gmail.com' 'anay.sahni500@outlook.com'
+ 'kartik.iyengar56@yahoo.com' 'shalv.dewan297@yahoo.com'
+ 'darshit.som405@outlook.com' 'ranbir.gill353@outlook.com'
+ 'nayantara.kumar249@outlook.com' 'yakshit.sane712@outlook.com'
+ 'heer.gandhi20@yahoo.com' 'aniruddh.bhardwaj945@outlook.com'
+ 'pranay.chakraborty967@outlook.com' 'kavya.deo994@yahoo.com'
+ 'armaan.bhagat70@outlook.com' 'kimaya.kalla190@gmail.com'
+ 'shray.sethi504@yahoo.com' 'vedika.dugar705@yahoo.com'
+ 'adira.raman468@gmail.com' 'diya.bhardwaj433@yahoo.com'
+ 'veer.yogi462@gmail.com' 'kashvi.chandran537@outlook.com'
+ 'onkar.bains317@outlook.com' 'rhea.kamdar603@outlook.com'
+ 'aarav.lad38@gmail.com' 'zara.luthra954@gmail.com'
+ 'piya.sem627@gmail.com' 'seher.shan533@outlook.com'
+ 'oorja.chaudhari342@yahoo.com' 'tejas.kale199@yahoo.com'
+ 'darshit.salvi569@outlook.com' 'shalv.ratta886@yahoo.com'
+ 'saksham.saini519@gmail.com' 'gatik.sem731@outlook.com'
+ 'rohan.kulkarni206@gmail.com' 'sahil.sama278@gmail.com'
+ 'yuvraj .gade437@yahoo.com' 'yuvaan.sarin100@yahoo.com'
+ 'ritvik.malhotra487@gmail.com' 'gokul.char411@outlook.com'
+ 'aaina.salvi758@outlook.com' 'vaibhav.sandhu223@gmail.com'
+ 'siya.zacharia92@outlook.com' 'jayant.randhawa720@outlook.com'
+ 'jiya.dora296@outlook.com' 'yuvaan.mahal522@yahoo.com'
+ 'aarav.doshi582@yahoo.com' 'reyansh.cheema646@outlook.com'
+ 'adah.srivastava172@gmail.com' 'kavya.raman872@yahoo.com'
+ 'neysa.dyal497@gmail.com' 'anahita.kant774@gmail.com'
+ 'ahana .sandal296@yahoo.com' 'lakshit.kumer752@outlook.com'
+ 'anika.sundaram743@yahoo.com' 'yashvi.shah918@gmail.com'
+ 'jayan.sahni796@gmail.com' 'dharmajan.dhar629@outlook.com'
+ 'drishya.saini717@yahoo.com' 'myra.rao581@outlook.com'
+ 'shamik.batra991@yahoo.com' 'suhana.dalal399@gmail.com'
+ 'pari.dubey948@gmail.com' 'mamooty.swaminathan856@outlook.com'
+ 'kiaan.borah783@gmail.com' 'anay.bajaj797@gmail.com'
+ 'nirvaan.khanna422@gmail.com' 'manjari.varghese634@yahoo.com'
+ 'tiya.bansal446@yahoo.com' 'amani.johal204@outlook.com'
+ 'mohanlal.mani951@outlook.com' 'kartik.sekhon873@yahoo.com'
+ 'rasha.handa858@yahoo.com' 'bhamini.iyengar436@outlook.com'
+ 'nirvaan.borah492@outlook.com' 'neysa.sankaran395@outlook.com'
+ 'aarush.warrior114@yahoo.com' 'suhana.vasa772@outlook.com'
+ 'trisha.wali463@outlook.com' 'emir.sood896@gmail.com'
+ 'aarna.choudhary422@outlook.com' 'jayesh.suri995@yahoo.com'
+ 'rasha.lad325@outlook.com' 'anahi.bakshi415@yahoo.com'
+ 'ivana.dash706@gmail.com' 'gatik.kari201@gmail.com'
+ 'himmat.suresh396@yahoo.com' 'anahi.sama856@outlook.com'
+ 'eva.mammen205@gmail.com' 'kimaya.dutt128@outlook.com'
+ 'tanya.walla644@outlook.com' 'ahana .ramesh370@yahoo.com'
+ 'saira.walla278@outlook.com' 'dishani.kala815@outlook.com'
+ 'ira.kapoor30@outlook.com' 'indranil.sharaf44@gmail.com'
+ 'anika.kar30@gmail.com' 'pranay.sheth176@outlook.com'
+ 'nishith.trivedi527@gmail.com' 'navya.devi395@yahoo.com'
+ 'tiya.sood406@yahoo.com' 'elakshi.kibe743@yahoo.com'
+ 'mishti.dar257@yahoo.com' 'raghav.kannan677@outlook.com'
+ 'dhanuk.saxena323@yahoo.com' 'reyansh.dalal488@outlook.com'
+ 'purab.ganesh358@outlook.com' 'samar.warrior118@yahoo.com'
+ 'hrishita.baria587@gmail.com' 'hiran.borra272@gmail.com'
+ 'mehul.handa356@gmail.com' 'rania.bose219@outlook.com'
+ 'renee.chhabra650@gmail.com' 'chirag.johal433@outlook.com'
+ 'yuvraj .gandhi888@gmail.com' 'hrishita.kaul244@outlook.com'
+ 'zeeshan.balasubramanian884@outlook.com' 'lagan.thaman661@outlook.com'
+ 'aaina.hayer93@gmail.com' 'trisha.master898@gmail.com'
+ 'rasha.anne411@gmail.com' 'tarini.mani178@outlook.com'
+ 'vaibhav.khare204@yahoo.com' 'aarush.goda230@outlook.com'
+ 'rohan.shetty30@yahoo.com' 'vidur.varkey754@outlook.com'
+ 'aaina.luthra405@outlook.com' 'siya.shah321@gmail.com'
+ 'inaaya .sura55@gmail.com' 'lavanya.yadav116@outlook.com'
+ 'madhup.kohli943@gmail.com' 'madhup.deshpande465@outlook.com'
+ 'adira.kibe762@gmail.com' 'aniruddh.hayer503@yahoo.com'
+ 'shayak.sami629@gmail.com' 'parinaaz.sur448@gmail.com'
+ 'yuvaan.sengupta97@yahoo.com' 'ivan.trivedi322@outlook.com'
+ 'anahita.bhatt120@gmail.com' 'misha.loke15@gmail.com'
+ 'anay.hegde433@gmail.com' 'kiara.manda646@outlook.com'
+ 'nitara.arya541@gmail.com' 'dharmajan.rout481@yahoo.com'
+ 'aaryahi.bir637@gmail.com' 'anahi.chand366@outlook.com'
+ 'badal.de874@outlook.com' 'vaibhav.gade892@gmail.com'
+ 'lakshit.karan252@yahoo.com' 'shaan.ganguly424@yahoo.com'
+ 'tara.wable778@gmail.com' 'vaibhav.dewan718@yahoo.com'
+ 'suhana.thakur400@outlook.com' 'aaina.date744@yahoo.com'
+ 'dhanush.keer359@yahoo.com' 'advik.shere84@gmail.com'
+ 'hrishita.bal706@yahoo.com' 'stuvan.choudhury944@gmail.com'
+ 'nehmat.banerjee50@yahoo.com' 'vanya.sachdev487@outlook.com'
+ 'arnav.shroff982@outlook.com' 'aniruddh.dasgupta769@yahoo.com'
+ 'krish.tripathi349@yahoo.com' 'akarsh.rastogi976@yahoo.com'
+ 'indrans.dar771@outlook.com' 'gokul.khalsa782@outlook.com'
+ 'oorja.bhandari2@yahoo.com' 'jivika.chopra308@gmail.com'
+ 'anahita.sarma216@yahoo.com' 'onkar.sinha914@outlook.com'
+ 'tushar.chacko761@gmail.com' 'mahika.raman841@outlook.com'
+ 'siya.sekhon131@yahoo.com' 'farhan.sood865@yahoo.com'
+ 'ishaan.dugal84@outlook.com' 'emir.mann254@gmail.com'
+ 'anay.dugal998@gmail.com' 'kashvi.sandhu302@yahoo.com'
+ 'uthkarsh.issac530@yahoo.com' 'saanvi.chaudhary141@gmail.com'
+ 'dhanuk.rajagopalan994@gmail.com' 'prisha.thakur615@outlook.com'
+ 'mishti.dara245@yahoo.com' 'ehsaan.sarin999@gmail.com'
+ 'trisha.dora671@gmail.com' 'piya.rama712@yahoo.com'
+ 'zara.bhasin215@outlook.com' 'yashvi.mandal486@yahoo.com'
+ 'vardaniya.bail303@yahoo.com' 'shray.lata240@yahoo.com'
+ 'aaryahi.sahota202@outlook.com' 'tushar.banerjee843@yahoo.com'
+ 'dishani.sabharwal811@gmail.com' 'shlok.ahuja348@gmail.com'
+ 'aaina.tata972@yahoo.com' 'ayesha.bera192@gmail.com'
+ 'adah.golla133@outlook.com' 'myra.walla283@gmail.com'
+ 'amira.sathe356@outlook.com' 'indrans.kalla281@outlook.com'
+ 'jayesh.sha213@outlook.com' 'elakshi.sachdev335@outlook.com'
+ 'purab.randhawa128@outlook.com' 'zara.luthra400@outlook.com'
+ 'urvi.khurana841@gmail.com' 'anahita.kamdar962@yahoo.com'
+ 'sana.rajagopalan69@gmail.com' 'priyansh.edwin651@outlook.com'
+ 'nirvaan.thakur243@outlook.com' 'dhruv.dewan326@outlook.com'
+ 'alisha.dara534@yahoo.com' 'suhana.kata437@outlook.com'
+ 'jiya.ramaswamy408@yahoo.com' 'oorja.gupta390@yahoo.com'
+ 'shayak.atwal948@yahoo.com' 'bhamini.varghese714@gmail.com'
+ 'shaan.chand254@outlook.com' 'aradhya.cherian601@yahoo.com'
+ 'sumer.sur72@outlook.com' 'pranay.garde191@gmail.com'
+ 'ranbir.wable351@gmail.com' 'kimaya.sarna955@yahoo.com'
+ 'raghav.mall892@outlook.com' 'aayush.kuruvilla654@yahoo.com'
+ 'kanav.basak675@outlook.com' 'nakul.sem978@gmail.com'
+ 'yuvraj .konda682@yahoo.com' 'ivana.sibal266@gmail.com'
+ 'nakul.sant605@outlook.com' 'anika.roy836@yahoo.com'
+ 'riya.korpal299@outlook.com' 'alia.sule346@yahoo.com'
+ 'advik.batra671@gmail.com' 'ritvik.choudhry696@gmail.com'
+ 'yuvaan.saraf407@yahoo.com' 'nirvaan.dua123@gmail.com'
+ 'nitara.mannan661@outlook.com' 'tushar.khalsa989@outlook.com'
+ 'ishita.lanka519@yahoo.com' 'shray.kala621@outlook.com'
+ 'shanaya.maharaj267@yahoo.com' 'shalv.goda430@gmail.com'
+ 'rati.karan797@yahoo.com' 'purab.dua565@yahoo.com'
+ 'ojas.d’alia704@outlook.com' 'fateh.sen363@yahoo.com'
+ 'kartik.dugar590@gmail.com' 'fateh.sharaf632@gmail.com'
+ 'heer.singh860@gmail.com' 'prisha.chanda3@outlook.com'
+ 'kartik.chokshi6@yahoo.com' 'seher.khurana405@yahoo.com'
+ 'raghav.sengupta195@yahoo.com' 'khushi.sidhu770@yahoo.com'
+ 'eshani.raju445@yahoo.com' 'raunak.bedi486@outlook.com'
+ 'kartik.divan632@gmail.com' 'manikya.gole276@yahoo.com'
+ 'jayesh.dora259@yahoo.com' 'abram.sathe216@outlook.com'
+ 'hazel.bhatnagar780@gmail.com' 'raghav.bajaj537@outlook.com'
+ 'baiju.malhotra769@outlook.com' 'riaan.sarkar304@outlook.com'
+ 'gokul.ray2@outlook.com' 'suhana.korpal263@gmail.com'
+ 'ehsaan.viswanathan378@gmail.com' 'abram.mangat72@gmail.com'
+ 'raunak.keer847@gmail.com' 'anvi.kannan836@gmail.com'
+ 'shlok.chanda2@gmail.com' 'baiju.date366@gmail.com'
+ 'anvi.bhandari897@gmail.com' 'chirag.iyer116@outlook.com'
+ 'ayesha.bansal393@yahoo.com' 'kashvi.rau3@gmail.com'
+ 'piya.bala765@gmail.com' 'indrajit.borde145@gmail.com'
+ 'zoya.manda801@outlook.com' 'romil.basak434@gmail.com'
+ 'nishith.bhargava321@outlook.com' 'ivana.singhal555@gmail.com'
+ 'zeeshan.raman323@gmail.com' 'kimaya.subramanian25@outlook.com'
+ 'miraya.chowdhury805@gmail.com' 'urvi.lal147@yahoo.com'
+ 'vaibhav.kar263@yahoo.com' 'ahana .dixit519@yahoo.com'
+ 'khushi.kala686@gmail.com' 'ryan.mane351@outlook.com'
+ 'miraya.balan809@yahoo.com' 'manjari.shankar895@outlook.com'
+ 'divyansh.singh989@outlook.com' 'lakshay.rattan919@yahoo.com'
+ 'lakshit.deo431@outlook.com' 'nitara.baria421@yahoo.com'
+ 'indranil.dar866@outlook.com' 'jayant.majumdar684@yahoo.com'
+ 'dhanuk.brar275@outlook.com' 'aarav.jayaraman570@yahoo.com'
+ 'alisha.sankaran728@gmail.com' 'kimaya.keer586@yahoo.com'
+ 'riaan.babu958@gmail.com' 'mehul.dhawan815@gmail.com'
+ 'renee.dhaliwal352@yahoo.com' 'rati.vasa31@yahoo.com'
+ 'amani.banik945@gmail.com' 'piya.dada836@yahoo.com'
+ 'prerak.subramaniam31@gmail.com' 'vritika.rattan219@yahoo.com'
+ 'khushi.sahota833@yahoo.com' 'zaina.chaudhary19@outlook.com'
+ 'aarna.bhandari772@yahoo.com' 'inaaya .chowdhury143@gmail.com'
+ 'neelofar.borde338@outlook.com' 'priyansh.thaker678@yahoo.com'
+ 'hridaan.banik62@gmail.com' 'biju.butala937@gmail.com'
+ 'vritika.dube473@gmail.com' 'kimaya.shere155@yahoo.com'
+ 'jiya.dhawan532@yahoo.com' 'advika.bhatia104@gmail.com'
+ 'anahita.sankaran175@yahoo.com' 'romil.sarma598@gmail.com'
+ 'yuvaan.deshpande464@yahoo.com' 'damini.madan152@yahoo.com'
+ 'bhamini.kanda982@outlook.com' 'dhanush.ram581@yahoo.com'
+ 'arnav.walia819@yahoo.com' 'adah.shah900@yahoo.com'
+ 'samarth.ramakrishnan991@gmail.com' 'ojas.arya88@yahoo.com'
+ 'divij.contractor431@yahoo.com' 'pari.toor129@yahoo.com'
+ 'kashvi.raj759@outlook.com' 'akarsh.singhal1@gmail.com'
+ 'pari.tara880@outlook.com' 'priyansh.mani684@gmail.com'
+ 'arnav.singh661@outlook.com' 'tanya.chahal672@gmail.com'
+ 'anaya.lad133@outlook.com' 'nehmat.kant791@outlook.com'
+ 'ranbir.chana329@gmail.com' 'keya.kamdar89@outlook.com'
+ 'myra.talwar585@yahoo.com' 'ayesha.bath53@outlook.com'
+ 'anaya.ghosh560@outlook.com' 'yuvraj .ganesan242@yahoo.com'
+ 'samarth.sampath666@yahoo.com' 'ehsaan.varughese785@yahoo.com'
+ 'ishaan.gala423@outlook.com' 'zain.saran674@gmail.com'
+ 'bhamini.dhawan715@outlook.com' 'nitara.iyer37@gmail.com'
+ 'tara.maharaj884@yahoo.com' 'armaan.karan776@gmail.com'
+ 'dhruv.dugar167@yahoo.com' 'ojas.edwin676@yahoo.com'
+ 'farhan.som594@gmail.com' 'yuvaan.venkatesh671@gmail.com'
+ 'drishya.tella112@gmail.com' 'aarav.saha919@outlook.com'
+ 'hrishita.kashyap851@outlook.com' 'zain.bala676@outlook.com'
+ 'kanav.lad371@gmail.com' 'taran.rastogi815@yahoo.com'
+ 'tanya.krish784@outlook.com' 'mishti.kant730@yahoo.com'
+ 'tara.bal717@gmail.com' 'lagan.deol305@yahoo.com'
+ 'ira.bhatti292@gmail.com' 'reyansh.kanda613@gmail.com'
+ 'rasha.kibe911@yahoo.com' 'gatik.atwal646@outlook.com'
+ 'mohanlal.ramanathan690@gmail.com' 'yasmin.dar572@outlook.com'
+ 'rhea.buch502@outlook.com' 'sahil.majumdar476@yahoo.com'
+ 'abram.majumdar268@outlook.com' 'yuvraj .batra587@gmail.com'
+ 'mamooty.trivedi671@gmail.com' 'farhan.kashyap866@gmail.com'
+ 'fateh.sabharwal135@outlook.com' 'indrans.krish804@yahoo.com'
+ 'saanvi.dhingra292@outlook.com' 'diya.sastry489@outlook.com'
+ 'purab.johal61@yahoo.com' 'anya.keer983@outlook.com'
+ 'nirvaan.kari203@yahoo.com' 'ishita.bora630@yahoo.com'
+ 'veer.chandran11@yahoo.com' 'kismat.kumar359@outlook.com'
+ 'siya.wable106@outlook.com' 'himmat.venkatesh173@gmail.com'
+ 'darshit.devi310@outlook.com' 'trisha.subramanian574@yahoo.com'
+ 'zeeshan.garde184@outlook.com' 'vedika.kulkarni408@gmail.com'
+ 'priyansh.tara628@outlook.com' 'aarav.dhaliwal920@outlook.com'
+ 'samaira.dixit455@gmail.com' 'khushi.mann120@gmail.com'
+ 'nirvi.konda766@outlook.com' 'indrajit.kapoor271@gmail.com'
+ 'heer.khurana662@outlook.com' 'shray.ganesan487@gmail.com'
+ 'ishita.singh664@gmail.com' 'inaaya .gulati259@outlook.com'
+ 'amani.dyal525@gmail.com' 'kanav.sarkar472@gmail.com'
+ 'nakul.mangal353@gmail.com' 'veer.dada840@outlook.com'
+ 'urvi.jha626@outlook.com' 'azad.dutt692@yahoo.com'
+ 'shanaya.khalsa589@outlook.com' 'renee.tak730@yahoo.com'
+ 'vaibhav.hans476@yahoo.com' 'nitara.sule366@yahoo.com'
+ 'nehmat.borra649@yahoo.com' 'bhamini.badami525@outlook.com'
+ 'gokul.krishnamurthy711@gmail.com' 'kiara.gandhi6@yahoo.com'
+ 'divyansh.vohra603@yahoo.com' 'advika.bedi413@gmail.com'
+ 'eshani.kari640@outlook.com' 'abram.sen406@gmail.com'
+ 'hridaan.jayaraman646@gmail.com' 'neysa.brahmbhatt700@gmail.com'
+ 'dhanuk.keer625@gmail.com' 'vardaniya.deo960@outlook.com'
+ 'shayak.ratta251@yahoo.com' 'rania.issac848@outlook.com'
+ 'nehmat.baria777@outlook.com' 'shalv.varkey351@yahoo.com'
+ 'pari.varughese968@outlook.com' 'hazel.gupta598@yahoo.com'
+ 'samar.rattan887@yahoo.com' 'saanvi.wali511@yahoo.com'
+ 'tara.kohli581@outlook.com' 'hrishita.badami751@gmail.com'
+ 'miraya.banerjee120@yahoo.com' 'miraan.raval258@yahoo.com'
+ 'piya.dhawan775@gmail.com' 'manikya.shenoy798@gmail.com'
+ 'divij.kalla805@gmail.com' 'divyansh.sidhu314@yahoo.com'
+ 'myra.sarraf214@outlook.com' 'divyansh.kapadia165@yahoo.com'
+ 'ivan.saran655@yahoo.com' 'rohan.zacharia449@gmail.com'
+ 'aniruddh.bajaj329@yahoo.com' 'shaan.sunder852@outlook.com'
+ 'bhavin.din545@gmail.com' 'taimur.grover664@outlook.com'
+ 'adah.bora546@yahoo.com' 'nirvaan.lanka978@gmail.com'
+ 'zain.mandal455@outlook.com' 'pihu.sule124@yahoo.com'
+ 'jivin.chada370@yahoo.com' 'jayant.baral579@gmail.com'
+ 'manjari.virk179@outlook.com' 'vaibhav.rao340@gmail.com'
+ 'pihu.dara68@gmail.com' 'charvi.manne505@outlook.com'
+ 'hridaan.d’alia190@outlook.com' 'anahi.ray814@gmail.com'
+ 'onkar.karpe465@outlook.com' 'onkar.sama65@yahoo.com'
+ 'aayush.yogi990@outlook.com' 'zaina.kaul711@outlook.com'
+ 'reyansh.sandhu304@yahoo.com' 'inaaya .brar144@gmail.com'
+ 'devansh.kant211@yahoo.com' 'shray.raj73@outlook.com'
+ 'rohan.reddy248@outlook.com' 'aarna.sant14@gmail.com'
+ 'ojas.kari605@outlook.com' 'romil.chaudhary963@yahoo.com'
+ 'veer.varkey284@yahoo.com' 'anya.bera342@yahoo.com'
+ 'miraan.halder346@yahoo.com' 'kaira.gola204@gmail.com'
+ 'kashvi.divan454@gmail.com' 'rati.divan988@gmail.com'
+ 'akarsh.thakkar380@yahoo.com' 'nirvi.hora827@outlook.com'
+ 'raghav.agrawal489@outlook.com' 'jivika.venkatesh552@outlook.com'
+ 'piya.sood629@gmail.com' 'shanaya.bakshi825@yahoo.com'
+ 'mahika.sharma360@outlook.com' 'charvi.thaman394@yahoo.com'
+ 'reyansh.soni724@gmail.com' 'yasmin.contractor628@yahoo.com'
+ 'mahika.suresh939@yahoo.com' 'sumer.choudhary782@gmail.com'
+ 'myra.chandran541@gmail.com' 'miraya.dass988@outlook.com'
+ 'parinaaz.shroff585@outlook.com' 'saira.sinha614@gmail.com'
+ 'nirvi.sangha43@outlook.com' 'hiran.ratti292@outlook.com'
+ 'divit.zacharia189@gmail.com' 'mishti.roy972@gmail.com'
+ 'arnav.dubey26@yahoo.com' 'vedika.kannan40@gmail.com'
+ 'arhaan.mann960@outlook.com' 'tejas.setty294@outlook.com'
+ 'hansh.bath214@yahoo.com' 'ritvik.gade583@gmail.com'
+ 'siya.johal346@outlook.com' 'jayant.chaudhry422@yahoo.com'
+ 'hansh.srivastava943@gmail.com' 'hrishita.vora297@yahoo.com'
+ 'tejas.lanka680@gmail.com' 'damini.deshpande994@yahoo.com'
+ 'ivan.dave364@outlook.com' 'anya.swaminathan460@yahoo.com'
+ 'ritvik.shenoy205@yahoo.com' 'shayak.suri501@yahoo.com'
+ 'farhan.kaur586@gmail.com' 'dhanuk.bobal205@outlook.com'
+ 'tanya.chowdhury726@yahoo.com' 'parinaaz.sengupta193@gmail.com'
+ 'pari.issac289@gmail.com' 'zaina.mallick715@outlook.com'
+ 'tejas.bath44@outlook.com' 'vritika.hora892@outlook.com'
+ 'abram.deo23@yahoo.com' 'heer.bhatia985@gmail.com'
+ 'amani.gour614@gmail.com' 'pari.shere650@yahoo.com'
+ 'pari.deep577@yahoo.com' 'keya.halder729@gmail.com'
+ 'navya.grewal981@outlook.com' 'emir.sandal30@outlook.com'
+ 'mehul.keer724@outlook.com' 'anay.rao406@gmail.com'
+ 'jhanvi.gade156@gmail.com' 'manjari.choudhry562@gmail.com'
+ 'neelofar.balay777@gmail.com' 'myra.tata604@gmail.com'
+ 'anahi.sarma524@yahoo.com' 'romil.sachar43@yahoo.com'
+ 'yuvraj .bhardwaj524@gmail.com' 'hiran.bajaj815@outlook.com'
+ 'armaan.doshi221@outlook.com' 'bhamini.bhardwaj179@gmail.com'
+ 'divit.dalal31@gmail.com' 'heer.bir987@gmail.com'
+ 'vidur.karan841@yahoo.com' 'tushar.sampath834@outlook.com'
+ 'shanaya.sarin519@outlook.com' 'hrishita.kadakia261@outlook.com'
+ 'khushi.sharaf656@outlook.com' 'samiha.brahmbhatt25@gmail.com'
+ 'zeeshan.sagar384@gmail.com' 'divyansh.thaman972@outlook.com'
+ 'ayesha.randhawa619@yahoo.com' 'yuvraj .dey475@yahoo.com'
+ 'arhaan.sant992@gmail.com' 'tushar.chopra828@outlook.com'
+ 'ahana .kapadia486@gmail.com' 'miraan.varma457@outlook.com'
+ 'taran.bawa381@gmail.com' 'piya.gour398@outlook.com'
+ 'inaaya .yohannan417@gmail.com' 'neelofar.gola614@outlook.com'
+ 'biju.issac476@outlook.com' 'raghav.chandran94@outlook.com'
+ 'gatik.vala531@outlook.com' 'amani.bath818@yahoo.com'
+ 'nitara.cherian150@yahoo.com' 'nayantara.reddy53@yahoo.com'
+ 'kimaya.anne803@gmail.com' 'badal.srivastava861@gmail.com'
+ 'shamik.dara253@yahoo.com' 'gokul.srivastava103@gmail.com'
+ 'jivika.chauhan512@outlook.com' 'darshit.thakkar255@outlook.com'
+ 'tarini.malhotra21@yahoo.com' 'lakshay.raj374@gmail.com'
+ 'madhav.talwar420@yahoo.com' 'mehul.gala18@gmail.com'
+ 'urvi.borah334@gmail.com' 'vedika.yohannan466@gmail.com'
+ 'kimaya.agarwal806@outlook.com' 'raghav.varughese383@gmail.com'
+ 'hunar.bhattacharyya146@gmail.com' 'hrishita.dass55@yahoo.com'
+ 'yasmin.chahal150@outlook.com' 'faiyaz.sahota821@outlook.com'
+ 'anay.bhatti148@gmail.com' 'abram.gola1@gmail.com'
+ 'vritika.subramaniam591@outlook.com' 'miraan.raja337@outlook.com'
+ 'samarth.anand761@yahoo.com' 'jayant.deo32@yahoo.com'
+ 'baiju.bhatnagar874@gmail.com' 'seher.kade299@yahoo.com'
+ 'eshani.bhandari608@yahoo.com' 'shanaya.balay873@yahoo.com'
+ 'anika.kapur721@gmail.com' 'vanya.golla446@yahoo.com'
+ 'drishya.rajagopalan833@yahoo.com' 'emir.kara96@yahoo.com'
+ 'damini.choudhry346@gmail.com' 'mannat.bains466@outlook.com'
+ 'samiha.srinivasan272@yahoo.com' 'nirvi.lad514@outlook.com'
+ 'romil.karnik15@outlook.com' 'nayantara.aurora747@gmail.com'
+ 'biju.khatri346@gmail.com' 'yakshit.kala65@gmail.com'
+ 'piya.bhagat195@outlook.com' 'ayesha.sawhney193@gmail.com'
+ 'ahana .bansal567@outlook.com' 'dhanush.dyal157@yahoo.com'
+ 'mahika.borah372@gmail.com' 'chirag.bhatnagar103@yahoo.com'
+ 'raghav.ratta555@gmail.com' 'myra.master698@outlook.com'
+ 'ira.sawhney276@gmail.com' 'shaan.halder729@gmail.com'
+ 'kimaya.lanka350@gmail.com' 'ritvik.karan399@yahoo.com'
+ 'dishani.ramakrishnan424@gmail.com' 'adah.bawa705@yahoo.com'
+ 'yashvi.sarna739@yahoo.com' 'farhan.varkey153@gmail.com'
+ 'neysa.sachdev686@outlook.com' 'tiya.majumdar707@gmail.com'
+ 'saira.verma224@yahoo.com' 'madhav.kale811@outlook.com'
+ 'alisha.wali1@yahoo.com' 'manikya.jhaveri201@gmail.com'
+ 'shayak.thaker705@gmail.com' 'amani.iyengar446@gmail.com'
+ 'zeeshan.sethi949@outlook.com' 'divit.dugar55@outlook.com'
+ 'aaryahi.dugar341@outlook.com' 'nitya.datta472@gmail.com'
+ 'umang.bose493@gmail.com' 'piya.khalsa164@gmail.com'
+ 'darshit.bath520@yahoo.com' 'dharmajan.batra577@gmail.com'
+ 'adah.bava55@yahoo.com' 'shanaya.shankar275@gmail.com'
+ 'umang.tak529@gmail.com' 'hansh.mall163@gmail.com'
+ 'biju.raj364@yahoo.com' 'jhanvi.mand316@yahoo.com'
+ 'shalv.sampath690@outlook.com' 'gatik.jha746@gmail.com'
+ 'sumer.vohra222@gmail.com' 'nitya.sheth984@outlook.com'
+ 'aarna.vig342@yahoo.com' 'saira.bal319@outlook.com'
+ 'reyansh.rama622@outlook.com' 'sahil.goda646@gmail.com'
+ 'ehsaan.mani533@gmail.com' 'dishani.cherian920@yahoo.com'
+ 'indrans.saha768@gmail.com' 'anya.choudhury218@gmail.com'
+ 'emir.gill588@gmail.com' 'ivana.gour92@outlook.com'
+ 'farhan.singh111@gmail.com' 'ranbir.mangat783@yahoo.com'
+ 'mamooty.swamy857@yahoo.com' 'aaryahi.uppal677@yahoo.com'
+ 'jhanvi.sinha258@gmail.com' 'misha.rana930@yahoo.com'
+ 'pari.rout627@outlook.com' 'ivana.arya52@outlook.com'
+ 'mahika.saha611@gmail.com' 'rania.deol69@gmail.com'
+ 'aniruddh.chana870@gmail.com' 'purab.sarna195@gmail.com'
+ 'tarini.dubey292@gmail.com' 'shayak.gill854@gmail.com'
+ 'aarush.chana896@outlook.com' 'hridaan.mandal465@yahoo.com'
+ 'nirvi.iyer645@yahoo.com' 'darshit.bobal75@outlook.com'
+ 'seher.ravel130@gmail.com' 'aniruddh.bath291@yahoo.com'
+ 'siya.lanka553@outlook.com' 'madhav.guha518@yahoo.com'
+ 'aaina.karan54@outlook.com' 'shlok.brar873@yahoo.com'
+ 'tushar.dugal851@gmail.com' 'saira.gaba992@outlook.com'
+ 'urvi.mander27@outlook.com' 'kimaya.basak314@outlook.com'
+ 'baiju.brahmbhatt859@yahoo.com' 'indranil.shroff746@outlook.com'
+ 'miraya.bakshi393@outlook.com' 'pari.baria912@gmail.com'
+ 'purab.kant523@yahoo.com' 'nitara.kala341@gmail.com'
+ 'aradhya.raman71@gmail.com' 'ahana .johal601@outlook.com'
+ 'purab.chokshi867@outlook.com' 'tanya.kunda642@yahoo.com'
+ 'farhan.gera414@outlook.com' 'adah.bhakta334@gmail.com']]
+[2025-07-26 17:31:26,997: INFO: data_ingestion: Unique values in gender: ['Male' 'Female']]
+[2025-07-26 17:31:26,997: INFO: data_ingestion: Unique values in part_time_job: ['No' 'Yes']]
+[2025-07-26 17:31:26,997: INFO: data_ingestion: Unique values in extracurricular_activities: ['Yes' 'No']]
+[2025-07-26 17:31:26,998: INFO: data_ingestion: Unique values in career_aspiration: ['Engineer' 'Scientist' 'Entrepreneur' 'Teacher' 'Artist' 'Civil Servant'
+ 'Doctor']]
+[2025-07-26 17:31:26,998: INFO: data_ingestion: Unique values in race_ethnicity: ['Group B' 'Group C' 'Group D' 'Group A' 'Group E']]
+[2025-07-26 17:31:26,998: INFO: data_ingestion: Unique values in parental_level_of_education: ['High school' 'Some college' 'Some high school' 'Associate degree'
+ 'Master’s degree' 'Bachelor’s degree']]
+[2025-07-26 17:31:26,999: INFO: data_ingestion: Unique values in lunch: ['Standard' 'Free/reduced']]
+[2025-07-26 17:31:26,999: INFO: data_ingestion: Unique values in test_preparation_course: [nan 'Completed']]
+[2025-07-26 17:31:26,999: INFO: training_pipeline: >>>>>> stage DataIngestionTrainingPipeline completed <<<<<<
+
+x==========x]
+[2025-07-26 17:31:27,000: INFO: training_pipeline: >>>>>> stage DataTransformationTrainingPipeline started <<<<<<]
+[2025-07-26 17:31:27,002: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\config.yaml loaded successfully]
+[2025-07-26 17:31:27,005: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\params.yaml loaded successfully]
+[2025-07-26 17:31:27,011: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\schema.yaml loaded successfully]
+[2025-07-26 17:31:27,011: INFO: common: Created directory at: artifacts]
+[2025-07-26 17:31:27,012: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-07-26 17:31:27,017: INFO: data_transformation: Read data completed]
+[2025-07-26 17:31:27,017: INFO: data_transformation: Data shape: (1000, 23)]
+[2025-07-26 17:31:27,031: INFO: data_transformation: Train test split completed]
+[2025-07-26 17:31:27,089: INFO: data_transformation: Read train and test data completed]
+[2025-07-26 17:31:27,099: INFO: data_transformation: Obtaining preprocessing object]
+[2025-07-26 17:31:27,100: INFO: data_transformation: Categorical columns: ['gender', 'part_time_job', 'extracurricular_activities', 'career_aspiration', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']]
+[2025-07-26 17:31:27,100: INFO: data_transformation: Numerical columns: ['absence_days', 'weekly_self_study_hours', 'history_score', 'physics_score', 'chemistry_score', 'biology_score', 'english_score', 'geography_score', 'writing_score', 'reading_score']]
+[2025-07-26 17:31:27,103: INFO: data_transformation: Applying preprocessing object on training dataframe and testing dataframe.]
+[2025-07-26 17:31:27,136: INFO: data_transformation: Saved preprocessing object.]
+[2025-07-26 17:31:27,140: INFO: common: binary file saved at: artifacts/data_transformation/preprocessor.pkl]
+[2025-07-26 17:31:27,141: INFO: data_transformation: Data transformation completed]
+[2025-07-26 17:31:27,141: INFO: training_pipeline: >>>>>> stage DataTransformationTrainingPipeline completed <<<<<<
+
+x==========x]
+[2025-07-26 17:31:27,142: INFO: training_pipeline: >>>>>> stage ModelTrainerTrainingPipeline started <<<<<<]
+[2025-07-26 17:31:27,144: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\config.yaml loaded successfully]
+[2025-07-26 17:31:27,147: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\params.yaml loaded successfully]
+[2025-07-26 17:31:27,152: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\schema.yaml loaded successfully]
+[2025-07-26 17:31:27,153: INFO: common: Created directory at: artifacts]
+[2025-07-26 17:31:27,153: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-07-26 17:31:27,154: INFO: model_trainer: Split training and test input data]
+[2025-07-26 17:33:48,798: INFO: model_trainer: Model performance report:]
+[2025-07-26 17:33:48,798: INFO: model_trainer: Random Forest: -0.05729152985693253]
+[2025-07-26 17:33:48,798: INFO: model_trainer: Decision Tree: -1.0440591691550596]
+[2025-07-26 17:33:48,799: INFO: model_trainer: Gradient Boosting: -0.009115689901386004]
+[2025-07-26 17:33:48,799: INFO: model_trainer: Linear Regression: -0.07573410880228959]
+[2025-07-26 17:33:48,799: INFO: model_trainer: XGBRegressor: -0.011917820875588125]
+[2025-07-26 17:33:48,799: INFO: model_trainer: CatBoosting Regressor: -0.02170039036514071]
+[2025-07-26 17:33:48,799: INFO: model_trainer: AdaBoost Regressor: -0.0381981199132424]
+[2025-07-26 17:33:48,800: INFO: model_trainer: Expected accuracy threshold: -0.5]
+[2025-07-26 17:33:48,800: INFO: model_trainer: Best model score achieved: -0.009115689901386004]
+[2025-07-26 17:33:48,800: INFO: model_trainer: Best model name: Gradient Boosting]
+[2025-07-26 17:33:48,800: INFO: model_trainer: Best found model on both training and testing dataset: Gradient Boosting]
+[2025-07-26 17:33:48,800: INFO: model_trainer: Best model score: -0.009115689901386004]
+[2025-07-26 17:33:48,813: INFO: common: binary file saved at: artifacts/model_trainer\model.pkl]
+[2025-07-26 17:33:48,815: INFO: model_trainer: R2 Score: -0.009115689901386004]
+[2025-07-26 17:33:48,818: INFO: training_pipeline: >>>>>> stage ModelTrainerTrainingPipeline completed <<<<<<
+
+x==========x]
+[2025-07-26 17:33:48,819: INFO: training_pipeline: >>>>>> stage ModelEvaluationTrainingPipeline started <<<<<<]
+[2025-07-26 17:33:48,821: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\config.yaml loaded successfully]
+[2025-07-26 17:33:48,824: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\params.yaml loaded successfully]
+[2025-07-26 17:33:48,830: INFO: common: yaml file: D:\PROJECTS\Student\student_performance_ml_project\config\schema.yaml loaded successfully]
+[2025-07-26 17:33:48,830: INFO: common: Created directory at: artifacts]
+[2025-07-26 17:33:48,831: INFO: common: Created directory at: artifacts/model_evaluation]
+[2025-07-26 17:33:48,897: INFO: common: binary file loaded from: artifacts/data_transformation/preprocessor.pkl]
+[2025-07-26 17:33:49,272: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2025-07-26 17:34:04,077: INFO: model_evaluation: Model evaluation completed - RMSE: 29.922102526213777, MAE: 26.067754323761065, R2: -0.009115689901386004]
+[2025-07-26 17:34:04,080: INFO: training_pipeline: >>>>>> stage ModelEvaluationTrainingPipeline completed <<<<<<
+
+x==========x]
+[2025-07-26 17:34:04,080: INFO: training_pipeline: Complete training pipeline finished successfully]
+[2025-07-26 17:34:04,080: INFO: training_pipeline: Best model: Gradient Boosting with R2 score: -0.009115689901386004]
+[2025-07-26 17:34:04,080: INFO: main: >>>>>> Training Pipeline Completed Successfully <<<<<<]
+[2025-07-26 17:34:04,081: INFO: main: Final Results: {'best_model': 'Gradient Boosting', 'r2_score': -0.009115689901386004, 'model_report': {'Random Forest': -0.05729152985693253, 'Decision Tree': -1.0440591691550596, 'Gradient Boosting': -0.009115689901386004, 'Linear Regression': -0.07573410880228959, 'XGBRegressor': -0.011917820875588125, 'CatBoosting Regressor': -0.02170039036514071, 'AdaBoost Regressor': -0.0381981199132424}}]
+[2025-07-26 17:36:03,567: INFO: app: Starting Student Performance ML Web Application]
+[2025-07-26 17:36:03,568: INFO: app: Features: Advanced UI, 3D Effects, Animations, Real-time Predictions]
+[2025-07-26 17:36:03,568: INFO: app: Access the application at: http://localhost:5000]
+[2025-07-26 17:36:03,622: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000]
+[2025-07-26 17:36:03,622: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-26 17:36:03,639: INFO: _internal:  * Restarting with watchdog (windowsapi)]
+[2025-07-26 17:36:05,706: INFO: app: Starting Student Performance ML Web Application]
+[2025-07-26 17:36:05,706: INFO: app: Features: Advanced UI, 3D Effects, Animations, Real-time Predictions]
+[2025-07-26 17:36:05,707: INFO: app: Access the application at: http://localhost:5000]
+[2025-07-26 17:36:05,725: WARNING: _internal:  * Debugger is active!]
+[2025-07-26 17:36:05,741: INFO: _internal:  * Debugger PIN: 143-149-297]
+[2025-07-26 17:36:08,983: INFO: app: Rendering index page]
+[2025-07-26 17:36:09,004: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 17:36:09] "GET / HTTP/1.1" 200 -]
+[2025-07-26 17:36:09,299: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 17:36:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -]
+[2025-07-26 17:36:09,330: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 17:36:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -]
+[2025-07-26 17:36:41,512: INFO: app: Rendering prediction form]
+[2025-07-26 17:36:41,525: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 17:36:41] "GET /predictdata HTTP/1.1" 200 -]
+[2025-07-26 17:36:41,621: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 17:36:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -]
+[2025-07-26 17:36:41,783: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 17:36:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -]
+[2025-07-26 18:20:44,469: INFO: app: Starting Student Performance ML Web Application]
+[2025-07-26 18:20:44,469: INFO: app: Features: Advanced UI, 3D Effects, Animations, Real-time Predictions]
+[2025-07-26 18:20:44,469: INFO: app: Access the application at: http://localhost:5000]
+[2025-07-26 18:20:44,540: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000]
+[2025-07-26 18:20:44,566: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-26 18:20:44,600: INFO: _internal:  * Restarting with watchdog (windowsapi)]
+[2025-07-26 18:20:46,988: INFO: app: Starting Student Performance ML Web Application]
+[2025-07-26 18:20:46,988: INFO: app: Features: Advanced UI, 3D Effects, Animations, Real-time Predictions]
+[2025-07-26 18:20:46,989: INFO: app: Access the application at: http://localhost:5000]
+[2025-07-26 18:20:47,008: WARNING: _internal:  * Debugger is active!]
+[2025-07-26 18:20:47,035: INFO: _internal:  * Debugger PIN: 143-149-297]
+[2025-07-26 18:20:51,595: INFO: app: Rendering index page]
+[2025-07-26 18:20:51,610: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 18:20:51] "GET / HTTP/1.1" 200 -]
+[2025-07-26 18:20:51,870: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 18:20:51] "GET /static/css/style.css HTTP/1.1" 200 -]
+[2025-07-26 18:20:51,927: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 18:20:51] "GET /static/js/main.js HTTP/1.1" 200 -]

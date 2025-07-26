@@ -1,0 +1,101 @@
+# Schema configuration for Student Performance Dataset
+# Dataset: student-scores.xlsx
+
+COLUMNS:
+  student_id: int64
+  gender: object
+  part_time_job: object
+  absence_days: int64
+  extracurricular_activities: object
+  weekly_self_study_hours: int64
+  math_score: int64
+  history_score: int64
+  physics_score: int64
+  chemistry_score: int64
+  biology_score: int64
+  english_score: int64
+  geography_score: int64
+  career_aspiration: object
+
+categorical_columns:
+  - gender
+  - part_time_job
+  - extracurricular_activities
+  - career_aspiration
+
+numerical_columns:
+  - student_id
+  - absence_days
+  - weekly_self_study_hours
+  - math_score
+  - history_score
+  - physics_score
+  - chemistry_score
+  - biology_score
+  - english_score
+  - geography_score
+
+TARGET_COLUMN:
+  name: math_score
+  type: int64
+
+DROP_COLUMNS:
+  - student_id  # ID column not needed for prediction
+
+DOMAIN_VALUE:
+  gender:
+    - Male
+    - Female
+  part_time_job:
+    - Yes
+    - No
+  extracurricular_activities:
+    - Yes
+    - No
+  career_aspiration:
+    - Lawyer
+    - Doctor
+    - Government Officer
+    - Artist
+    - Unknown
+    - Scientist
+    - Software Engineer
+    - Teacher
+    - Business Owner
+    - Accountant
+    - Designer
+    - Construction Engineer
+    - Social Worker
+    - Fashion Designer
+    - Psychologist
+    - Medical Doctor
+    - Journalist
+    - Chef
+
+# Data validation rules
+VALIDATION_RULES:
+  score_range:
+    min: 0
+    max: 100
+  absence_days_range:
+    min: 0
+    max: 365
+  study_hours_range:
+    min: 0
+    max: 168  # max hours per week
+
+# Feature engineering configuration
+FEATURE_ENGINEERING:
+  create_features:
+    - average_score  # Average of all subject scores
+    - total_score    # Sum of all subject scores
+    - study_efficiency  # Score per study hour ratio
+  
+  score_columns:
+    - math_score
+    - history_score
+    - physics_score
+    - chemistry_score
+    - biology_score
+    - english_score
+    - geography_score

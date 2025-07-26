@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/PROJECTS/Student/student_performance_ml_project/mlruns/0/78c1554fb19048e9903daecd902d208b/artifacts
+end_time: 1753526342571
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 78c1554fb19048e9903daecd902d208b
+run_name: beautiful-hare-564
+run_uuid: 78c1554fb19048e9903daecd902d208b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753526341999
+status: 4
+tags: []
+user_id: varni

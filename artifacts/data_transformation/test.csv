@@ -1,0 +1,201 @@
+id,first_name,last_name,email,gender,part_time_job,absence_days,extracurricular_activities,weekly_self_study_hours,career_aspiration,math_score,history_score,physics_score,chemistry_score,biology_score,english_score,geography_score,race_ethnicity,parental_level_of_education,lunch,test_preparation_course,writing_score,reading_score
+522,Ivana,Sibal,ivana.sibal266@gmail.com,Male,No,2,Yes,1.8,Teacher,75,24,95,14,73,47,16,Group E,Masterâ€™s degree,Standard,Completed,40,48
+738,Manikya,Shenoy,manikya.shenoy798@gmail.com,Male,Yes,6,No,10.0,Scientist,98,67,60,13,87,38,78,Group B,Some college,Standard,,26,73
+741,Myra,Sarraf,myra.sarraf214@outlook.com,Male,No,9,No,0.5,Artist,48,41,71,71,94,25,27,Group D,Some college,Standard,,79,64
+661,Tanya,Krish,tanya.krish784@outlook.com,Female,No,3,Yes,17.4,Civil Servant,55,3,88,21,9,16,65,Group D,Some college,Standard,Completed,67,49
+412,Lagan,Thaman,lagan.thaman661@outlook.com,Male,Yes,1,Yes,5.1,Artist,39,81,89,46,87,15,68,Group D,Some high school,Free/reduced,Completed,30,56
+679,Saanvi,Dhingra,saanvi.dhingra292@outlook.com,Female,Yes,12,Yes,19.9,Teacher,50,47,97,69,91,13,57,Group A,Associate degree,Standard,Completed,28,73
+627,Divij,Contractor,divij.contractor431@yahoo.com,Female,No,0,Yes,19.1,Artist,11,96,17,78,38,100,31,Group C,High school,Free/reduced,,74,65
+514,Pranay,Garde,pranay.garde191@gmail.com,Male,Yes,5,Yes,5.2,Civil Servant,52,56,80,79,13,81,21,Group A,Associate degree,Standard,Completed,10,37
+860,Piya,Gour,piya.gour398@outlook.com,Male,Yes,4,Yes,17.2,Doctor,97,8,61,65,9,72,21,Group D,Masterâ€™s degree,Free/reduced,,31,80
+137,Khushi,Malhotra,khushi.malhotra815@yahoo.com,Female,Yes,11,No,9.2,Doctor,89,28,38,87,10,83,83,Group A,Associate degree,Free/reduced,Completed,97,4
+812,Anya,Swaminathan,anya.swaminathan460@yahoo.com,Female,No,1,No,15.0,Civil Servant,84,58,84,10,42,70,4,Group A,Masterâ€™s degree,Standard,Completed,16,79
+77,Taran,Choudhary,taran.choudhary798@gmail.com,Female,Yes,16,Yes,10.6,Doctor,99,44,44,93,82,18,30,Group C,High school,Standard,,13,18
+637,Ranbir,Chana,ranbir.chana329@gmail.com,Male,No,12,Yes,19.8,Entrepreneur,71,25,25,32,62,56,86,Group B,Masterâ€™s degree,Standard,Completed,36,28
+974,Shayak,Gill,shayak.gill854@gmail.com,Male,Yes,15,Yes,2.0,Doctor,33,66,53,21,73,69,43,Group E,Associate degree,Standard,Completed,94,62
+939,Darshit,Bath,darshit.bath520@yahoo.com,Male,No,0,Yes,12.0,Engineer,84,33,31,48,44,81,43,Group E,Some college,Standard,Completed,11,46
+900,Emir,Kara,emir.kara96@yahoo.com,Female,No,4,Yes,17.7,Doctor,65,77,63,35,25,92,23,Group A,Masterâ€™s degree,Free/reduced,Completed,53,4
+281,Zain,Arora,zain.arora849@yahoo.com,Female,Yes,8,Yes,8.4,Doctor,66,97,78,88,87,34,36,Group E,Some college,Free/reduced,,83,95
+884,Hrishita,Dass,hrishita.dass55@yahoo.com,Female,No,12,No,1.6,Scientist,45,65,70,61,5,61,8,Group B,Some college,Standard,,45,42
+762,Onkar,Sama,onkar.sama65@yahoo.com,Female,No,20,Yes,19.3,Doctor,12,29,58,14,15,70,91,Group C,Some college,Free/reduced,Completed,37,16
+320,Zara,Luthra,zara.luthra954@gmail.com,Female,Yes,9,No,7.4,Artist,8,97,54,70,8,37,60,Group C,Some college,Free/reduced,,17,15
+550,Raunak,Bedi,raunak.bedi486@outlook.com,Male,Yes,16,Yes,3.8,Civil Servant,75,80,81,19,29,15,16,Group C,High school,Standard,Completed,51,4
+175,Hrishita,Toor,hrishita.toor255@yahoo.com,Female,No,8,Yes,11.4,Engineer,64,86,6,22,28,66,5,Group D,Some college,Free/reduced,Completed,51,8
+372,Suhana,Vasa,suhana.vasa772@outlook.com,Male,Yes,10,No,18.0,Entrepreneur,87,54,35,6,8,47,44,Group E,Bachelorâ€™s degree,Standard,Completed,57,62
+528,Ritvik,Choudhry,ritvik.choudhry696@gmail.com,Female,Yes,3,No,19.5,Doctor,6,15,65,83,43,75,55,Group D,High school,Standard,,19,80
+211,Nirvi,Manne,nirvi.manne808@yahoo.com,Female,No,8,No,9.3,Engineer,60,6,81,74,74,79,9,Group E,Some high school,Free/reduced,Completed,60,24
+236,Nitya,Taneja,nitya.taneja460@gmail.com,Female,Yes,5,Yes,14.7,Engineer,48,5,54,35,71,33,16,Group C,Some high school,Free/reduced,Completed,20,74
+102,Emir,Virk,emir.virk515@outlook.com,Male,Yes,18,Yes,3.4,Entrepreneur,92,77,43,72,5,3,10,Group E,Some college,Standard,Completed,5,82
+987,Urvi,Mander,urvi.mander27@outlook.com,Female,No,16,No,19.1,Civil Servant,71,41,2,78,41,96,62,Group C,Some college,Standard,,98,87
+903,Samiha,Srinivasan,samiha.srinivasan272@yahoo.com,Female,Yes,7,No,7.9,Engineer,67,29,5,28,57,30,50,Group A,Some high school,Free/reduced,Completed,0,55
+948,Gatik,Jha,gatik.jha746@gmail.com,Female,Yes,3,Yes,1.9,Entrepreneur,58,67,59,92,100,15,69,Group B,High school,Standard,,6,77
+347,Ahana ,Sandal,ahana .sandal296@yahoo.com,Male,No,10,Yes,1.9,Entrepreneur,81,45,55,78,83,34,42,Group A,Some college,Free/reduced,Completed,34,34
+140,Devansh,Sathe,devansh.sathe774@outlook.com,Female,Yes,2,No,1.1,Artist,29,9,43,77,98,78,76,Group C,Some high school,Free/reduced,Completed,50,99
+622,Dhanush,Ram,dhanush.ram581@yahoo.com,Female,No,3,Yes,10.0,Teacher,18,59,87,19,66,37,79,Group B,Some college,Free/reduced,Completed,71,85
+500,Anahita,Kamdar,anahita.kamdar962@yahoo.com,Female,Yes,7,Yes,2.1,Scientist,22,1,51,83,40,1,49,Group B,Some high school,Free/reduced,Completed,27,58
+371,Aarush,Warrior,aarush.warrior114@yahoo.com,Male,No,14,Yes,7.3,Doctor,82,71,90,8,71,90,99,Group C,High school,Standard,Completed,26,17
+199,Eva,Brar,eva.brar996@gmail.com,Male,Yes,4,Yes,8.5,Teacher,55,25,80,18,76,33,40,Group A,Associate degree,Free/reduced,Completed,93,8
+688,Himmat,Venkatesh,himmat.venkatesh173@gmail.com,Male,Yes,6,Yes,18.6,Entrepreneur,18,18,21,60,0,41,9,Group E,Associate degree,Free/reduced,Completed,6,17
+585,Miraya,Balan,miraya.balan809@yahoo.com,Female,No,6,Yes,4.2,Engineer,97,87,54,34,32,81,22,Group A,Some college,Free/reduced,,10,18
+902,Mannat,Bains,mannat.bains466@outlook.com,Male,No,17,No,0.9,Scientist,2,52,75,80,8,60,53,Group E,High school,Free/reduced,,59,77
+60,Tiya,Soni,tiya.soni206@gmail.com,Male,No,16,No,16.6,Scientist,61,37,95,43,14,59,9,Group B,Masterâ€™s degree,Free/reduced,Completed,18,96
+329,Rohan,Kulkarni,rohan.kulkarni206@gmail.com,Female,No,8,No,15.5,Teacher,15,34,19,20,35,14,1,Group E,Some high school,Standard,Completed,79,71
+97,Amani,Agarwal,amani.agarwal322@outlook.com,Female,No,7,Yes,0.5,Doctor,63,66,49,71,15,33,99,Group D,High school,Free/reduced,Completed,33,90
+313,Adira,Raman,adira.raman468@gmail.com,Female,Yes,16,No,19.7,Engineer,71,49,66,97,80,6,24,Group D,Some college,Free/reduced,Completed,37,56
+975,Aarush,Chana,aarush.chana896@outlook.com,Male,Yes,3,Yes,10.9,Scientist,52,3,43,29,73,96,57,Group D,Masterâ€™s degree,Free/reduced,Completed,94,2
+300,Shalv,Dewan,shalv.dewan297@yahoo.com,Female,Yes,4,No,1.7,Entrepreneur,95,6,70,51,33,10,51,Group B,High school,Free/reduced,,64,55
+278,Miraan,Venkatesh,miraan.venkatesh135@outlook.com,Male,Yes,0,Yes,13.3,Civil Servant,41,60,59,69,34,70,56,Group E,High school,Free/reduced,Completed,17,89
+925,Neysa,Sachdev,neysa.sachdev686@outlook.com,Female,No,3,No,9.4,Doctor,31,41,5,43,45,60,97,Group C,Associate degree,Standard,Completed,30,68
+602,Piya,Dada,piya.dada836@yahoo.com,Female,Yes,19,No,8.6,Entrepreneur,45,47,80,8,57,21,4,Group E,Associate degree,Free/reduced,Completed,65,32
+440,Anahi,Chand,anahi.chand366@outlook.com,Female,Yes,5,Yes,16.1,Scientist,55,14,79,29,15,71,28,Group C,Some college,Standard,Completed,62,33
+838,Romil,Sachar,romil.sachar43@yahoo.com,Male,Yes,6,Yes,15.2,Teacher,95,38,88,86,27,75,38,Group A,Masterâ€™s degree,Standard,Completed,46,59
+571,Piya,Bala,piya.bala765@gmail.com,Male,Yes,4,No,14.7,Teacher,54,47,6,89,13,84,74,Group E,High school,Standard,,9,61
+880,Vedika,Yohannan,vedika.yohannan466@gmail.com,Male,Yes,7,Yes,12.8,Civil Servant,5,8,48,17,0,36,58,Group D,Bachelorâ€™s degree,Free/reduced,Completed,67,62
+262,Indrajit,Mahajan,indrajit.mahajan954@yahoo.com,Female,No,19,Yes,18.9,Civil Servant,22,81,63,56,1,25,84,Group B,Some high school,Standard,,66,36
+579,Miraya,Chowdhury,miraya.chowdhury805@gmail.com,Female,No,9,No,12.5,Artist,5,91,99,87,49,30,26,Group A,High school,Free/reduced,,78,77
+24,Tarini,Ganguly,tarini.ganguly447@outlook.com,Female,Yes,12,Yes,5.1,Teacher,55,0,66,68,87,92,94,Group B,Some college,Free/reduced,,94,85
+31,Amira,Loyal,amira.loyal853@yahoo.com,Male,No,18,Yes,17.1,Civil Servant,73,48,61,0,45,38,96,Group E,Masterâ€™s degree,Standard,Completed,49,53
+618,Romil,Sarma,romil.sarma598@gmail.com,Female,No,7,No,2.2,Civil Servant,2,72,87,37,29,67,64,Group B,Some high school,Standard,Completed,21,96
+11,Mehul,Krishnan,mehul.krishnan8@gmail.com,Male,Yes,7,Yes,18.1,Civil Servant,42,9,65,30,35,85,62,Group B,Masterâ€™s degree,Free/reduced,,27,69
+222,Amira,Rastogi,amira.rastogi665@gmail.com,Female,Yes,4,Yes,19.6,Civil Servant,20,13,53,75,61,72,86,Group E,Associate degree,Free/reduced,,56,23
+821,Tejas,Bath,tejas.bath44@outlook.com,Male,No,13,No,17.6,Scientist,51,59,59,57,19,18,94,Group D,Some high school,Standard,Completed,96,49
+297,Manikya,Choudhury,manikya.choudhury365@gmail.com,Female,Yes,8,No,17.8,Doctor,29,32,38,11,73,51,72,Group A,Masterâ€™s degree,Free/reduced,Completed,27,93
+55,Anahi,Gupta,anahi.gupta233@outlook.com,Female,Yes,13,Yes,15.2,Teacher,12,56,21,88,38,3,5,Group C,Some college,Free/reduced,Completed,41,7
+543,Heer,Singh,heer.singh860@gmail.com,Female,No,1,No,9.9,Doctor,47,14,43,86,31,69,98,Group C,Associate degree,Free/reduced,Completed,15,37
+210,Dhanush,Kadakia,dhanush.kadakia861@outlook.com,Male,Yes,9,Yes,9.4,Teacher,33,92,71,97,23,87,42,Group B,Some college,Standard,Completed,83,11
+605,Khushi,Sahota,khushi.sahota833@yahoo.com,Female,Yes,6,Yes,16.1,Artist,5,35,53,15,15,57,21,Group E,Associate degree,Standard,,76,41
+693,Priyansh,Tara,priyansh.tara628@outlook.com,Male,Yes,5,Yes,1.7,Civil Servant,15,7,56,81,90,7,40,Group C,High school,Standard,Completed,12,69
+663,Tara,Bal,tara.bal717@gmail.com,Female,Yes,18,Yes,3.0,Engineer,75,75,47,86,83,58,48,Group B,Bachelorâ€™s degree,Free/reduced,,41,56
+867,Nitara,Cherian,nitara.cherian150@yahoo.com,Female,Yes,8,Yes,19.3,Civil Servant,70,50,0,8,24,32,63,Group E,Some college,Free/reduced,,58,70
+71,Hiran,Dasgupta,hiran.dasgupta588@gmail.com,Female,No,17,Yes,12.2,Teacher,88,34,3,23,34,89,97,Group C,Some high school,Standard,,39,43
+544,Prisha,Chanda,prisha.chanda3@outlook.com,Male,No,6,No,18.6,Teacher,65,4,59,79,62,7,45,Group D,Some college,Free/reduced,Completed,0,78
+108,Hrishita,Sood,hrishita.sood999@gmail.com,Male,No,11,No,11.2,Scientist,96,18,25,77,65,51,64,Group A,High school,Free/reduced,Completed,5,5
+494,Indrans,Kalla,indrans.kalla281@outlook.com,Male,No,2,Yes,18.2,Artist,97,70,15,47,9,96,13,Group C,Associate degree,Free/reduced,,64,98
+591,Indranil,Dar,indranil.dar866@outlook.com,Female,No,20,No,14.0,Civil Servant,12,11,13,11,83,2,78,Group D,Masterâ€™s degree,Standard,Completed,52,13
+742,Divyansh,Kapadia,divyansh.kapadia165@yahoo.com,Male,No,18,No,19.0,Engineer,99,84,49,88,90,62,31,Group E,Associate degree,Standard,,35,77
+293,Krish,Taneja,krish.taneja855@yahoo.com,Male,Yes,6,Yes,2.0,Doctor,68,49,24,24,67,84,31,Group B,Bachelorâ€™s degree,Free/reduced,,72,80
+290,Vaibhav,Viswanathan,vaibhav.viswanathan905@gmail.com,Male,No,19,Yes,6.4,Engineer,84,68,49,24,67,87,63,Group B,Bachelorâ€™s degree,Free/reduced,Completed,98,70
+653,Farhan,Som,farhan.som594@gmail.com,Male,No,19,No,19.1,Artist,23,33,98,100,35,33,63,Group B,High school,Standard,,16,29
+40,Trisha,Dhillon,trisha.dhillon314@yahoo.com,Female,Yes,3,Yes,6.3,Teacher,68,97,88,23,24,27,94,Group E,Bachelorâ€™s degree,Free/reduced,,61,35
+590,Nitara,Baria,nitara.baria421@yahoo.com,Female,No,17,No,10.5,Civil Servant,42,14,22,58,54,47,22,Group B,Bachelorâ€™s degree,Free/reduced,Completed,70,76
+308,Kavya,Deo,kavya.deo994@yahoo.com,Female,No,14,Yes,4.1,Doctor,74,69,87,25,17,39,88,Group B,Associate degree,Standard,,90,67
+680,Diya,Sastry,diya.sastry489@outlook.com,Female,Yes,20,No,6.6,Civil Servant,80,10,12,71,21,26,62,Group A,High school,Free/reduced,Completed,75,31
+67,Lakshit,Sagar,lakshit.sagar63@yahoo.com,Male,No,13,Yes,9.8,Artist,9,10,41,77,18,8,16,Group E,Bachelorâ€™s degree,Free/reduced,Completed,35,79
+276,Yuvraj ,Rao,yuvraj .rao800@yahoo.com,Female,No,13,Yes,3.7,Engineer,16,93,30,84,32,95,89,Group B,High school,Free/reduced,,95,10
+68,Charvi,Hora,charvi.hora465@outlook.com,Female,No,3,Yes,17.1,Teacher,98,70,92,27,55,57,29,Group D,Associate degree,Free/reduced,,52,43
+319,Aarav,Lad,aarav.lad38@gmail.com,Female,Yes,18,No,6.6,Engineer,6,13,53,22,20,86,36,Group E,Bachelorâ€™s degree,Standard,Completed,78,84
+549,Eshani,Raju,eshani.raju445@yahoo.com,Male,No,9,No,1.7,Artist,31,79,19,93,65,23,31,Group A,Some college,Standard,Completed,35,98
+999,Farhan,Gera,farhan.gera414@outlook.com,Female,Yes,14,Yes,15.7,Scientist,61,59,41,33,95,46,71,Group D,High school,Free/reduced,,80,34
+715,Gokul,Krishnamurthy,gokul.krishnamurthy711@gmail.com,Male,No,18,No,4.3,Artist,35,95,88,99,23,35,64,Group E,Associate degree,Standard,Completed,85,5
+754,Jayant,Baral,jayant.baral579@gmail.com,Male,Yes,16,Yes,2.8,Artist,97,4,7,76,26,94,84,Group E,Associate degree,Standard,Completed,37,47
+328,Gatik,Sem,gatik.sem731@outlook.com,Female,Yes,0,No,18.6,Teacher,76,11,42,59,5,13,66,Group C,Some high school,Free/reduced,,98,84
+383,Eva,Mammen,eva.mammen205@gmail.com,Male,No,9,No,0.8,Civil Servant,38,74,38,63,71,94,59,Group A,High school,Free/reduced,Completed,28,3
+452,Stuvan,Choudhury,stuvan.choudhury944@gmail.com,Female,No,3,Yes,7.4,Scientist,5,66,19,15,47,39,47,Group D,Some high school,Standard,,38,37
+523,Nakul,Sant,nakul.sant605@outlook.com,Male,Yes,12,No,6.4,Scientist,86,16,66,84,77,75,28,Group A,Bachelorâ€™s degree,Free/reduced,Completed,13,50
+219,Rohan,Karnik,rohan.karnik303@gmail.com,Female,Yes,17,No,18.2,Teacher,61,42,30,0,1,85,11,Group D,High school,Standard,,14,73
+788,Yasmin,Contractor,yasmin.contractor628@yahoo.com,Male,No,17,No,15.7,Engineer,85,70,8,43,31,46,18,Group B,Associate degree,Standard,Completed,30,62
+437,Nitara,Arya,nitara.arya541@gmail.com,Male,No,18,No,11.1,Scientist,82,53,60,14,63,79,82,Group D,Some high school,Standard,Completed,44,57
+765,Reyansh,Sandhu,reyansh.sandhu304@yahoo.com,Female,No,15,No,6.4,Teacher,38,0,9,32,90,71,85,Group E,Bachelorâ€™s degree,Standard,,39,26
+89,Aayush,Sangha,aayush.sangha49@gmail.com,Male,No,20,No,1.3,Civil Servant,63,76,68,2,80,65,73,Group B,Some college,Free/reduced,,30,91
+64,Priyansh,Bali,priyansh.bali283@gmail.com,Female,Yes,14,Yes,13.3,Teacher,81,76,2,6,100,42,31,Group E,High school,Standard,,16,100
+827,Pari,Deep,pari.deep577@yahoo.com,Female,Yes,10,Yes,7.7,Doctor,79,41,10,67,62,59,77,Group A,Associate degree,Free/reduced,,93,34
+717,Divyansh,Vohra,divyansh.vohra603@yahoo.com,Female,No,17,No,9.5,Entrepreneur,1,43,43,40,44,56,19,Group D,High school,Standard,Completed,59,95
+352,Dharmajan,Dhar,dharmajan.dhar629@outlook.com,Male,Yes,14,No,2.1,Engineer,9,73,93,32,99,57,2,Group A,Some high school,Free/reduced,Completed,63,19
+937,Umang,Bose,umang.bose493@gmail.com,Male,No,17,No,1.1,Teacher,95,77,3,92,19,45,40,Group A,Bachelorâ€™s degree,Free/reduced,Completed,48,86
+257,Ahana ,Majumdar,ahana .majumdar494@outlook.com,Male,Yes,19,Yes,17.9,Civil Servant,86,83,55,66,53,47,5,Group D,High school,Free/reduced,Completed,89,67
+636,Nehmat,Kant,nehmat.kant791@outlook.com,Male,Yes,3,Yes,14.6,Artist,96,53,8,7,78,32,14,Group A,Associate degree,Free/reduced,,4,95
+645,Ishaan,Gala,ishaan.gala423@outlook.com,Male,Yes,0,Yes,16.3,Engineer,7,16,56,23,36,5,40,Group B,Some college,Standard,Completed,44,77
+555,Hazel,Bhatnagar,hazel.bhatnagar780@gmail.com,Female,Yes,1,Yes,3.8,Entrepreneur,91,32,97,71,44,46,57,Group A,Associate degree,Standard,Completed,80,91
+960,Ivana,Gour,ivana.gour92@outlook.com,Female,No,4,No,11.6,Teacher,72,31,18,42,72,13,37,Group E,Some college,Standard,,2,98
+169,Jivin,Dewan,jivin.dewan396@gmail.com,Female,Yes,15,Yes,10.6,Engineer,46,40,16,49,72,53,46,Group B,Associate degree,Standard,,69,87
+918,Shaan,Halder,shaan.halder729@gmail.com,Male,Yes,7,Yes,14.6,Teacher,50,17,27,35,14,73,0,Group A,Masterâ€™s degree,Standard,Completed,83,26
+529,Yuvaan,Saraf,yuvaan.saraf407@yahoo.com,Male,No,19,Yes,13.1,Artist,99,88,85,84,11,99,59,Group C,Masterâ€™s degree,Free/reduced,Completed,83,48
+824,Heer,Bhatia,heer.bhatia985@gmail.com,Female,Yes,10,No,12.2,Doctor,30,66,63,27,53,62,1,Group B,Some college,Free/reduced,Completed,39,80
+986,Saira,Gaba,saira.gaba992@outlook.com,Male,Yes,12,Yes,17.4,Doctor,43,67,77,100,87,47,13,Group A,Bachelorâ€™s degree,Free/reduced,Completed,28,64
+817,Tanya,Chowdhury,tanya.chowdhury726@yahoo.com,Male,Yes,15,No,14.6,Entrepreneur,7,56,23,64,0,10,22,Group B,Bachelorâ€™s degree,Standard,,25,33
+87,Anahita,Lalla,anahita.lalla953@gmail.com,Female,No,1,No,10.0,Doctor,49,10,47,28,3,40,12,Group C,High school,Standard,,91,83
+433,Anahita,Bhatt,anahita.bhatt120@gmail.com,Female,Yes,20,No,9.2,Artist,84,95,77,92,62,38,79,Group D,Some college,Standard,,78,46
+185,Vardaniya,Srinivasan,vardaniya.srinivasan801@outlook.com,Female,No,15,No,6.9,Entrepreneur,64,41,49,34,23,3,40,Group A,Some college,Standard,Completed,76,28
+979,Seher,Ravel,seher.ravel130@gmail.com,Male,No,1,Yes,13.2,Entrepreneur,55,92,76,91,88,32,64,Group B,Some college,Free/reduced,,37,82
+535,Shanaya,Maharaj,shanaya.maharaj267@yahoo.com,Female,Yes,12,No,1.7,Scientist,86,54,88,18,68,26,9,Group C,Masterâ€™s degree,Standard,Completed,80,93
+295,Ryan,Tara,ryan.tara783@outlook.com,Female,No,10,Yes,11.3,Doctor,48,98,70,95,32,46,57,Group A,Masterâ€™s degree,Standard,Completed,57,50
+893,Baiju,Bhatnagar,baiju.bhatnagar874@gmail.com,Female,Yes,2,Yes,15.9,Engineer,19,69,54,63,11,89,82,Group A,Associate degree,Standard,,19,6
+426,Madhup,Deshpande,madhup.deshpande465@outlook.com,Female,No,19,Yes,6.6,Engineer,83,79,57,41,93,93,72,Group A,Masterâ€™s degree,Free/reduced,Completed,16,27
+714,Bhamini,Badami,bhamini.badami525@outlook.com,Female,Yes,10,No,8.5,Engineer,23,95,32,92,83,95,10,Group B,Bachelorâ€™s degree,Free/reduced,Completed,55,14
+261,Prisha,Zacharia,prisha.zacharia103@gmail.com,Male,No,10,Yes,3.2,Teacher,0,11,18,60,76,55,11,Group B,Some college,Standard,,8,33
+238,Nitara,Ben,nitara.ben806@outlook.com,Male,Yes,13,No,1.8,Doctor,27,84,42,42,46,37,27,Group E,Associate degree,Standard,,96,79
+560,Suhana,Korpal,suhana.korpal263@gmail.com,Male,Yes,12,No,17.4,Teacher,77,70,26,56,28,41,34,Group D,High school,Free/reduced,,26,74
+584,Ryan,Mane,ryan.mane351@outlook.com,Female,No,6,No,2.3,Artist,4,69,19,60,18,81,27,Group A,Bachelorâ€™s degree,Free/reduced,,40,72
+446,Vaibhav,Dewan,vaibhav.dewan718@yahoo.com,Male,No,20,Yes,17.8,Entrepreneur,100,79,83,56,89,44,100,Group B,Some college,Standard,,83,51
+868,Nayantara,Reddy,nayantara.reddy53@yahoo.com,Female,No,19,Yes,9.5,Artist,40,15,17,23,15,46,97,Group A,Some college,Standard,Completed,6,5
+801,Arhaan,Mann,arhaan.mann960@outlook.com,Female,No,9,No,9.0,Teacher,30,87,62,78,32,44,81,Group B,Associate degree,Free/reduced,,58,61
+600,Rati,Vasa,rati.vasa31@yahoo.com,Male,Yes,7,Yes,14.6,Doctor,34,35,61,25,11,44,90,Group C,Associate degree,Free/reduced,Completed,70,83
+850,Samiha,Brahmbhatt,samiha.brahmbhatt25@gmail.com,Male,Yes,9,Yes,4.1,Civil Servant,99,87,9,8,32,57,15,Group D,Some high school,Free/reduced,Completed,54,45
+266,Adah,Bhatt,adah.bhatt649@gmail.com,Female,Yes,10,No,19.1,Entrepreneur,68,1,89,33,31,36,11,Group C,Some high school,Standard,Completed,51,86
+996,Ahana ,Johal,ahana .johal601@outlook.com,Female,No,4,No,19.3,Teacher,28,54,57,81,100,56,92,Group D,High school,Standard,,37,82
+530,Nirvaan,Dua,nirvaan.dua123@gmail.com,Male,Yes,3,No,12.8,Entrepreneur,28,2,75,73,73,61,35,Group A,Bachelorâ€™s degree,Standard,Completed,88,95
+56,Purab,Reddy,purab.reddy251@outlook.com,Male,No,18,Yes,3.4,Engineer,78,48,79,87,30,63,74,Group D,Masterâ€™s degree,Free/reduced,Completed,18,29
+121,Gokul,Bhatt,gokul.bhatt490@gmail.com,Male,No,19,No,8.3,Entrepreneur,60,96,68,85,27,97,31,Group E,Some high school,Free/reduced,Completed,87,96
+216,Nakul,Deo,nakul.deo230@outlook.com,Male,Yes,6,Yes,11.8,Doctor,15,46,91,83,4,48,81,Group E,Bachelorâ€™s degree,Standard,,32,98
+26,Vaibhav,Bava,vaibhav.bava312@yahoo.com,Male,Yes,13,No,9.3,Artist,86,27,65,60,94,21,84,Group E,Masterâ€™s degree,Free/reduced,,10,36
+73,Heer,Deep,heer.deep691@gmail.com,Male,No,14,No,9.7,Artist,53,34,27,96,65,14,44,Group C,Masterâ€™s degree,Free/reduced,Completed,55,14
+45,Myra,Tiwari,myra.tiwari704@gmail.com,Male,No,20,Yes,8.5,Entrepreneur,28,82,19,34,18,9,7,Group E,Masterâ€™s degree,Free/reduced,Completed,21,39
+248,Prerak,Krishnan,prerak.krishnan180@outlook.com,Male,Yes,8,Yes,17.8,Doctor,33,93,80,9,93,9,2,Group A,Bachelorâ€™s degree,Free/reduced,,64,80
+722,Neysa,Brahmbhatt,neysa.brahmbhatt700@gmail.com,Male,No,18,No,19.5,Artist,24,81,3,79,28,17,78,Group A,Bachelorâ€™s degree,Free/reduced,,79,64
+282,Jayesh,Shan,jayesh.shan187@gmail.com,Male,No,3,No,12.4,Scientist,89,79,62,24,41,2,19,Group A,High school,Standard,Completed,6,68
+894,Seher,Kade,seher.kade299@yahoo.com,Male,No,18,Yes,0.8,Scientist,42,12,4,74,10,5,78,Group B,Associate degree,Free/reduced,,0,24
+915,Raghav,Ratta,raghav.ratta555@gmail.com,Female,No,5,Yes,1.6,Doctor,23,83,72,89,13,80,2,Group B,High school,Standard,Completed,60,27
+811,Ivan,Dave,ivan.dave364@outlook.com,Male,No,0,No,19.8,Scientist,32,24,65,35,66,3,62,Group A,Masterâ€™s degree,Standard,Completed,40,21
+245,Saanvi,Garg,saanvi.garg189@gmail.com,Male,No,6,Yes,3.6,Civil Servant,72,6,96,70,59,82,70,Group A,Some college,Standard,,9,37
+823,Abram,Deo,abram.deo23@yahoo.com,Male,No,5,No,16.6,Civil Servant,70,35,29,24,62,77,92,Group D,High school,Free/reduced,,63,55
+322,Seher,Shan,seher.shan533@outlook.com,Female,No,15,Yes,17.7,Doctor,90,37,24,0,15,3,59,Group B,Bachelorâ€™s degree,Free/reduced,Completed,80,15
+644,Ehsaan,Varughese,ehsaan.varughese785@yahoo.com,Female,Yes,13,No,11.0,Engineer,56,15,78,47,45,24,43,Group B,High school,Standard,,55,7
+159,Samiha,Bala,samiha.bala450@gmail.com,Male,Yes,6,No,17.2,Entrepreneur,80,54,21,78,17,100,26,Group E,Some college,Free/reduced,,26,7
+978,Darshit,Bobal,darshit.bobal75@outlook.com,Male,Yes,10,No,19.4,Civil Servant,76,5,71,75,68,98,87,Group D,Bachelorâ€™s degree,Free/reduced,,34,30
+430,Parinaaz,Sur,parinaaz.sur448@gmail.com,Female,No,9,Yes,19.7,Teacher,38,31,66,54,37,72,6,Group A,Bachelorâ€™s degree,Standard,Completed,70,9
+942,Shanaya,Shankar,shanaya.shankar275@gmail.com,Male,Yes,12,No,16.7,Engineer,71,67,94,0,33,80,93,Group B,Bachelorâ€™s degree,Free/reduced,Completed,33,82
+463,Anahita,Sarma,anahita.sarma216@yahoo.com,Female,No,0,Yes,12.9,Engineer,77,60,0,1,86,22,52,Group D,Associate degree,Standard,,71,89
+310,Kimaya,Kalla,kimaya.kalla190@gmail.com,Male,No,19,Yes,11.9,Doctor,87,3,45,10,88,99,61,Group E,Associate degree,Free/reduced,,17,64
+698,Indrajit,Kapoor,indrajit.kapoor271@gmail.com,Female,No,11,No,7.0,Teacher,66,57,80,87,21,4,74,Group E,Bachelorâ€™s degree,Standard,Completed,49,19
+61,Bhavin,Contractor,bhavin.contractor810@yahoo.com,Male,Yes,8,Yes,9.1,Teacher,95,86,33,74,48,81,47,Group B,Associate degree,Standard,Completed,13,86
+885,Yasmin,Chahal,yasmin.chahal150@outlook.com,Male,No,1,Yes,10.2,Teacher,66,47,3,57,51,42,78,Group E,Some college,Free/reduced,Completed,58,44
+596,Kimaya,Keer,kimaya.keer586@yahoo.com,Male,Yes,4,No,12.7,Civil Servant,45,23,30,83,28,38,24,Group D,Some college,Standard,Completed,68,31
+768,Shray,Raj,shray.raj73@outlook.com,Male,No,8,Yes,7.6,Scientist,14,80,59,54,74,21,90,Group C,High school,Standard,,88,62
+650,Armaan,Karan,armaan.karan776@gmail.com,Male,No,19,No,17.3,Civil Servant,93,94,96,7,13,70,49,Group C,Bachelorâ€™s degree,Free/reduced,Completed,92,86
+651,Dhruv,Dugar,dhruv.dugar167@yahoo.com,Female,No,7,Yes,18.2,Scientist,87,35,10,31,98,69,37,Group D,Some high school,Free/reduced,Completed,43,73
+866,Amani,Bath,amani.bath818@yahoo.com,Male,Yes,3,No,12.8,Doctor,76,81,43,23,82,63,47,Group D,Masterâ€™s degree,Free/reduced,Completed,31,50
+669,Mohanlal,Ramanathan,mohanlal.ramanathan690@gmail.com,Male,No,15,Yes,9.7,Doctor,93,63,36,16,25,81,11,Group B,Some high school,Free/reduced,,66,92
+299,Kartik,Iyengar,kartik.iyengar56@yahoo.com,Female,Yes,10,Yes,6.5,Teacher,28,19,6,86,93,50,57,Group E,Bachelorâ€™s degree,Standard,,96,76
+690,Trisha,Subramanian,trisha.subramanian574@yahoo.com,Female,No,8,Yes,11.2,Artist,83,44,22,3,46,59,98,Group D,High school,Standard,Completed,85,44
+315,Veer,Yogi,veer.yogi462@gmail.com,Female,Yes,14,Yes,17.7,Engineer,32,41,88,83,91,20,91,Group A,Some high school,Free/reduced,Completed,93,15
+311,Shray,Sethi,shray.sethi504@yahoo.com,Female,Yes,5,Yes,4.5,Artist,97,1,34,52,28,95,85,Group B,Some high school,Standard,Completed,25,96
+362,Manjari,Varghese,manjari.varghese634@yahoo.com,Male,Yes,14,Yes,5.5,Doctor,14,19,87,60,63,22,20,Group A,Masterâ€™s degree,Free/reduced,Completed,85,5
+480,Piya,Rama,piya.rama712@yahoo.com,Female,No,19,No,19.5,Doctor,5,97,78,75,24,68,37,Group B,Some high school,Free/reduced,,19,41
+111,Ayesha,Andra,ayesha.andra175@outlook.com,Female,No,4,Yes,0.6,Teacher,14,24,2,56,40,53,19,Group B,Associate degree,Free/reduced,,52,88
+990,Indranil,Shroff,indranil.shroff746@outlook.com,Female,Yes,7,No,8.9,Scientist,5,2,79,34,19,89,82,Group A,Some high school,Free/reduced,,13,36
+487,Dishani,Sabharwal,dishani.sabharwal811@gmail.com,Female,No,6,No,15.4,Teacher,53,26,56,57,71,3,47,Group B,Some college,Standard,Completed,17,73
+364,Amani,Johal,amani.johal204@outlook.com,Female,No,7,Yes,6.5,Engineer,30,94,52,25,48,28,9,Group D,Some high school,Free/reduced,,60,74
+255,Navya,Deep,navya.deep900@outlook.com,Male,No,2,Yes,9.0,Artist,61,21,28,52,76,18,74,Group E,Masterâ€™s degree,Free/reduced,,98,23
+260,Faiyaz,Barad,faiyaz.barad566@outlook.com,Female,No,5,No,11.2,Artist,32,39,73,44,99,90,50,Group A,Masterâ€™s degree,Standard,Completed,94,17
+803,Hansh,Bath,hansh.bath214@yahoo.com,Female,No,13,No,14.7,Artist,49,59,46,43,41,85,51,Group E,High school,Standard,,17,92
+678,Indrans,Krish,indrans.krish804@yahoo.com,Female,No,16,Yes,6.0,Artist,25,12,33,83,73,60,48,Group A,High school,Free/reduced,Completed,37,54
+495,Jayesh,Sha,jayesh.sha213@outlook.com,Female,Yes,14,Yes,1.5,Teacher,86,95,59,48,43,95,51,Group A,Some high school,Free/reduced,,24,50
+671,Rhea,Buch,rhea.buch502@outlook.com,Female,No,19,No,10.9,Scientist,12,28,14,96,97,36,53,Group B,Masterâ€™s degree,Free/reduced,,57,41
+378,Anahi,Bakshi,anahi.bakshi415@yahoo.com,Male,Yes,14,No,3.1,Teacher,69,64,42,82,90,37,60,Group E,Masterâ€™s degree,Standard,Completed,37,96
+527,Advik,Batra,advik.batra671@gmail.com,Female,Yes,14,No,5.8,Doctor,26,27,95,25,94,83,1,Group E,Some high school,Standard,Completed,46,92
+846,Tushar,Sampath,tushar.sampath834@outlook.com,Male,No,17,No,7.2,Artist,11,77,32,17,42,45,82,Group E,Masterâ€™s degree,Standard,,59,57
+138,Manikya,Raja,manikya.raja58@outlook.com,Female,Yes,5,Yes,10.0,Artist,82,100,42,72,12,67,5,Group E,Associate degree,Free/reduced,,29,27
+356,Suhana,Dalal,suhana.dalal399@gmail.com,Female,No,15,No,19.3,Engineer,4,43,7,43,100,92,5,Group B,Masterâ€™s degree,Free/reduced,,51,15
+366,Kartik,Sekhon,kartik.sekhon873@yahoo.com,Male,No,13,Yes,15.2,Doctor,37,77,20,81,78,21,73,Group A,Associate degree,Free/reduced,,70,29
+943,Umang,Tak,umang.tak529@gmail.com,Male,No,6,Yes,8.0,Doctor,19,86,8,18,89,51,79,Group B,Bachelorâ€™s degree,Free/reduced,Completed,86,37
+750,Nirvaan,Lanka,nirvaan.lanka978@gmail.com,Female,No,10,Yes,13.2,Doctor,38,20,54,34,29,27,98,Group B,Associate degree,Standard,Completed,45,3
+949,Sumer,Vohra,sumer.vohra222@gmail.com,Female,No,20,No,20.0,Engineer,52,4,92,9,10,96,78,Group D,Some college,Free/reduced,,97,64
+830,Emir,Sandal,emir.sandal30@outlook.com,Male,No,2,No,9.3,Doctor,57,80,48,71,20,76,56,Group A,Some college,Free/reduced,Completed,97,40
+657,Hrishita,Kashyap,hrishita.kashyap851@outlook.com,Female,Yes,4,No,15.3,Teacher,10,9,28,72,64,73,80,Group D,Bachelorâ€™s degree,Standard,,70,93
+200,Bhavin,Kumar,bhavin.kumar533@yahoo.com,Female,Yes,19,No,2.3,Doctor,18,72,75,74,97,12,13,Group A,Some college,Free/reduced,Completed,72,99
+214,Lagan,Sami,lagan.sami749@yahoo.com,Male,Yes,10,Yes,0.4,Engineer,80,93,31,28,88,44,39,Group D,Bachelorâ€™s degree,Free/reduced,,16,13
+409,Yuvraj ,Gandhi,yuvraj .gandhi888@gmail.com,Female,No,11,Yes,7.9,Civil Servant,92,17,30,14,73,94,64,Group E,Bachelorâ€™s degree,Free/reduced,Completed,15,66
+333,Ritvik,Malhotra,ritvik.malhotra487@gmail.com,Male,No,15,No,16.9,Scientist,98,44,77,73,16,65,13,Group A,Some college,Standard,Completed,51,91
+209,Arnav,Rao,arnav.rao929@yahoo.com,Female,No,12,Yes,11.7,Entrepreneur,24,43,92,91,28,87,68,Group D,Masterâ€™s degree,Free/reduced,Completed,81,100
+614,Kimaya,Shere,kimaya.shere155@yahoo.com,Male,No,16,No,1.1,Scientist,47,12,6,83,48,93,54,Group B,Associate degree,Standard,Completed,24,37
+79,Bhamini,Bath,bhamini.bath361@outlook.com,Male,Yes,9,No,9.0,Engineer,47,36,9,82,11,78,76,Group D,Bachelorâ€™s degree,Standard,Completed,64,49
