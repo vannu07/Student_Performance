@@ -43,13 +43,7 @@ This project implements a comprehensive machine learning solution for predicting
 ### 🎬 Demo Preview
 
 ```
-🎥 Add your demo GIF here:
-![Demo](https://via.placeholder.com/800x400/0066cc/ffffff?text=ML+Pipeline+Demo)
-```
 
-*Replace the placeholder above with your actual demo GIF showing the ML pipeline in action*
-
----
 
 ## ✨ Features
 
