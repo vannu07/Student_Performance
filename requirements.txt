@@ -24,3 +24,4 @@ Jinja2
 MarkupSafe
 Werkzeug
 gunicorn
+python-dotenv

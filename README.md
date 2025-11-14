@@ -480,6 +480,12 @@ mlflow ui
 ```
 <img src="https://img.shields.io/badge/Status-Ready-4CAF50?style=flat-square" alt="MLflow Ready"/>
 
+## 🔐 Security & Credentials
+
+- **Do not commit credentials.** Use environment variables or a secrets manager for API tokens and passwords. See `SECURITY.md` for recommended practices and steps to remove leaked secrets.
+- Local development: copy `.env.example` to `.env`, fill it, and never commit `.env`.
+
+
 </td>
 </tr>
 </table>

@@ -17,7 +17,12 @@ application = Flask(__name__,
 app = application
 
 # Configure app
-app.config['SECRET_KEY'] = 'student_performance_ml_secret_key_2024'
+secret_key = os.getenv('SECRET_KEY')
+if not secret_key:
+    logger.warning("SECRET_KEY not set; using insecure default for development. Set SECRET_KEY in env for production.")
+    secret_key = 'student_performance_ml_secret_key_2024'
+
+app.config['SECRET_KEY'] = secret_key
 app.config['DEBUG'] = True
 
 # Route for home page
