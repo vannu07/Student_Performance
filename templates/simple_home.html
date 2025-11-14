@@ -225,11 +225,13 @@
     </style>
 </head>
 <body>
+    <a class="visually-hidden-focusable" href="#main-content">Skip to content</a>
     <div class="container-fluid">
+        <main id="main-content" tabindex="-1">
         <div class="main-container">
             <!-- Header -->
             <div class="header">
-                <h1><i class="fas fa-graduation-cap"></i> Student Performance Predictor</h1>
+                <h1><i class="fas fa-graduation-cap" aria-hidden="true"></i> <span class="visually-hidden">Student Performance Predictor</span></h1>
                 <p>Simple AI-powered tool to predict student math scores</p>
             </div>
 
@@ -249,7 +251,7 @@
                 </div>
 
                 <!-- Prediction Form -->
-                <form action="/predictdata" method="post" id="predictionForm">
+                <form action="/predictdata" method="post" id="predictionForm" role="form" aria-label="Simple Prediction Form">
                     <div class="row">
                         <!-- Gender -->
                         <div class="col-md-6">
@@ -379,8 +381,8 @@
                     </div>
 
                     <!-- Submit Button -->
-                    <button type="submit" class="btn-predict" id="submitBtn" disabled>
-                        <i class="fas fa-magic"></i> Predict Math Score
+                    <button type="submit" class="btn-predict btn-modern" id="submitBtn" disabled aria-label="Predict Math Score">
+                        <i class="fas fa-magic" aria-hidden="true"></i> Predict Math Score
                     </button>
                 </form>
 
@@ -434,6 +436,7 @@
                 </div>
             </div>
         </div>
+        </main>
     </div>
 
     <!-- Bootstrap JS -->
