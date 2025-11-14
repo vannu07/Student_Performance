@@ -22,20 +22,21 @@
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 </head>
 <body>
+    <a class="visually-hidden-focusable" href="#main-content">Skip to content</a>
     <!-- Page Loader -->
     <div class="page-loader">
         <div class="loading-spinner"></div>
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main Navigation">
         <div class="container">
-            <a class="nav-brand" href="/">
-                <i class="fas fa-graduation-cap me-2"></i>
-                StudentML Pro
+            <a class="nav-brand" href="/" aria-label="StudentML Pro Home">
+                <i class="fas fa-graduation-cap me-2" aria-hidden="true"></i>
+                <span class="visually-hidden">StudentML Pro</span>
             </a>
             <div class="ms-auto">
-                <a href="/" class="btn-3d btn-sm">
+                <a href="/" class="btn btn-outline-modern btn-sm">
                     <i class="fas fa-home me-2"></i>
                     Home
                 </a>
@@ -44,11 +45,12 @@
     </nav>
 
     <!-- Hero Section -->
+    <main id="main-content" tabindex="-1">
     <section class="hero-section" style="min-height: auto; padding: 120px 0 50px;">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-down">
                 <h1 class="hero-title display-4 mb-3">
-                    <i class="fas fa-brain icon-3d me-3"></i>
+                    <i class="fas fa-brain icon-modern me-3"></i>
                     AI Prediction Interface
                 </h1>
                 <p class="hero-subtitle">
@@ -65,7 +67,7 @@
                 <div class="col-lg-10">
                     <div class="glass-card p-5" data-aos="fade-up" data-aos-duration="1000">
                         <div class="form-container">
-                            <form action="/predictdata" method="post" id="predictionForm">
+                            <form action="/predictdata" method="post" id="predictionForm" role="form" aria-label="AI Prediction Form">
                                 <div class="row">
                                     <!-- Gender Selection -->
                                     <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="100">
@@ -202,10 +204,10 @@
                                 
                                 <!-- Submit Button -->
                                 <div class="text-center mt-4" data-aos="zoom-in" data-aos-delay="500">
-                                    <button type="submit" class="btn-3d btn-lg px-5 py-3">
-                                        <i class="fas fa-magic me-2"></i>
+                                    <button type="submit" class="btn btn-primary btn-lg px-5 py-3 btn-modern" aria-label="Generate AI Prediction">
+                                        <i class="fas fa-magic me-2" aria-hidden="true"></i>
                                         Generate AI Prediction
-                                        <i class="fas fa-arrow-right ms-2"></i>
+                                        <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i>
                                     </button>
                                 </div>
                             </form>
@@ -225,7 +227,7 @@
                     <div class="result-display glass-card" data-aos="zoom-in" data-aos-duration="800">
                         <div class="text-center">
                             <div class="mb-4">
-                                <i class="fas fa-trophy icon-3d" style="font-size: 4rem; color: #ffd700;"></i>
+                                <i class="fas fa-trophy icon-modern" style="font-size: 4rem; color: #ffd700;"></i>
                             </div>
                             <h2 class="display-4 text-white mb-3">
                                 🎉 Prediction Complete!
@@ -261,11 +263,11 @@
                             
                             <!-- Action Buttons -->
                             <div class="mt-4">
-                                <button onclick="window.location.reload()" class="btn-3d me-3">
+                                <button onclick="window.location.reload()" class="btn btn-outline-modern me-3">
                                     <i class="fas fa-redo me-2"></i>
                                     New Prediction
                                 </button>
-                                <a href="/" class="btn-3d" style="background: var(--secondary-gradient);">
+                                <a href="/" class="btn btn-secondary">
                                     <i class="fas fa-home me-2"></i>
                                     Back to Home
                                 </a>
@@ -283,7 +285,7 @@
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
                 <h2 class="display-5 text-white mb-3">
-                    <i class="fas fa-cogs icon-3d me-3"></i>
+                    <i class="fas fa-cogs icon-modern me-3"></i>
                     How Our AI Works
                 </h2>
                 <p class="lead text-white-50">Understanding the prediction process</p>
@@ -292,7 +294,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="glass-card p-4 text-center h-100">
-                        <div class="icon-3d mb-3">
+                        <div class="icon-modern mb-3">
                             <i class="fas fa-database"></i>
                         </div>
                         <h5 class="text-white mb-3">Data Processing</h5>
@@ -304,7 +306,7 @@
                 
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="glass-card p-4 text-center h-100">
-                        <div class="icon-3d mb-3">
+                        <div class="icon-modern mb-3">
                             <i class="fas fa-brain"></i>
                         </div>
                         <h5 class="text-white mb-3">AI Analysis</h5>
@@ -316,7 +318,7 @@
                 
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="glass-card p-4 text-center h-100">
-                        <div class="icon-3d mb-3">
+                        <div class="icon-modern mb-3">
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <h5 class="text-white mb-3">Result Generation</h5>
@@ -329,6 +331,7 @@
         </div>
     </section>
 
+    </main>
     <!-- Footer -->
     <footer class="py-4 mt-5">
         <div class="container text-center">

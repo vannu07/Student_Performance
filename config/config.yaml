@@ -2,7 +2,7 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: d:/PROJECTS/Student/student_performance_ml_project/data/student-scores.xlsx
+  source_URL: data/student-scores.xlsx
   local_data_file: artifacts/data_ingestion/data.xlsx
   unzip_dir: artifacts/data_ingestion
 

@@ -1,4 +1,5 @@
-"""Helper to load `.env` into the environment for local development.
+"""
+Helper to load `.env` into the environment for local development.
 Usage:
   python scripts/load_env.py        # loads .env from repo root and prints loaded keys
   python scripts/load_env.py --run "python app.py"  # load env and run a command

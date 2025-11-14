@@ -5,7 +5,6 @@ class StudentPerformanceApp {
     constructor() {
         this.init();
         this.setupEventListeners();
-        this.createParticles();
         this.setupScrollAnimations();
         this.setupFormValidation();
         this.setupThemeToggle();
@@ -20,20 +19,7 @@ class StudentPerformanceApp {
 
     // Particle System
     createParticles() {
-        const particlesContainer = document.createElement('div');
-        particlesContainer.className = 'particles';
-        document.body.appendChild(particlesContainer);
-
-        for (let i = 0; i < 50; i++) {
-            this.createParticle(particlesContainer);
-        }
-
-        // Continuously create new particles
-        setInterval(() => {
-            if (particlesContainer.children.length < 50) {
-                this.createParticle(particlesContainer);
-            }
-        }, 200);
+        // Particle system removed for a cleaner professional look.
     }
 
     createParticle(container) {
@@ -123,35 +109,7 @@ class StudentPerformanceApp {
 
     // 3D Effects Setup
     setup3DEffects() {
-        // Mouse tracking for 3D card effects
-        document.addEventListener('mousemove', (e) => {
-            const cards = document.querySelectorAll('.glass-card');
-            
-            cards.forEach(card => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const rotateX = (y - centerY) / 10;
-                const rotateY = (centerX - x) / 10;
-                
-                if (x >= 0 && x <= rect.width && y >= 0 && y <= rect.height) {
-                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
-                } else {
-                    card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-                }
-            });
-        });
-
-        // Reset 3D effects when mouse leaves
-        document.addEventListener('mouseleave', () => {
-            document.querySelectorAll('.glass-card').forEach(card => {
-                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-            });
-        });
+        // 3D interactive card effects removed for a more minimal/professional UI.
     }
 
     // Form Validation with Visual Feedback
@@ -396,8 +354,11 @@ class StudentPerformanceApp {
 
         // Button click effects
         document.addEventListener('click', (e) => {
-            if (e.target.classList.contains('btn-3d')) {
-                this.createRippleEffect(e);
+            // support both legacy `.btn-3d` and new `.btn-modern` buttons
+            const btn = e.target.closest('.btn-3d, .btn-modern');
+            if (btn) {
+                // pass the button and mouse coordinates for ripple positioning
+                this.createRippleEffect(btn, e.clientX, e.clientY);
             }
         });
 
@@ -414,23 +375,28 @@ class StudentPerformanceApp {
     }
 
     // Ripple Effect for Buttons
-    createRippleEffect(e) {
-        const button = e.target;
+    createRippleEffect(button, clientX, clientY) {
+        if (!button) return;
         const ripple = document.createElement('span');
         const rect = button.getBoundingClientRect();
         const size = Math.max(rect.width, rect.height);
-        const x = e.clientX - rect.left - size / 2;
-        const y = e.clientY - rect.top - size / 2;
+        const x = (clientX || (rect.left + rect.width / 2)) - rect.left - size / 2;
+        const y = (clientY || (rect.top + rect.height / 2)) - rect.top - size / 2;
 
         ripple.style.width = ripple.style.height = size + 'px';
         ripple.style.left = x + 'px';
         ripple.style.top = y + 'px';
         ripple.classList.add('ripple');
 
+        // ensure button has position relative for ripple placement
+        if (getComputedStyle(button).position === 'static') {
+            button.style.position = 'relative';
+        }
+
         button.appendChild(ripple);
 
         setTimeout(() => {
-            ripple.remove();
+            if (ripple && ripple.parentNode) ripple.remove();
         }, 600);
     }
 
@@ -466,26 +432,11 @@ class StudentPerformanceApp {
 
     // Celebration Animation
     celebratePrediction() {
-        // Create confetti effect
-        for (let i = 0; i < 50; i++) {
-            setTimeout(() => {
-                this.createConfetti();
-            }, i * 50);
-        }
+        // Disabled confetti celebration for a professional presentation.
     }
 
     createConfetti() {
-        const confetti = document.createElement('div');
-        confetti.className = 'confetti';
-        confetti.style.left = Math.random() * 100 + '%';
-        confetti.style.backgroundColor = this.getRandomColor();
-        confetti.style.animationDuration = (Math.random() * 2 + 1) + 's';
-        
-        document.body.appendChild(confetti);
-
-        setTimeout(() => {
-            confetti.remove();
-        }, 3000);
+        // Confetti removed.
     }
 
     getRandomColor() {
