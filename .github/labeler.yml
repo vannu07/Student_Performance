@@ -3,7 +3,7 @@
 # Label for documentation changes
 documentation:
   - changed-files:
-    - any-glob-to-any-file: ['*.md', 'docs/**/*']
+    - any-glob-to-any-file: ['*.md', '!SECURITY.md', 'docs/**/*']
 
 # Label for source code changes
 source:
