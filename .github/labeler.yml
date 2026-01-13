@@ -1,0 +1,41 @@
+# Configuration for labeler - https://github.com/actions/labeler
+
+# Label for documentation changes
+documentation:
+  - changed-files:
+    - any-glob-to-any-file: ['*.md', 'docs/**/*']
+
+# Label for source code changes
+source:
+  - changed-files:
+    - any-glob-to-any-file: ['src/**/*', '*.py']
+
+# Label for test changes
+tests:
+  - changed-files:
+    - any-glob-to-any-file: ['tests/**/*', 'test_*.py', '*_test.py']
+
+# Label for GitHub Actions workflow changes
+github-actions:
+  - changed-files:
+    - any-glob-to-any-file: ['.github/workflows/**/*']
+
+# Label for configuration changes
+configuration:
+  - changed-files:
+    - any-glob-to-any-file: ['*.yaml', '*.yml', '*.json', 'config/**/*', 'params.yaml', 'dvc.yaml']
+
+# Label for dependencies
+dependencies:
+  - changed-files:
+    - any-glob-to-any-file: ['requirements.txt', 'setup.py', 'Dockerfile']
+
+# Label for frontend/templates changes
+frontend:
+  - changed-files:
+    - any-glob-to-any-file: ['templates/**/*', 'static/**/*']
+
+# Label for security-related changes
+security:
+  - changed-files:
+    - any-glob-to-any-file: ['SECURITY.md', '.github/workflows/security*.yml']
