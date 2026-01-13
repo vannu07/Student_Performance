@@ -28,7 +28,7 @@ github-actions:
 # Label for configuration changes
 configuration:
   - changed-files:
-    - any-glob-to-any-file: ['params.yaml', 'dvc.yaml', 'config/**/*']
+    - any-glob-to-any-file: ['config/**/*']
 
 # Label for dependencies
 dependencies:
