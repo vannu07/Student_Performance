@@ -8,7 +8,12 @@ documentation:
 # Label for source code changes
 source:
   - changed-files:
-    - any-glob-to-any-file: ['src/**/*', '*.py']
+    - any-glob-to-any-file:
+      - 'src/**/*.py'
+      - '*.py'
+      - '!test_*.py'
+      - '!*_test.py'
+      - '!tests/**/*'
 
 # Label for test changes
 tests:
