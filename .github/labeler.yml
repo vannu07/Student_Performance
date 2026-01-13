@@ -1,43 +1,46 @@
-# Add labels to pull requests based on the paths of files being changed
+# Configuration for labeler - https://github.com/actions/labeler
 
+# Label for documentation changes
 documentation:
-  - '**/*.md'
-  - 'docs/**/*'
+  - changed-files:
+    - any-glob-to-any-file: ['*.md', '!SECURITY.md', 'docs/**/*']
 
-dependencies:
-  - 'requirements.txt'
-  - 'setup.py'
-  - 'Dockerfile'
+# Label for source code changes
+source:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/**/*.py'
+      - '*.py'
+      - '!test_*.py'
+      - '!*_test.py'
+      - '!tests/**/*'
 
-configuration:
-  - 'config/**/*'
-  - 'params.yaml'
-  - 'dvc.yaml'
-  - '.env.example'
-
-workflows:
-  - '.github/workflows/**/*'
-
-frontend:
-  - 'static/**/*'
-  - 'templates/**/*'
-
-backend:
-  - 'app.py'
-  - 'main.py'
-  - 'src/**/*.py'
-
+# Label for test changes
 tests:
-  - 'tests/**/*'
-  - '**/test_*.py'
+  - changed-files:
+    - any-glob-to-any-file: ['tests/**/*', 'test_*.py', '*_test.py']
 
-data:
-  - 'data/**/*'
-  - 'analyze_dataset.py'
-  - 'examine_data.py'
+# Label for GitHub Actions workflow changes
+github-actions:
+  - changed-files:
+    - any-glob-to-any-file: ['.github/**/*']
 
-research:
-  - 'research/**/*'
+# Label for configuration changes
+configuration:
+  - changed-files:
+    - any-glob-to-any-file: ['config/**/*']
 
-scripts:
-  - 'scripts/**/*'
+# Label for dependencies
+dependencies:
+  - changed-files:
+    - any-glob-to-any-file: ['requirements.txt', 'setup.py', 'Dockerfile']
+
+# Label for frontend/templates changes
+frontend:
+  - changed-files:
+    - any-glob-to-any-file: ['templates/**/*', 'static/**/*']
+
+# Label for security-related changes
+security:
+  - changed-files:
+    - any-glob-to-any-file: ['SECURITY.md', '.github/workflows/security*.yml']
