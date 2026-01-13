@@ -1,0 +1,43 @@
+# Add labels to pull requests based on the paths of files being changed
+
+documentation:
+  - '**/*.md'
+  - 'docs/**/*'
+
+dependencies:
+  - 'requirements.txt'
+  - 'setup.py'
+  - 'Dockerfile'
+
+configuration:
+  - 'config/**/*'
+  - 'params.yaml'
+  - 'dvc.yaml'
+  - '.env.example'
+
+workflows:
+  - '.github/workflows/**/*'
+
+frontend:
+  - 'static/**/*'
+  - 'templates/**/*'
+
+backend:
+  - 'app.py'
+  - 'main.py'
+  - 'src/**/*.py'
+
+tests:
+  - 'tests/**/*'
+  - '**/test_*.py'
+
+data:
+  - 'data/**/*'
+  - 'analyze_dataset.py'
+  - 'examine_data.py'
+
+research:
+  - 'research/**/*'
+
+scripts:
+  - 'scripts/**/*'
