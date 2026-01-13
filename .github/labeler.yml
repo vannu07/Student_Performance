@@ -18,12 +18,12 @@ tests:
 # Label for GitHub Actions workflow changes
 github-actions:
   - changed-files:
-    - any-glob-to-any-file: ['.github/workflows/**/*']
+    - any-glob-to-any-file: ['.github/**/*']
 
 # Label for configuration changes
 configuration:
   - changed-files:
-    - any-glob-to-any-file: ['*.yaml', '*.yml', '*.json', 'config/**/*', 'params.yaml', 'dvc.yaml']
+    - any-glob-to-any-file: ['params.yaml', 'dvc.yaml', 'config/**/*', '*.json']
 
 # Label for dependencies
 dependencies:
