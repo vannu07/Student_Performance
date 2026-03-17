@@ -229,7 +229,7 @@ class StudentPerformanceApp {
 
         // Simulate processing time (remove this in production)
         setTimeout(() => {
-            submitBtn.innerHTML = originalText;
+            submitBtn.textContent = originalText;
             submitBtn.disabled = false;
         }, 3000);
     }
