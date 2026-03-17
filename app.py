@@ -291,8 +291,11 @@ if __name__ == "__main__":
         os.makedirs(static_dir)
         logger.info(f"Created static directory: {static_dir}")
     
+    # Configure debug mode via environment variable (disabled by default for safety)
+    debug_mode = os.getenv("FLASK_DEBUG", "False").lower() in ("1", "true", "yes")
+    
     logger.info("Starting Student Performance ML Web Application")
     logger.info("Features: Advanced UI, 3D Effects, Animations, Real-time Predictions")
     logger.info("Access the application at: http://localhost:5000")
     
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=debug_mode)
