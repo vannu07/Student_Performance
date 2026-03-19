@@ -251,7 +251,7 @@ def api_predict():
     except Exception as e:
         logger.error(f"API prediction error: {str(e)}")
         return jsonify({
-            'error': str(e),
+            'error': 'An internal error occurred while processing the prediction request.',
             'success': False
         }), 500
 
