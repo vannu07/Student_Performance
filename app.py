@@ -56,8 +56,8 @@ def simple_predict():
             logger.info("Rendering simple prediction form")
             return render_template('simple_home.html')
         except Exception as e:
-            logger.error(f"Error rendering simple prediction form: {str(e)}")
-            return f"Error loading prediction form: {str(e)}", 500
+            logger.exception("Error rendering simple prediction form")
+            return "An internal error occurred while loading the prediction form.", 500
     else:
         try:
             logger.info("Processing simple prediction request")
