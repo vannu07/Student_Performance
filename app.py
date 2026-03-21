@@ -32,7 +32,7 @@ def index():
     try:
         logger.info("Rendering index page")
         return render_template('index.html')
-    except Exception as e:
+    except Exception:
         # Log full exception details server-side without exposing them to the client
         logger.exception("Error rendering index page")
         return "An internal error occurred while loading the page.", 500
