@@ -44,9 +44,10 @@ def simple_index():
     try:
         logger.info("Rendering simple index page")
         return render_template('simple_index.html')
-    except Exception as e:
-        logger.error(f"Error rendering simple index page: {str(e)}")
-        return f"Error loading page: {str(e)}", 500
+    except Exception:
+        # Log full exception details server-side without exposing them to the client
+        logger.exception("Error rendering simple index page")
+        return "An internal error occurred while loading the page.", 500
 
 # Route for simple prediction interface
 @app.route('/simple-predict', methods=['GET', 'POST'])
