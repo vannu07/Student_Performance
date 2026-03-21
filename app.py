@@ -33,8 +33,9 @@ def index():
         logger.info("Rendering index page")
         return render_template('index.html')
     except Exception as e:
-        logger.error(f"Error rendering index page: {str(e)}")
-        return f"Error loading page: {str(e)}", 500
+        # Log full exception details server-side without exposing them to the client
+        logger.exception("Error rendering index page")
+        return "An internal error occurred while loading the page.", 500
 
 # Route for simple landing page (interview-friendly)
 @app.route('/simple')
