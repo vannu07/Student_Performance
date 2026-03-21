@@ -140,7 +140,7 @@ def predict_datapoint():
             return render_template('home.html')
         except Exception as e:
             logger.error(f"Error rendering prediction form: {str(e)}")
-            return f"Error loading prediction form: {str(e)}", 500
+            return "An internal error occurred while loading the prediction form.", 500
     else:
         try:
             logger.info("Processing prediction request")
